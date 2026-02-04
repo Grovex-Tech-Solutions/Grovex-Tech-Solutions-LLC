@@ -40,8 +40,9 @@ export function getAllRetainerPlans() {
 /**
  * Get service package pricing
  */
-export function getServicePackage(category: 'computerRepair' | 'businessIT' | 'communityEducation', service: string) {
-  return pricingData.pricing.servicePackages[category]?.[service];
+export function getServicePackage(category: 'computerRepair' | 'businessIT' | 'communityEducation', service: string): ServicePackageItem | undefined {
+  const categoryPackages = pricingData.pricing.servicePackages[category];
+  return categoryPackages?.[service] as ServicePackageItem | undefined;
 }
 
 /**

@@ -125,6 +125,17 @@ Content strategy and messaging:
 
 **When to use**: Writing copy or planning content updates.
 
+#### [Pricing Management](PRICING_MANAGEMENT.md)
+Complete pricing structure and management:
+- Labor rates (residential & business)
+- Trip charges and service areas
+- Retainer plans (Managed Care tiers)
+- Service packages and pricing
+- Pricing philosophy and transparency
+- Management workflow and updates
+
+**When to use**: When updating prices, quoting services, or ensuring pricing consistency.
+
 #### [Professional Standards Validation](../professional-standards-validation.md)
 Code quality and standards:
 - Code style guidelines
@@ -200,10 +211,11 @@ Code quality improvements:
 
 **Creating content?** Start here:
 1. Read [Content Audit Report](../content-audit-report.md) - Understand voice and tone
-2. Review homepage and key pages for style reference
-3. Focus on community-first, accessible language
-4. Avoid technical jargon unless necessary
-5. Write with seniors and non-technical users in mind
+2. Review [Pricing Management](PRICING_MANAGEMENT.md) - Current pricing structure
+3. Review homepage and key pages for style reference
+4. Focus on community-first, accessible language
+5. Avoid technical jargon unless necessary
+6. Write with seniors and non-technical users in mind
 
 **Content guidelines:**
 - Community-focused, not corporate
@@ -211,6 +223,7 @@ Code quality improvements:
 - Emphasize benefits over features
 - Include local references (Turtle Creek, Mon Valley)
 - Keep sentences short and scannable
+- Use transparent, upfront pricing (see Pricing Management)
 
 ### For Maintainers
 
@@ -276,6 +289,12 @@ Code quality improvements:
 
 **"What's the brand voice?"**
 → [Content Audit Report](../content-audit-report.md)
+
+**"What are the current prices?"**
+→ [Pricing Management](PRICING_MANAGEMENT.md) → Pricing Structure
+
+**"How do I update pricing?"**
+→ [Pricing Management](PRICING_MANAGEMENT.md) → Managing Pricing
 
 **"How do I ensure accessibility?"**
 → [Design System](DESIGN_SYSTEM.md) → Accessibility

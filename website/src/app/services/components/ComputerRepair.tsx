@@ -10,9 +10,9 @@ export default function ComputerRepair() {
             From slow laptops to smartphone setup, we provide friendly, local tech support right in your home or at our Turtle Creek location. No need to drive downtown - we&apos;re here to help the neighbors we see every day.
           </p>
           
-          <div className="bg-green-50 border border-green-200 p-4 rounded-lg mb-6 shadow-sm">
-            <p className="text-sm font-medium text-green-800">
-              <strong>Free Diagnostic Assessment</strong> - We diagnose your problem at no charge and provide upfront pricing before any work begins. No surprises.
+          <div className="bg-background-secondary border-l-4 border-primary p-4 rounded-lg mb-6 shadow-sm">
+            <p className="text-sm font-medium text-foreground">
+              <strong className="text-primary">Free Diagnostic Assessment</strong> - We diagnose your problem at no charge and provide upfront pricing before any work begins. No surprises.
             </p>
           </div>
 
@@ -56,9 +56,9 @@ export default function ComputerRepair() {
                 Service fee: $50 ($25 for seniors 65+)
               </p>
             </div>
-            <div className="bg-red-50 border border-red-200 p-5 rounded-lg shadow-sm">
-              <h4 className="font-semibold text-red-700 mb-2">Emergency Service - $149</h4>
-              <p className="text-sm text-foreground">
+            <div className="bg-background-secondary border-l-4 border-amber-500 dark:border-amber-400 p-5 rounded-lg shadow-sm">
+              <h4 className="font-semibold text-foreground mb-2">Emergency Service - $149</h4>
+              <p className="text-sm text-foreground-secondary">
                 Business system down? Same-day response guaranteed. On-site within 2 hours for critical issues.
               </p>
             </div>
@@ -94,18 +94,18 @@ export default function ComputerRepair() {
           </div>
         </div>
         <div className="md:w-1/2">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-4 rounded-xl relative overflow-hidden">
+          <div className="bg-background-secondary dark:bg-background p-4 rounded-xl relative overflow-hidden border border-border">
             {/* Tech-themed animated elements */}
-            <div className="absolute top-4 right-4 w-6 h-6 bg-blue-200/40 rounded-sm animate-pulse transform rotate-12">
-              <div className="w-full h-1 bg-blue-400/60 mt-1"></div>
-              <div className="w-3/4 h-1 bg-blue-400/40 mt-1"></div>
+            <div className="absolute top-4 right-4 w-6 h-6 bg-primary/20 rounded-sm animate-pulse transform rotate-12">
+              <div className="w-full h-1 bg-primary/40 mt-1"></div>
+              <div className="w-3/4 h-1 bg-primary/30 mt-1"></div>
             </div>
-            <div className="absolute bottom-6 left-6 w-8 h-6 bg-indigo-300/30 rounded animate-bounce [animation-delay:1s] [animation-duration:3s]">
-              <div className="w-full h-2 bg-indigo-400/50 rounded-t"></div>
-              <div className="w-full h-2 bg-indigo-300/40 mt-1"></div>
+            <div className="absolute bottom-6 left-6 w-8 h-6 bg-primary/15 rounded animate-bounce [animation-delay:1s] [animation-duration:3s]">
+              <div className="w-full h-2 bg-primary/30 rounded-t"></div>
+              <div className="w-full h-2 bg-primary/20 mt-1"></div>
             </div>
-            <div className="absolute top-1/2 right-8 w-5 h-5 bg-blue-300/50 rounded-full animate-ping [animation-delay:2s] border-2 border-blue-400/30">
-              <div className="absolute inset-1 bg-blue-400/40 rounded-full"></div>
+            <div className="absolute top-1/2 right-8 w-5 h-5 bg-primary/25 rounded-full animate-ping [animation-delay:2s] border-2 border-primary/20">
+              <div className="absolute inset-1 bg-primary/30 rounded-full"></div>
             </div>
             <OptimizedImage
               src="/computer_repair.png"

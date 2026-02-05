@@ -5,23 +5,23 @@ export default function SoftwareDevelopment() {
     <section id="web-development" className="py-16 border-b border-border scroll-mt-24">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="md:w-1/2">
-          <div className="bg-gradient-to-br from-purple-50 to-pink-100 p-4 rounded-xl relative overflow-hidden">
+          <div className="bg-background-secondary dark:bg-background p-4 rounded-xl relative overflow-hidden border border-border">
             {/* Web development themed animated elements */}
-            <div className="absolute top-6 left-4 w-8 h-6 bg-purple-200/40 rounded animate-pulse [animation-delay:0.5s]">
+            <div className="absolute top-6 left-4 w-8 h-6 bg-primary/20 rounded animate-pulse [animation-delay:0.5s]">
               <div className="flex space-x-1 p-1">
-                <div className="w-1 h-1 bg-purple-400/60 rounded-full"></div>
-                <div className="w-1 h-1 bg-purple-400/60 rounded-full"></div>
-                <div className="w-1 h-1 bg-purple-400/60 rounded-full"></div>
+                <div className="w-1 h-1 bg-primary/40 rounded-full"></div>
+                <div className="w-1 h-1 bg-primary/40 rounded-full"></div>
+                <div className="w-1 h-1 bg-primary/40 rounded-full"></div>
               </div>
-              <div className="w-full h-1 bg-purple-300/40 mt-1"></div>
+              <div className="w-full h-1 bg-primary/30 mt-1"></div>
             </div>
-            <div className="absolute bottom-4 right-6 w-6 h-8 bg-pink-300/30 rounded animate-bounce [animation-delay:1.5s] [animation-duration:2.5s]">
-              <div className="w-full h-2 bg-pink-400/50"></div>
-              <div className="w-3/4 h-1 bg-pink-300/40 mt-1"></div>
-              <div className="w-1/2 h-1 bg-pink-300/40 mt-1"></div>
+            <div className="absolute bottom-4 right-6 w-6 h-8 bg-primary/15 rounded animate-bounce [animation-delay:1.5s] [animation-duration:2.5s]">
+              <div className="w-full h-2 bg-primary/30"></div>
+              <div className="w-3/4 h-1 bg-primary/20 mt-1"></div>
+              <div className="w-1/2 h-1 bg-primary/20 mt-1"></div>
             </div>
-            <div className="absolute top-1/3 left-8 w-6 h-6 bg-purple-300/50 rounded animate-ping [animation-delay:3s] border border-purple-400/30">
-              <div className="absolute inset-2 border border-purple-400/40"></div>
+            <div className="absolute top-1/3 left-8 w-6 h-6 bg-primary/25 rounded animate-ping [animation-delay:3s] border border-primary/20">
+              <div className="absolute inset-2 border border-primary/30"></div>
             </div>
             <OptimizedImage 
               src="/simple-web-design.png"

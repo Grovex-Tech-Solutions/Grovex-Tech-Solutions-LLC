@@ -114,23 +114,23 @@ export default function ITConsulting() {
           </div>
         </div>
         <div className="md:w-1/2">
-          <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-4 rounded-xl relative overflow-hidden">
+          <div className="bg-background-secondary dark:bg-background p-4 rounded-xl relative overflow-hidden border border-border">
             {/* IT/Network themed animated elements */}
-            <div className="absolute top-8 right-6 w-8 h-6 bg-green-200/40 rounded animate-pulse [animation-delay:1s]">
+            <div className="absolute top-8 right-6 w-8 h-6 bg-primary/20 rounded animate-pulse [animation-delay:1s]">
               <div className="flex justify-between items-center h-full p-1">
-                <div className="w-1 h-4 bg-green-400/60 rounded"></div>
-                <div className="w-1 h-3 bg-green-400/60 rounded"></div>
-                <div className="w-1 h-5 bg-green-400/60 rounded"></div>
-                <div className="w-1 h-2 bg-green-400/60 rounded"></div>
+                <div className="w-1 h-4 bg-primary/40 rounded"></div>
+                <div className="w-1 h-3 bg-primary/40 rounded"></div>
+                <div className="w-1 h-5 bg-primary/40 rounded"></div>
+                <div className="w-1 h-2 bg-primary/40 rounded"></div>
               </div>
             </div>
-            <div className="absolute bottom-8 left-4 w-7 h-7 bg-emerald-300/30 rounded animate-bounce [animation-delay:2s] [animation-duration:2.8s] border border-emerald-400/40">
-              <div className="absolute inset-2 border-2 border-emerald-400/50 rounded"></div>
-              <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-emerald-500/60 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute bottom-8 left-4 w-7 h-7 bg-primary/15 rounded animate-bounce [animation-delay:2s] [animation-duration:2.8s] border border-primary/25">
+              <div className="absolute inset-2 border-2 border-primary/30 rounded"></div>
+              <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-primary/50 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
             </div>
-            <div className="absolute top-1/4 right-4 w-6 h-4 bg-green-300/50 rounded-sm animate-ping [animation-delay:0.5s]">
-              <div className="w-full h-1 bg-green-400/60 mt-1"></div>
-              <div className="w-4 h-1 bg-green-400/40 mt-0.5"></div>
+            <div className="absolute top-1/4 right-4 w-6 h-4 bg-primary/25 rounded-sm animate-ping [animation-delay:0.5s]">
+              <div className="w-full h-1 bg-primary/40 mt-1"></div>
+              <div className="w-4 h-1 bg-primary/30 mt-0.5"></div>
             </div>
             <OptimizedImage
               src="/it_consult.png"

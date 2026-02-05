@@ -10,9 +10,9 @@ export function getPricingStructure(): PricingStructure {
 }
 
 /**
- * Get labor rates for residential or business services
+ * Get labor rates for residential, business, or emergency services
  */
-export function getLaborRate(type: 'residential' | 'business') {
+export function getLaborRate(type: 'residential' | 'business' | 'emergency') {
   return pricingData.pricing.laborRates[type];
 }
 
@@ -26,7 +26,7 @@ export function getTripCharge(type: 'localHomeVisit' | 'extendedHomeVisit' | 'bu
 /**
  * Get retainer plan details
  */
-export function getRetainerPlan(tier: 'managedCareBasic' | 'managedCarePlus' | 'managedCarePremium') {
+export function getRetainerPlan(tier: 'managedCareBasic' | 'managedCarePlus' | 'managedCarePremium' | 'managedCareEnterprise' | 'seniorTechSafetyNet') {
   return pricingData.pricing.retainerPlans[tier];
 }
 
@@ -40,7 +40,7 @@ export function getAllRetainerPlans() {
 /**
  * Get service package pricing
  */
-export function getServicePackage(category: 'computerRepair' | 'businessIT' | 'communityEducation', service: string): ServicePackageItem | undefined {
+export function getServicePackage(category: 'computerRepair' | 'businessIT' | 'communityEducation' | 'commodityHardware', service: string): ServicePackageItem | undefined {
   const categoryPackages = pricingData.pricing.servicePackages[category] as Record<string, ServicePackageItem>;
   return categoryPackages?.[service];
 }
@@ -69,9 +69,45 @@ export function formatPriceRange(min: number, max: number): string {
 /**
  * Get hourly rate display string
  */
-export function getHourlyRateDisplay(type: 'residential' | 'business'): string {
+export function getHourlyRateDisplay(type: 'residential' | 'business' | 'emergency'): string {
   const rate = getLaborRate(type);
   return `$${rate.hourlyRate}/hour`;
+}
+
+/**
+ * Get recommended retainer plans (those marked as recommended)
+ */
+export function getRecommendedRetainerPlans() {
+  return Object.values(pricingData.pricing.retainerPlans).filter(
+    (plan) => (plan as { isRecommended?: boolean }).isRecommended
+  );
+}
+
+/**
+ * Get business retainer plans (excluding senior-specific plans)
+ */
+export function getBusinessRetainerPlans() {
+  const plans = pricingData.pricing.retainerPlans;
+  return [
+    plans.managedCareBasic,
+    plans.managedCarePlus,
+    plans.managedCarePremium,
+    plans.managedCareEnterprise,
+  ];
+}
+
+/**
+ * Get community/senior-focused plans
+ */
+export function getCommunityPlans() {
+  return pricingData.pricing.retainerPlans.seniorTechSafetyNet;
+}
+
+/**
+ * Get pricing strategy information
+ */
+export function getPricingStrategy() {
+  return pricingData.pricing.pricingStrategy;
 }
 
 /**

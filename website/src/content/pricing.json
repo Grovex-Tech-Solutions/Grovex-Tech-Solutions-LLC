@@ -2,16 +2,22 @@
   "pricing": {
     "laborRates": {
       "residential": {
-        "hourlyRate": 60,
+        "hourlyRate": 59,
         "description": "Standard hourly rate for residential repairs and help desk support",
-        "minimumCharge": 60,
+        "minimumCharge": 59,
         "notes": "First hour minimum, then billed in 15-minute increments"
       },
       "business": {
-        "hourlyRate": 75,
+        "hourlyRate": 79,
         "description": "Standard hourly rate for business IT support",
-        "minimumCharge": 75,
+        "minimumCharge": 79,
         "notes": "First hour minimum, then billed in 15-minute increments"
+      },
+      "emergency": {
+        "hourlyRate": 149,
+        "description": "Priority emergency response for critical business systems",
+        "minimumCharge": 149,
+        "notes": "Same-day response guaranteed. Charged for the speed and business continuity, not just the hours."
       }
     },
     "tripCharges": {
@@ -36,46 +42,61 @@
     },
     "retainerPlans": {
       "managedCareBasic": {
-        "monthlyFee": 75,
-        "name": "Managed Care Plan - Basic",
-        "description": "Essential monthly IT support for small businesses",
+        "monthlyFee": 49,
+        "name": "Tech Support Essentials",
+        "description": "Basic protection for small businesses",
         "includes": [
-          "Monthly system maintenance and updates",
-          "Priority help desk support (response within 4 hours)",
-          "Remote support via phone, email, or remote desktop",
-          "Basic cybersecurity monitoring",
-          "Monthly system health report",
+          "Antivirus and security software",
+          "Monthly system updates",
+          "Email support (response within 24 hours)",
           "10% discount on additional services"
         ],
-        "idealFor": "Small businesses with 1-5 computers",
+        "idealFor": "Home offices and micro-businesses with 1-2 computers",
         "notes": "No long-term contract required, cancel anytime with 30 days notice"
       },
       "managedCarePlus": {
-        "monthlyFee": 150,
-        "name": "Managed Care Plan - Plus",
-        "description": "Comprehensive IT support with enhanced response times",
+        "monthlyFee": 139,
+        "name": "Business Protection Plan",
+        "description": "Comprehensive protection with updates",
         "includes": [
-          "All Basic Plan features",
-          "Priority help desk support (response within 2 hours)",
-          "Two on-site visits per month (additional visits at discounted rate)",
-          "Advanced cybersecurity protection",
-          "Quarterly technology planning consultation",
-          "Network monitoring and optimization",
-          "15% discount on additional services"
+          "All Essentials features",
+          "Priority help desk support (response within 4 hours)",
+          "Remote support via phone or remote desktop",
+          "Network security monitoring",
+          "Monthly system health report"
         ],
-        "idealFor": "Growing businesses with 5-15 computers",
-        "notes": "No long-term contract required, cancel anytime with 30 days notice"
+        "idealFor": "Small businesses with 3-8 computers",
+        "notes": "No long-term contract required, cancel anytime with 30 days notice",
+        "isDecoy": true
       },
       "managedCarePremium": {
-        "monthlyFee": 300,
-        "name": "Managed Care Plan - Premium",
-        "description": "Full-service IT partnership for established businesses",
+        "monthlyFee": 149,
+        "name": "Peace of Mind - Complete Care",
+        "description": "Full-service IT partnership with on-site support",
         "includes": [
-          "All Plus Plan features",
+          "All Business Protection features",
+          "Priority help desk support (response within 2 hours)",
+          "One on-site visit per month included",
+          "Advanced cybersecurity protection suite",
+          "Quarterly technology planning consultation",
+          "Network monitoring and optimization",
+          "15% discount on additional services",
+          "30-day satisfaction guarantee"
+        ],
+        "idealFor": "Growing businesses with 5-15 computers",
+        "notes": "Best value - only $10 more than Business Protection for significantly more service",
+        "isRecommended": true
+      },
+      "managedCareEnterprise": {
+        "monthlyFee": 299,
+        "name": "Enterprise Partnership",
+        "description": "Dedicated IT department for established businesses",
+        "includes": [
+          "All Complete Care features",
           "Priority help desk support (response within 1 hour)",
           "Unlimited on-site visits",
           "24/7 emergency support hotline",
-          "Comprehensive cybersecurity suite",
+          "Comprehensive cybersecurity suite with threat monitoring",
           "Monthly technology strategy sessions",
           "Proactive system optimization",
           "Dedicated account manager",
@@ -83,58 +104,146 @@
         ],
         "idealFor": "Established businesses with 15+ computers or complex IT needs",
         "notes": "No long-term contract required, cancel anytime with 30 days notice"
+      },
+      "seniorTechSafetyNet": {
+        "monthlyFee": 29,
+        "name": "Senior Tech Safety Net",
+        "description": "Peace of mind technology support for seniors and their families",
+        "includes": [
+          "Unlimited phone support for tech questions",
+          "Scam and fraud protection training",
+          "Monthly device checkup (remote)",
+          "Help with online safety and privacy",
+          "Family notification for detected security issues",
+          "Patient, no-rush assistance at your pace"
+        ],
+        "idealFor": "Seniors 65+ who want reliable tech help on call",
+        "notes": "Exclusive community-focused service not available from big box stores",
+        "isCommunitySpecial": true
       }
     },
     "servicePackages": {
       "computerRepair": {
         "diagnostics": {
           "price": 0,
-          "description": "Free diagnostics and assessment",
-          "notes": "We assess the problem at no charge, then provide upfront pricing before any work begins"
+          "description": "Premium Diagnostic Assessment",
+          "includes": [
+            "Comprehensive system health analysis",
+            "Written report with findings",
+            "Honest recommendation (repair vs. replace)",
+            "Upfront pricing before any work begins"
+          ],
+          "notes": "Our diagnostic goes beyond the basics - we identify root causes, not just symptoms"
         },
         "virusRemoval": {
-          "priceRange": "75-150",
-          "description": "Virus and malware removal with system optimization",
-          "notes": "Price depends on severity of infection and time required"
+          "price": 99,
+          "priceRange": "99-149",
+          "description": "Virus and malware removal with system restoration",
+          "includes": [
+            "Complete malware and virus removal",
+            "System optimization and cleanup",
+            "Security software installation",
+            "Prevention tips and training"
+          ],
+          "notes": "Standard infections $99, severe infections requiring extended recovery $149"
         },
         "hardwareRepair": {
-          "priceRange": "100-300",
+          "priceRange": "99-299",
           "description": "Hardware repair or replacement (parts + labor)",
           "notes": "Final price depends on specific parts needed. We always get approval before ordering parts."
         },
         "dataRecovery": {
-          "priceRange": "100-300",
+          "priceRange": "99-299",
           "description": "Data backup and recovery services",
-          "notes": "Simple backups start at $100, complex recovery up to $300"
+          "notes": "Simple backups start at $99, complex recovery up to $299"
         },
         "wifiSetup": {
-          "price": 100,
+          "price": 99,
           "description": "Wi-Fi network setup and optimization",
+          "includes": [
+            "Router configuration and placement optimization",
+            "Network security setup",
+            "All device connections",
+            "Speed optimization"
+          ],
           "notes": "Includes router configuration, security setup, and device connection"
         },
         "seniorTraining": {
-          "hourlyRate": 60,
+          "hourlyRate": 49,
           "description": "Patient, step-by-step technology training for seniors",
-          "notes": "Smartphone setup, email, internet basics, social media - we go at your pace"
+          "includes": [
+            "Smartphone and tablet basics",
+            "Email and internet safety",
+            "Video calling with family",
+            "Social media setup",
+            "Written instructions to take home"
+          ],
+          "notes": "We go at your pace - no rushing, no judgment"
+        },
+        "emergencyRepair": {
+          "price": 149,
+          "description": "Business Continuity Emergency Service",
+          "includes": [
+            "Same-day response guaranteed",
+            "Priority over all scheduled work",
+            "Direct line to technician",
+            "On-site within 2 hours (local area)"
+          ],
+          "notes": "For critical business systems where downtime costs money. Value-based pricing for the speed and peace of mind.",
+          "isEmergency": true
         }
       },
       "businessIT": {
         "starterWebsite": {
-          "price": 500,
-          "description": "Starter Website Package",
+          "price": 499,
+          "name": "Starter Website",
+          "description": "Professional web presence for local businesses",
           "includes": [
-            "WordPress setup and configuration",
-            "Mobile-responsive design",
-            "Basic SEO optimization",
-            "Domain registration assistance",
-            "Google My Business setup",
+            "Modern, mobile-responsive design",
+            "Up to 5 pages",
             "Contact form integration",
+            "Google My Business setup",
+            "Basic SEO optimization",
             "3 months of support and updates"
           ],
           "notes": "Perfect for small local businesses getting started online"
         },
+        "professionalWebsite": {
+          "price": 899,
+          "name": "Professional Website",
+          "description": "Enhanced website with advanced features",
+          "includes": [
+            "Custom design tailored to your brand",
+            "Up to 10 pages",
+            "CMS for easy content updates",
+            "Advanced SEO optimization",
+            "Social media integration",
+            "Analytics dashboard",
+            "6 months of support"
+          ],
+          "notes": "For businesses ready to make a stronger online impression",
+          "isRecommended": true
+        },
+        "enterpriseWebsite": {
+          "price": 1299,
+          "priceRange": "1299-2499",
+          "name": "Enterprise Website",
+          "description": "Full-featured business website with e-commerce capability",
+          "includes": [
+            "Fully custom design and branding",
+            "Unlimited pages",
+            "E-commerce integration",
+            "Booking/scheduling system",
+            "Custom functionality development",
+            "Advanced analytics and reporting",
+            "Training and documentation",
+            "12 months of priority support"
+          ],
+          "notes": "For businesses needing advanced features, online sales, or custom functionality",
+          "isAnchor": true
+        },
         "smallOfficeSetup": {
-          "priceRange": "300-600",
+          "priceRange": "299-599",
           "description": "Small Office IT Setup",
           "includes": [
             "Router and network configuration",
@@ -145,19 +254,6 @@
             "Training for staff"
           ],
           "notes": "One-time setup fee for small business office infrastructure"
-        },
-        "customWebsite": {
-          "priceRange": "800-2500",
-          "description": "Custom Website Development",
-          "includes": [
-            "Custom design tailored to your brand",
-            "CMS for easy content updates",
-            "E-commerce integration (if needed)",
-            "Advanced SEO optimization",
-            "Training and documentation",
-            "6 months of support"
-          ],
-          "notes": "For businesses needing more advanced features or custom functionality"
         }
       },
       "communityEducation": {
@@ -173,21 +269,52 @@
           ],
           "notes": "All workshops are free for community members"
         }
+      },
+      "commodityHardware": {
+        "partsMarkup": {
+          "percentage": 10,
+          "description": "Transparent parts pricing",
+          "notes": "We charge only 10% above our cost for parts - we'll show you the receipt. Compare to big box stores charging 30-50% markup."
+        }
       }
     },
     "pricingPolicy": {
-      "philosophy": "Small-town prices, big-city know-how",
+      "philosophy": "Honest value, real results",
       "principles": [
+        "We charge for the value we create, not just the hours we work",
+        "Premium Diagnostic Assessment - we find root causes, not just symptoms",
         "Transparent, upfront pricing with no hidden fees",
-        "Free consultation and honest assessment before any work",
-        "We tell you what you actually need, not what makes us the most money",
-        "No surprise charges - you approve the price before we start",
-        "Senior discounts and community-friendly rates"
+        "You approve the price before we start any work",
+        "30-day satisfaction guarantee on all services",
+        "Senior and community-friendly rates for those who need it most"
+      ],
+      "differentiation": [
+        "Unlike big box stores, we won't try to sell you a new computer when yours can be fixed",
+        "Unlike national chains, we offer genuine community-focused services like our Senior Tech Safety Net",
+        "We invest time in understanding your needs, not upselling products you don't need"
       ],
       "paymentTerms": {
         "residential": "Payment due upon completion. Cash, check, or major credit cards accepted.",
         "business": "Net 15 terms for established business clients. Monthly retainer clients billed automatically.",
         "warranty": "All work comes with a 30-day satisfaction guarantee"
+      }
+    },
+    "pricingStrategy": {
+      "emergencyServices": {
+        "type": "value-based",
+        "rationale": "Business downtime costs money - we charge for the speed and business continuity, not just labor hours"
+      },
+      "monthlyPlans": {
+        "type": "psychological-decoy",
+        "rationale": "Business Protection Plan at $139 makes Complete Care at $149 look like exceptional value for only $10 more"
+      },
+      "websites": {
+        "type": "anchoring",
+        "rationale": "Enterprise tier at $1299+ anchors the $499 Starter and $899 Professional tiers as accessible"
+      },
+      "commodityHardware": {
+        "type": "competitive",
+        "rationale": "Parts are easily compared - stay competitive with transparent, low markup"
       }
     }
   }

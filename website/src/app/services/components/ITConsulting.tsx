@@ -13,7 +13,7 @@ export default function ITConsulting() {
           <div className="space-y-6">
             {/* Starter Website Package */}
             <div className="bg-background-secondary border border-border p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-primary mb-3">Starter Website Package - $500</h3>
+              <h3 className="text-lg font-semibold text-primary mb-3">Starter Website Package - $499</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
@@ -40,7 +40,7 @@ export default function ITConsulting() {
 
             {/* Small Office IT Setup */}
             <div className="bg-background-secondary border border-border p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-primary mb-3">Small Office IT Setup - $300-600</h3>
+              <h3 className="text-lg font-semibold text-primary mb-3">Small Office IT Setup - $299-599</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
@@ -65,31 +65,27 @@ export default function ITConsulting() {
               </ul>
             </div>
 
-            {/* Managed Care Plan */}
+            {/* Managed Care Plans */}
             <div className="bg-background-secondary border border-border p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-primary mb-3">Managed Care Plan - $75/month</h3>
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground">Monthly system maintenance and updates</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground">Priority help desk support via phone/email</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground">Backup monitoring and data protection</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground">Security monitoring and updates</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground">Discounted rates on additional services</span>
-                </li>
-              </ul>
+              <h3 className="text-lg font-semibold text-primary mb-4">Monthly Support Plans</h3>
+              <div className="space-y-4">
+                <div className="border-l-2 border-gray-300 pl-4">
+                  <p className="font-medium">Tech Support Essentials - $49/month</p>
+                  <p className="text-sm text-foreground-secondary">Antivirus, monthly updates, email support</p>
+                </div>
+                <div className="border-l-2 border-gray-300 pl-4">
+                  <p className="font-medium">Business Protection - $139/month</p>
+                  <p className="text-sm text-foreground-secondary">Priority support, network monitoring, health reports</p>
+                </div>
+                <div className="border-l-2 border-primary pl-4 bg-primary/5 -ml-px py-2 rounded-r">
+                  <p className="font-medium text-primary">Peace of Mind - Complete Care - $149/month <span className="text-xs bg-primary text-white px-2 py-0.5 rounded ml-2">Best Value</span></p>
+                  <p className="text-sm text-foreground-secondary">Everything in Business Protection + monthly on-site visit, advanced cybersecurity, quarterly planning</p>
+                </div>
+                <div className="border-l-2 border-gray-300 pl-4">
+                  <p className="font-medium">Enterprise Partnership - $299/month</p>
+                  <p className="text-sm text-foreground-secondary">Unlimited on-site visits, 24/7 support, dedicated account manager</p>
+                </div>
+              </div>
             </div>
           </div>
 

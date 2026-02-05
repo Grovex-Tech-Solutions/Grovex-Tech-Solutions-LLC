@@ -16,19 +16,19 @@ export default function ComputerRepair() {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Computer Repair & Virus Removal:</strong> Fix slow computers, remove malware, and restore performance - $75-200</span>
+                  <span className="text-foreground"><strong>Computer Repair & Virus Removal:</strong> Fix slow computers, remove malware, and restore performance - $99-149</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Wi-Fi Optimization & Setup:</strong> Get your home network running smoothly and securely - $100</span>
+                  <span className="text-foreground"><strong>Wi-Fi Optimization & Setup:</strong> Get your home network running smoothly and securely - $99</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Smartphone Setup & Training for Seniors:</strong> Patient, step-by-step help with phones and tablets - $60/hour</span>
+                  <span className="text-foreground"><strong>Smartphone Setup & Training for Seniors:</strong> Patient, step-by-step help with phones and tablets - $49/hour</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Data Backup & Recovery:</strong> Protect your photos, documents, and memories - $100-300</span>
+                  <span className="text-foreground"><strong>Data Backup & Recovery:</strong> Protect your photos, documents, and memories - $99-299</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>

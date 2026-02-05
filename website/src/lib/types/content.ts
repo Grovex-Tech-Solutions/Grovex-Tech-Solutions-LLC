@@ -205,20 +205,29 @@ export interface RetainerPlan {
   includes: string[];
   idealFor: string;
   notes: string;
+  isDecoy?: boolean;
+  isRecommended?: boolean;
+  isCommunitySpecial?: boolean;
 }
 
 export interface ServicePackageItem {
   price?: number;
   priceRange?: string;
   hourlyRate?: number;
+  percentage?: number;
+  name?: string;
   description: string;
   includes?: string[];
   notes: string;
+  isRecommended?: boolean;
+  isAnchor?: boolean;
+  isEmergency?: boolean;
 }
 
 export interface PricingPolicy {
   philosophy: string;
   principles: string[];
+  differentiation?: string[];
   paymentTerms: {
     residential: string;
     business: string;
@@ -226,11 +235,17 @@ export interface PricingPolicy {
   };
 }
 
+export interface PricingStrategy {
+  type: string;
+  rationale: string;
+}
+
 export interface PricingStructure {
   pricing: {
     laborRates: {
       residential: LaborRate;
       business: LaborRate;
+      emergency?: LaborRate;
     };
     tripCharges: {
       localHomeVisit: TripCharge;
@@ -241,6 +256,9 @@ export interface PricingStructure {
       managedCareBasic: RetainerPlan;
       managedCarePlus: RetainerPlan;
       managedCarePremium: RetainerPlan;
+      managedCareEnterprise?: RetainerPlan;
+      seniorTechSafetyNet?: RetainerPlan;
+      [key: string]: RetainerPlan | undefined;
     };
     servicePackages: {
       computerRepair: {
@@ -252,7 +270,16 @@ export interface PricingStructure {
       communityEducation: {
         [key: string]: ServicePackageItem;
       };
+      commodityHardware?: {
+        [key: string]: ServicePackageItem;
+      };
     };
     pricingPolicy: PricingPolicy;
+    pricingStrategy?: {
+      emergencyServices?: PricingStrategy;
+      monthlyPlans?: PricingStrategy;
+      websites?: PricingStrategy;
+      commodityHardware?: PricingStrategy;
+    };
   };
 }

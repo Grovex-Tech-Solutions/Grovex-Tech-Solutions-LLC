@@ -66,8 +66,7 @@
           "Monthly system health report"
         ],
         "idealFor": "Small businesses with 3-8 computers",
-        "notes": "No long-term contract required, cancel anytime with 30 days notice",
-        "isDecoy": true
+        "notes": "No long-term contract required, cancel anytime with 30 days notice"
       },
       "managedCarePremium": {
         "monthlyFee": 149,
@@ -133,7 +132,7 @@
             "Honest recommendation (repair vs. replace)",
             "Upfront pricing before any work begins"
           ],
-          "notes": "Our diagnostic goes beyond the basics - we identify root causes, not just symptoms"
+          "notes": "Our free diagnostic goes beyond the basics - we identify root causes, not just symptoms"
         },
         "virusRemoval": {
           "price": 99,
@@ -239,8 +238,7 @@
             "Training and documentation",
             "12 months of priority support"
           ],
-          "notes": "For businesses needing advanced features, online sales, or custom functionality",
-          "isAnchor": true
+          "notes": "For businesses needing advanced features, online sales, or custom functionality"
         },
         "smallOfficeSetup": {
           "priceRange": "299-599",
@@ -282,7 +280,7 @@
       "philosophy": "Honest value, real results",
       "principles": [
         "We charge for the value we create, not just the hours we work",
-        "Premium Diagnostic Assessment - we find root causes, not just symptoms",
+        "Free consultation and honest assessment - we find root causes, not just symptoms",
         "Transparent, upfront pricing with no hidden fees",
         "You approve the price before we start any work",
         "30-day satisfaction guarantee on all services",
@@ -297,24 +295,6 @@
         "residential": "Payment due upon completion. Cash, check, or major credit cards accepted.",
         "business": "Net 15 terms for established business clients. Monthly retainer clients billed automatically.",
         "warranty": "All work comes with a 30-day satisfaction guarantee"
-      }
-    },
-    "pricingStrategy": {
-      "emergencyServices": {
-        "type": "value-based",
-        "rationale": "Business downtime costs money - we charge for the speed and business continuity, not just labor hours"
-      },
-      "monthlyPlans": {
-        "type": "psychological-decoy",
-        "rationale": "Business Protection Plan at $139 makes Complete Care at $149 look like exceptional value for only $10 more"
-      },
-      "websites": {
-        "type": "anchoring",
-        "rationale": "Enterprise tier at $1299+ anchors the $499 Starter and $899 Professional tiers as accessible"
-      },
-      "commodityHardware": {
-        "type": "competitive",
-        "rationale": "Parts are easily compared - stay competitive with transparent, low markup"
       }
     }
   }

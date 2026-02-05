@@ -10,7 +10,7 @@ import type {
   ServiceContent, 
   TestimonialContent,
   ContentLoadOptions 
-} from '../types/content';
+} from '@/types/content';
 import { 
   loadContentModel, 
   loadPageContent, 

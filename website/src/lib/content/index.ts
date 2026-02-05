@@ -4,7 +4,7 @@
  */
 
 // Types
-export type * from '../types/content';
+export type * from '@/types/content';
 
 // Schemas
 export { schemas } from '../schemas/content';
@@ -44,4 +44,4 @@ export type {
   ContentModel,
   ContentLoadOptions,
   ContentValidationResult,
-} from '../types/content';
+} from '@/types/content';

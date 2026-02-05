@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
-import type { PricingStructure } from '@/lib/types/content';
+import type { PricingStructure } from '@/types/content';
 
 describe('Pricing Structure Validation', () => {
   let pricingData: PricingStructure;

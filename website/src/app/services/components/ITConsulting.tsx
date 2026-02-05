@@ -69,11 +69,11 @@ export default function ITConsulting() {
             <div className="bg-background-secondary border border-border p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-semibold text-primary mb-4">Monthly Support Plans</h3>
               <div className="space-y-4">
-                <div className="border-l-2 border-gray-300 pl-4">
+                <div className="border-l-2 border-border pl-4">
                   <p className="font-medium">Tech Support Essentials - $49/month</p>
                   <p className="text-sm text-foreground-secondary">Antivirus, monthly updates, email support</p>
                 </div>
-                <div className="border-l-2 border-gray-300 pl-4">
+                <div className="border-l-2 border-border pl-4">
                   <p className="font-medium">Business Protection - $139/month</p>
                   <p className="text-sm text-foreground-secondary">Priority support, network monitoring, health reports</p>
                 </div>
@@ -81,7 +81,7 @@ export default function ITConsulting() {
                   <p className="font-medium text-primary">Peace of Mind - Complete Care - $149/month <span className="text-xs bg-primary text-white px-2 py-0.5 rounded ml-2">Best Value</span></p>
                   <p className="text-sm text-foreground-secondary">Everything in Business Protection + monthly on-site visit, advanced cybersecurity, quarterly planning</p>
                 </div>
-                <div className="border-l-2 border-gray-300 pl-4">
+                <div className="border-l-2 border-border pl-4">
                   <p className="font-medium">Enterprise Partnership - $299/month</p>
                   <p className="text-sm text-foreground-secondary">Unlimited on-site visits, 24/7 support, dedicated account manager</p>
                 </div>

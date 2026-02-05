@@ -7,7 +7,7 @@
 export * from './content';
 
 // Types
-export * from './types/content';
+export * from '@/types/content';
 
 // Schemas
 export * from './schemas/content';

@@ -2,7 +2,7 @@
 // This file provides centralized access to business information to ensure consistency
 
 import businessData from '@/content/global/business.json';
-import { BusinessInfo } from '@/lib/types/content';
+import { BusinessInfo } from '@/types/content';
 
 export const business: BusinessInfo = businessData as BusinessInfo;
 

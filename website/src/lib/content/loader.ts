@@ -15,7 +15,7 @@ import type {
   BusinessInfo,
   ServiceContent,
   TestimonialContent
-} from '../types/content';
+} from '@/types/content';
 import { ContentModelSchema } from '../schemas/content';
 
 /**

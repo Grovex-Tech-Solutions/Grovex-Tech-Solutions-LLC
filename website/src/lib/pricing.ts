@@ -1,6 +1,21 @@
 // Pricing data loader for Three Rivers Tech
 import pricingData from '@/content/pricing.json';
-import type { PricingStructure, ServicePackageItem } from '@/lib/types/content';
+import type { 
+  PricingStructure, 
+  ServicePackageItem, 
+  LaborRate, 
+  TripCharge, 
+  RetainerPlan,
+  PricingPolicy,
+  RetainerPlanTier,
+  LaborRateType,
+  TripChargeType
+} from '@/types/content';
+
+/**
+ * Get the complete pricing structure with full type safety
+ */
+const pricing = (pricingData as PricingStructure).pricing;
 
 /**
  * Get the complete pricing structure
@@ -12,44 +27,67 @@ export function getPricingStructure(): PricingStructure {
 /**
  * Get labor rates for residential, business, or emergency services
  */
-export function getLaborRate(type: 'residential' | 'business' | 'emergency') {
-  return pricingData.pricing.laborRates[type];
+export function getLaborRate(type: LaborRateType): LaborRate {
+  const rate = pricing.laborRates[type];
+  if (!rate) {
+    throw new Error(`Labor rate for type "${type}" not found`);
+  }
+  return rate;
 }
 
 /**
  * Get trip charge information for a specific service area
  */
-export function getTripCharge(type: 'localHomeVisit' | 'extendedHomeVisit' | 'businessVisit') {
-  return pricingData.pricing.tripCharges[type];
+export function getTripCharge(type: TripChargeType): TripCharge {
+  const charge = pricing.tripCharges[type];
+  if (!charge) {
+    throw new Error(`Trip charge for type "${type}" not found`);
+  }
+  return charge;
 }
 
 /**
  * Get retainer plan details
  */
-export function getRetainerPlan(tier: 'managedCareBasic' | 'managedCarePlus' | 'managedCarePremium' | 'managedCareEnterprise' | 'seniorTechSafetyNet') {
-  return pricingData.pricing.retainerPlans[tier];
+export function getRetainerPlan(tier: RetainerPlanTier): RetainerPlan | undefined {
+  return pricing.retainerPlans[tier];
 }
 
 /**
  * Get all retainer plans for comparison
  */
-export function getAllRetainerPlans() {
-  return Object.values(pricingData.pricing.retainerPlans);
+export function getAllRetainerPlans(): RetainerPlan[] {
+  return Object.values(pricing.retainerPlans).filter(
+    (plan): plan is RetainerPlan => plan !== undefined
+  );
 }
 
 /**
  * Get service package pricing
  */
-export function getServicePackage(category: 'computerRepair' | 'businessIT' | 'communityEducation' | 'commodityHardware', service: string): ServicePackageItem | undefined {
-  const categoryPackages = pricingData.pricing.servicePackages[category] as Record<string, ServicePackageItem>;
+export function getServicePackage(
+  category: keyof typeof pricing.servicePackages, 
+  service: string
+): ServicePackageItem | undefined {
+  const categoryPackages = pricing.servicePackages[category];
   return categoryPackages?.[service];
+}
+
+/**
+ * Get all service packages for a specific category
+ */
+export function getServicePackagesByCategory(
+  category: keyof typeof pricing.servicePackages
+): Record<string, ServicePackageItem> {
+  const packages = pricing.servicePackages[category];
+  return packages || {};
 }
 
 /**
  * Get pricing policy and principles
  */
-export function getPricingPolicy() {
-  return pricingData.pricing.pricingPolicy;
+export function getPricingPolicy(): PricingPolicy {
+  return pricing.pricingPolicy;
 }
 
 /**
@@ -67,9 +105,20 @@ export function formatPriceRange(min: number, max: number): string {
 }
 
 /**
+ * Get a formatted string for any service package pricing model
+ */
+export function getServicePackagePriceDisplay(item: ServicePackageItem): string {
+  if (item.price !== undefined) return formatPrice(item.price);
+  if (item.priceRange) return `$${item.priceRange}`;
+  if (item.hourlyRate) return `$${item.hourlyRate}/hour`;
+  if (item.percentage) return `${item.percentage}% markup`;
+  return 'Contact for pricing';
+}
+
+/**
  * Get hourly rate display string
  */
-export function getHourlyRateDisplay(type: 'residential' | 'business' | 'emergency'): string {
+export function getHourlyRateDisplay(type: LaborRateType): string {
   const rate = getLaborRate(type);
   return `$${rate.hourlyRate}/hour`;
 }
@@ -77,43 +126,35 @@ export function getHourlyRateDisplay(type: 'residential' | 'business' | 'emergen
 /**
  * Get recommended retainer plans (those marked as recommended)
  */
-export function getRecommendedRetainerPlans() {
-  return Object.values(pricingData.pricing.retainerPlans).filter(
-    (plan) => (plan as { isRecommended?: boolean }).isRecommended
-  );
+export function getRecommendedRetainerPlans(): RetainerPlan[] {
+  return getAllRetainerPlans().filter((plan) => plan.isRecommended);
 }
 
 /**
  * Get business retainer plans (excluding senior-specific plans)
  */
-export function getBusinessRetainerPlans() {
-  const plans = pricingData.pricing.retainerPlans;
-  return [
+export function getBusinessRetainerPlans(): RetainerPlan[] {
+  const plans = pricing.retainerPlans;
+  const businessPlans = [
     plans.managedCareBasic,
     plans.managedCarePlus,
     plans.managedCarePremium,
     plans.managedCareEnterprise,
   ];
+  return businessPlans.filter((plan): plan is RetainerPlan => plan !== undefined);
 }
 
 /**
  * Get community/senior-focused plans
  */
-export function getCommunityPlans() {
-  return pricingData.pricing.retainerPlans.seniorTechSafetyNet;
-}
-
-/**
- * Get pricing strategy information
- */
-export function getPricingStrategy() {
-  return pricingData.pricing.pricingStrategy;
+export function getCommunityPlans(): RetainerPlan | undefined {
+  return pricing.retainerPlans.seniorTechSafetyNet;
 }
 
 /**
  * Get trip charge display string
  */
-export function getTripChargeDisplay(type: 'localHomeVisit' | 'extendedHomeVisit' | 'businessVisit'): string {
+export function getTripChargeDisplay(type: TripChargeType): string {
   const charge = getTripCharge(type);
   return charge.fee === 0 ? 'Free' : `$${charge.fee}`;
 }

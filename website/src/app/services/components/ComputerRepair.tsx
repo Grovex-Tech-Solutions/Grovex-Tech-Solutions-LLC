@@ -10,6 +10,12 @@ export default function ComputerRepair() {
             From slow laptops to smartphone setup, we provide friendly, local tech support right in your home or at our Turtle Creek location. No need to drive downtown - we&apos;re here to help the neighbors we see every day.
           </p>
           
+          <div className="bg-green-50 border border-green-200 p-4 rounded-lg mb-6 shadow-sm">
+            <p className="text-sm font-medium text-green-800">
+              <strong>Free Diagnostic Assessment</strong> - We diagnose your problem at no charge and provide upfront pricing before any work begins. No surprises.
+            </p>
+          </div>
+
           <div className="mb-6">
             <h3 className="text-xl font-semibold mb-3 text-primary">Our Home Tech Services</h3>
             <div className="bg-white border border-border p-6 rounded-lg shadow-sm">
@@ -42,11 +48,30 @@ export default function ComputerRepair() {
             </div>
           </div>
 
-          <div className="bg-background-secondary border border-border p-5 rounded-lg mb-6 shadow-sm">
-            <h4 className="font-semibold text-primary mb-2">On-Site Visits in Turtle Creek & Surrounding Areas</h4>
-            <p className="text-sm text-foreground">
-              We come to you! Serving Turtle Creek, Wilmerding, Monroeville, and the entire Mon Valley. 
-              On-site service fee: $25 (waived for seniors 65+)
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <div className="bg-background-secondary border border-border p-5 rounded-lg shadow-sm">
+              <h4 className="font-semibold text-primary mb-2">On-Site Visits</h4>
+              <p className="text-sm text-foreground">
+                We come to you! Serving Turtle Creek, Wilmerding, Monroeville, and the Mon Valley.
+                Service fee: $50 ($25 for seniors 65+)
+              </p>
+            </div>
+            <div className="bg-red-50 border border-red-200 p-5 rounded-lg shadow-sm">
+              <h4 className="font-semibold text-red-700 mb-2">Emergency Service - $149</h4>
+              <p className="text-sm text-foreground">
+                Business system down? Same-day response guaranteed. On-site within 2 hours for critical issues.
+              </p>
+            </div>
+          </div>
+
+          {/* Senior Tech Safety Net */}
+          <div className="bg-primary/10 border border-primary/30 p-5 rounded-lg mb-6 shadow-sm">
+            <h4 className="font-semibold text-primary mb-2">Senior Tech Safety Net - $29/month</h4>
+            <p className="text-sm text-foreground mb-3">
+              Peace of mind for seniors and their families. Unlimited phone support, scam protection training, monthly device checkups, and patient assistance whenever you need it.
+            </p>
+            <p className="text-xs text-foreground-secondary italic">
+              A community-focused service you won&apos;t find at big box stores.
             </p>
           </div>
 

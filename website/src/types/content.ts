@@ -202,6 +202,7 @@ export interface LaborRate {
 
 export interface TripCharge {
   fee: number;
+  seniorFee?: number;
   description: string;
   coverage: string;
   notes: string;

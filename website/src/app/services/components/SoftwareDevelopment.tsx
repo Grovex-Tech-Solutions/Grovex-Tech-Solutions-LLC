@@ -38,33 +38,54 @@ export default function SoftwareDevelopment() {
           <p className="text-foreground-secondary mb-6">
             Professional, affordable websites for local businesses and community organizations. We focus on simple, effective designs that help you reach more customers in Turtle Creek and the surrounding area.
           </p>
-          <div className="bg-white border border-border p-6 rounded-lg shadow-sm">
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                <span className="text-foreground">Custom websites for local businesses starting at $499</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                <span className="text-foreground">Local SEO to help customers find you online</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                <span className="text-foreground">Responsive design that works on all devices</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                <span className="text-foreground">Simple Content Management System so you can update your own site</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                <span className="text-foreground">Integration with social media and Google Business</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                <span className="text-foreground">Ongoing support and maintenance packages: $50/month</span>
-              </li>
-            </ul>
+          <div className="space-y-4">
+            {/* Website Pricing Tiers */}
+            <div className="bg-white border border-border p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-primary mb-3">Website Packages</h3>
+              <div className="space-y-3">
+                <div className="flex justify-between items-start border-b border-border pb-3">
+                  <div>
+                    <p className="font-medium">Starter Website - $499</p>
+                    <p className="text-sm text-foreground-secondary">Up to 5 pages, mobile-responsive, basic SEO, 3 months support</p>
+                  </div>
+                </div>
+                <div className="flex justify-between items-start border-b border-border pb-3 bg-primary/5 -mx-5 px-5 py-2">
+                  <div>
+                    <p className="font-medium text-primary">Professional Website - $899 <span className="text-xs bg-primary text-white px-2 py-0.5 rounded ml-2">Popular</span></p>
+                    <p className="text-sm text-foreground-secondary">Up to 10 pages, custom design, CMS, advanced SEO, analytics, 6 months support</p>
+                  </div>
+                </div>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="font-medium">Enterprise Website - $1,299+</p>
+                    <p className="text-sm text-foreground-secondary">Unlimited pages, e-commerce, booking system, custom features, 12 months support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Features */}
+            <div className="bg-white border border-border p-5 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-primary mb-3">All Websites Include</h3>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start">
+                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
+                  <span className="text-foreground">Local SEO to help customers find you online</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
+                  <span className="text-foreground">Responsive design that works on all devices</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
+                  <span className="text-foreground">Integration with social media and Google Business</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
+                  <span className="text-foreground">Ongoing support and maintenance starting at $49/month</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

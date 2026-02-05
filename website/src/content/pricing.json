@@ -22,16 +22,18 @@
     },
     "tripCharges": {
       "localHomeVisit": {
-        "fee": 0,
-        "description": "Free home visit for Turtle Creek residents",
-        "coverage": "Turtle Creek, PA 15145",
-        "notes": "On-site fee waived for seniors 65+"
+        "fee": 50,
+        "seniorFee": 25,
+        "description": "Home visit fee for Turtle Creek and surrounding areas",
+        "coverage": "Turtle Creek, PA 15145 and surrounding Mon Valley",
+        "notes": "Seniors 65+ pay reduced rate of $25"
       },
       "extendedHomeVisit": {
-        "fee": 25,
+        "fee": 50,
+        "seniorFee": 25,
         "description": "Home visit fee for surrounding Mon Valley areas",
         "coverage": "Monroeville, Wilmerding, East Pittsburgh, Braddock, and surrounding Mon Valley communities within 15 miles",
-        "notes": "Waived with 1+ hours of service"
+        "notes": "Seniors 65+ pay reduced rate of $25"
       },
       "businessVisit": {
         "fee": 0,

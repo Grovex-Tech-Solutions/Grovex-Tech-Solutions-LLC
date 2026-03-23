@@ -95,7 +95,7 @@ describe('Performance Optimization for Local Users', () => {
     it('exposes email and booking options with accessible attributes', () => {
       render(<ContactPage />);
 
-      const emailLink = screen.getByRole('link', { name: /info@threeriverstech\.com/i });
+      const emailLink = screen.getByRole('link', { name: /info@three-rivers-tech\.com/i });
       expect(emailLink).toHaveAttribute('href', expect.stringContaining('mailto:'));
       expect(emailLink.className).toContain('focus:ring-2');
 
@@ -252,7 +252,7 @@ describe('Performance Optimization for Local Users', () => {
     it('keeps primary contact links keyboard-focusable on the contact page', () => {
       render(<ContactPage />);
 
-      const emailLinks = screen.getAllByRole('link', { name: /info@threeriverstech\.com/i });
+      const emailLinks = screen.getAllByRole('link', { name: /info@three-rivers-tech\.com/i });
       emailLinks.forEach((link) => {
         expect(link.className).toContain('focus:ring-2');
       });

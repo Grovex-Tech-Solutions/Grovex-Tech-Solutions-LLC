@@ -150,10 +150,10 @@ export default function Footer() {
 
               <p>
                 <a 
-                  href="mailto:info@threeriverstech.com" 
+                  href="mailto:info@three-rivers-tech.com" 
                   className="text-foreground-secondary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md py-1 no-underline block"
                 >
-                  Email: info@threeriverstech.com
+                  Email: info@three-rivers-tech.com
                 </a>
               </p>
             </address>

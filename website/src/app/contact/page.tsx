@@ -76,12 +76,12 @@ export default function ContactPage() {
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="mr-2 text-blue-800" aria-hidden="true">✉️</span>
                     <a
-                      href="mailto:info@threeriverstech.com?subject=Tech Help Request&body=Hi! I need help with:%0D%0A%0D%0ADevice Type: %0D%0AProblem: %0D%0A%0D%0APlease contact me to schedule a visit.%0D%0A%0D%0AThank you!"
+                      href="mailto:cpenrod@three-rivers-tech.com?subject=Tech Help Request&body=Hi! I need help with:%0D%0A%0D%0ADevice Type: %0D%0AProblem: %0D%0A%0D%0APlease contact me to schedule a visit.%0D%0A%0D%0AThank you!"
                       className="text-blue-700 hover:text-blue-900 underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-1 -mx-1"
                       aria-label="Email the Three Rivers Tech support team"
                     >
                       <span className="sr-only">Email address:</span>
-                      <span>Email us: info@threeriverstech.com</span>
+                      <span>Email us: cpenrod@three-rivers-tech.com</span>
                     </a>
                   </div>
                   <div className="flex items-center">
@@ -127,10 +127,10 @@ export default function ContactPage() {
                 <div className="flex-grow">
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2">Email</h3>
                   <a 
-                    href="mailto:info@threeriverstech.com"
+                    href="mailto:cpenrod@three-rivers-tech.com"
                     className="text-sm sm:text-base lg:text-lg text-foreground-secondary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md p-1 -m-1 break-all"
                   >
-                    info@threeriverstech.com
+                    cpenrod@three-rivers-tech.com
                   </a>
                 </div>
               </div>

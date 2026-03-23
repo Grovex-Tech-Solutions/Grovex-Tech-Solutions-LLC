@@ -377,7 +377,7 @@ function createFallbackBusinessInfo(): BusinessInfo {
     name: 'Three Rivers Tech',
     description: 'Comprehensive technology solutions for your business',
     phone: '(412) 206-9453',
-    email: 'info@threeriverstech.com',
+    email: 'cpenrod@three-rivers-tech.com',
     address: {
       street: '124 Grant Street',
       city: 'Turtle Creek',

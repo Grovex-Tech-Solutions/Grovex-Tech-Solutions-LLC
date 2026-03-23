@@ -38,7 +38,7 @@ export default function CallToAction() {
               </a>
 
               <a
-                href="mailto:info@threeriverstech.com?subject=Tech Assessment Request&body=Hi! I'd like to request an assessment for:%0D%0A%0D%0ADevice/Service Type: %0D%0AProblem Description: %0D%0A%0D%0APlease contact me to schedule a visit.%0D%0A%0D%0AThank you!"
+                href="mailto:info@three-rivers-tech.com?subject=Tech Assessment Request&body=Hi! I'd like to request an assessment for:%0D%0A%0D%0ADevice/Service Type: %0D%0AProblem Description: %0D%0A%0D%0APlease contact me to schedule a visit.%0D%0A%0D%0AThank you!"
                 className="block w-full bg-white/20 backdrop-blur-sm text-white font-bold py-4 px-8 rounded-xl hover:bg-white/30 hover:shadow-large transform hover:-translate-y-1 transition-all duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary min-h-[48px] text-lg border border-white/30 focus:border-white"
                 aria-label="Send email for tech assessment"
               >

@@ -86,7 +86,7 @@ export default function ComputerRepair() {
               </svg>
             </a>
             <a
-              href="mailto:info@threeriverstech.com?subject=Home%20tech%20support%20request"
+              href="mailto:info@three-rivers-tech.com?subject=Home%20tech%20support%20request"
               className="inline-flex items-center justify-center border border-primary text-primary font-semibold py-3 px-6 rounded-lg hover:bg-primary hover:text-white transition-colors"
             >
               Email Our Team

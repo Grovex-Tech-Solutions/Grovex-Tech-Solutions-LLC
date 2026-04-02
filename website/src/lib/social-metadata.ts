@@ -97,8 +97,8 @@ export function generateTwitterMetadata(config: SocialMetadataConfig) {
     image = siteConfig.ogImage,
     imageAlt,
     twitterCard = "summary_large_image",
-    twitterSite = "@three_rivers_tech",
-    twitterCreator = "@three_rivers_tech"
+    twitterSite = "@grovextech",
+    twitterCreator = "@grovextech"
   } = config;
 
   return {

@@ -1,7 +1,7 @@
 # CI/CD Pipeline Implementation Details
 
 ## Overview
-This document provides detailed implementation instructions for setting up the CI/CD pipeline for the Three Rivers Tech website. This document is intended for the developer who will implement the pipeline based on the architectural plan.
+This document provides detailed implementation instructions for setting up the CI/CD pipeline for the Grovex Tech & Solutions LLC website. This document is intended for the developer who will implement the pipeline based on the architectural plan.
 
 ## Directory Structure to Create
 ```

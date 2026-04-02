@@ -68,7 +68,7 @@ export function generateImageAltText(
   key: string,
   title?: string
 ): string {
-  const siteName = "Three Rivers Tech";
+  const siteName = "Grovex Tech & Solutions LLC";
   
   switch (type) {
     case "page":
@@ -124,7 +124,7 @@ export function createOptimizedSocialMetadata(
         }
       ],
       type: "website" as const,
-      siteName: "Three Rivers Tech",
+      siteName: "Grovex Tech & Solutions LLC",
       locale: "en_US"
     },
     twitter: {
@@ -139,8 +139,8 @@ export function createOptimizedSocialMetadata(
           height: 600
         }
       ],
-      site: "@three_rivers_tech",
-      creator: "@three_rivers_tech"
+      site: "@grovextech",
+      creator: "@grovextech"
     }
   };
 }

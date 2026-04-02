@@ -12,12 +12,12 @@ export default function CommunityInvolvementPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "name": "Community Involvement - Three Rivers Tech",
-            "description": "Learn about Three Rivers Tech's commitment to the Turtle Creek community through local partnerships, sponsorships, and educational initiatives.",
-            "url": "https://threeriverstech.com/community-involvement",
+            "name": "Community Involvement - Grovex Tech & Solutions LLC",
+            "description": "Learn about Grovex Tech & Solutions LLC's commitment to the Turtle Creek community through local partnerships, sponsorships, and educational initiatives.",
+            "url": "https://grovextech.com/community-involvement",
             "publisher": {
               "@type": "LocalBusiness",
-              "name": "Three Rivers Tech",
+              "name": "Grovex Tech & Solutions LLC",
               "address": "124 Grant Street, Turtle Creek, PA 15145"
             }
           })
@@ -75,7 +75,7 @@ export default function CommunityInvolvementPage() {
             </div>
             
             <p className="text-foreground-secondary text-center max-w-3xl mx-auto">
-              {`At Three Rivers Tech, we believe in giving back to the community that has given us so much. Our commitment goes beyond providing technology services - we're invested in the long-term success and well-being of Turtle Creek and the entire Mon Valley.`}
+              {`At Grovex Tech & Solutions LLC, we believe in giving back to the community that has given us so much. Our commitment goes beyond providing technology services - we're invested in the long-term success and well-being of Turtle Creek and the entire Mon Valley.`}
             </p>
           </div>
 

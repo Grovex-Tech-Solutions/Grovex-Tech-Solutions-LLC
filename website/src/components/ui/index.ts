@@ -1,7 +1,7 @@
 /**
  * UI Components Library
  * 
- * Reusable, consistent components for the Three Rivers Tech website.
+ * Reusable, consistent components for the Grovex Tech & Solutions LLC website.
  * These components help maintain design consistency and reduce code duplication.
  */
 

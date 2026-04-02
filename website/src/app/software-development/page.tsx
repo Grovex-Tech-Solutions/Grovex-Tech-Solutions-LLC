@@ -9,13 +9,13 @@ export default function SoftwareDevelopmentSkillsPage() {
   return (
     <>
       <StructuredData data={generatePageStructuredData("service", {
-        name: "Software Development Skills - Three Rivers Tech",
+        name: "Software Development Skills - Grovex Tech & Solutions LLC",
         description: "Comprehensive software development expertise including web applications, mobile apps, API development, and cutting-edge technology solutions.",
-        url: "https://threeriverstech.com/software-development",
+        url: "https://grovextech.com/software-development",
         breadcrumbs: [
-          { name: "Home", url: "https://threeriverstech.com" },
-          { name: "Services", url: "https://threeriverstech.com/services" },
-          { name: "Software Development", url: "https://threeriverstech.com/software-development" }
+          { name: "Home", url: "https://grovextech.com" },
+          { name: "Services", url: "https://grovextech.com/services" },
+          { name: "Software Development", url: "https://grovextech.com/software-development" }
         ],
         serviceName: "Custom Software Development",
         serviceDescription: "Professional custom software development services including web applications, mobile apps, APIs, and enterprise software solutions."

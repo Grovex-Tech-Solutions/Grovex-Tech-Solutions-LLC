@@ -1,12 +1,12 @@
-# Three Rivers Tech Website Specification
+# Grovex Tech & Solutions LLC Website Specification
 
 ## Executive Summary
 
-This document outlines the complete specification for the Three Rivers Tech website, a modern, responsive, and professional website for a technology business offering software development, IT consulting, SaaS products, and computer repair services.
+This document outlines the complete specification for the Grovex Tech & Solutions LLC website, a modern, responsive, and professional website for a technology business offering software development, IT consulting, SaaS products, and computer repair services.
 
 ## Business Overview
 
-Three Rivers Tech is a comprehensive technology services company providing:
+Grovex Tech & Solutions LLC is a comprehensive technology services company providing:
 - Custom software development
 - IT consulting services
 - SaaS (Software as a Service) products
@@ -757,7 +757,7 @@ src/
 
 ## Conclusion
 
-This comprehensive specification document provides a detailed roadmap for developing a modern, professional website for Three Rivers Tech. The website will serve as a powerful marketing tool to showcase services, generate leads, and establish credibility in the competitive technology market.
+This comprehensive specification document provides a detailed roadmap for developing a modern, professional website for Grovex Tech & Solutions LLC. The website will serve as a powerful marketing tool to showcase services, generate leads, and establish credibility in the competitive technology market.
 
 By following this specification, we will create a website that:
 - Effectively communicates the value of our services
@@ -766,4 +766,4 @@ By following this specification, we will create a website that:
 - Supports our business objectives
 - Reflects our professional brand identity
 
-The implementation of this website will position Three Rivers Tech as a modern, reliable, and comprehensive technology solutions provider in our market.
+The implementation of this website will position Grovex Tech & Solutions LLC as a modern, reliable, and comprehensive technology solutions provider in our market.

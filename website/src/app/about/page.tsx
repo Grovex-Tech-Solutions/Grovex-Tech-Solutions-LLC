@@ -29,9 +29,9 @@ export default function AboutPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AboutPage",
-            "name": "About Three Rivers Tech - Local Tech Partners",
-            "description": "Learn about Three Rivers Tech, our commitment to the Turtle Creek community, and how we became your trusted local technology partners.",
-            "url": "https://threeriverstech.com/about",
+            "name": "About Grovex Tech & Solutions LLC - Local Tech Partners",
+            "description": "Learn about Grovex Tech & Solutions LLC, our commitment to the Turtle Creek community, and how we became your trusted local technology partners.",
+            "url": "https://grovextech.com/about",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -39,13 +39,13 @@ export default function AboutPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://threeriverstech.com"
+                  "item": "https://grovextech.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "About",
-                  "item": "https://threeriverstech.com/about"
+                  "item": "https://grovextech.com/about"
                 }
               ]
             }
@@ -54,7 +54,7 @@ export default function AboutPage() {
       />
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20 max-w-7xl">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">About Three Rivers Tech</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">About Grovex Tech & Solutions LLC</h1>
           <p className="text-base sm:text-lg md:text-xl text-foreground-secondary max-w-4xl mx-auto leading-relaxed px-2">
             Your trusted local technology partners serving Turtle Creek and the Mon Valley
           </p>
@@ -92,10 +92,10 @@ export default function AboutPage() {
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary mb-4 sm:mb-6 leading-relaxed">
                   Hi, I&apos;m Christian, and I&apos;m proud to call Turtle Creek home. I grew up in nearby Braddock Hills 
                   and graduated from Penn State Greater Allegheny in 2025 with a degree in Cybersecurity Analytics & Operations. 
-                  Shortly after graduation, I was able to purchase 124 Grant Street and establish Three Rivers Tech right here in our community.
+                  Shortly after graduation, I was able to purchase 124 Grant Street and establish Grovex Tech & Solutions LLC right here in our community.
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary mb-4 sm:mb-6 leading-relaxed">
-                  Currently, I work as a Help Desk Technician during the day while building Three Rivers Tech as my side business. 
+                  Currently, I work as a Help Desk Technician during the day while building Grovex Tech & Solutions LLC as my side business. 
                   My goal is to grow this into a full-time operation that serves our community&apos;s technology needs with the same 
                   care and attention I&apos;d want for my own family.
                 </p>
@@ -110,7 +110,7 @@ export default function AboutPage() {
 
           {/* Business Story Section */}
           <div className="bg-background-secondary rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-foreground text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">How Three Rivers Tech Came to Turtle Creek</h2>
+            <h2 className="text-foreground text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">How Grovex Tech & Solutions LLC Came to Turtle Creek</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
               <div>
                 <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">The Beginning</h3>
@@ -373,7 +373,7 @@ export default function AboutPage() {
                 <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">Technical Expertise Made Simple</h3>
                 <p className="text-sm sm:text-base text-foreground-secondary mb-4 leading-relaxed">
                   With a degree in Cybersecurity Analytics & Operations from Penn State Greater Allegheny and experience as a Help Desk Technician, 
-                  I bring professional-level expertise to everyday problems while growing Three Rivers Tech into a full-time local technology partner.
+                  I bring professional-level expertise to everyday problems while growing Grovex Tech & Solutions LLC into a full-time local technology partner.
                 </p>
                 <div className="bg-background rounded-xl p-4">
                   <h4 className="font-semibold mb-2 text-primary">What This Means for You:</h4>

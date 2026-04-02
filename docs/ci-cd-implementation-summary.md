@@ -1,7 +1,7 @@
 # CI/CD Pipeline Implementation Summary
 
 ## Overview
-This document summarizes the implementation of the CI/CD pipeline for the Three Rivers Tech website based on the plan outlined in `docs/ci-cd-implementation-details.md`.
+This document summarizes the implementation of the CI/CD pipeline for the Grovex Tech & Solutions LLC website based on the plan outlined in `docs/ci-cd-implementation-details.md`.
 
 ## Files Created
 

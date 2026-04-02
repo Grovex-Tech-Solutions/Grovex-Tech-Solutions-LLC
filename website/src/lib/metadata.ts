@@ -4,11 +4,11 @@ import { getSocialImage } from "./social-images";
 
 // Base configuration for consistent metadata across the site
 export const siteConfig = {
-  name: "Three Rivers Tech",
+  name: "Grovex Tech & Solutions LLC",
   description: "Your hometown tech partner in Turtle Creek, PA. Big-city know-how at small-town prices. Expert computer repair, website design, and IT support for families and small businesses.",
-  url: "https://threeriverstech.com",
+  url: "https://grovextech.com",
   ogImage: "/company_logo.png",
-  creator: "Three Rivers Tech",
+  creator: "Grovex Tech & Solutions LLC",
   keywords: [
     "computer repair Turtle Creek PA",
     "IT services Turtle Creek 15145",
@@ -27,11 +27,11 @@ export const siteConfig = {
 
 // Business information for consistent contact details
 export const businessInfo = {
-  name: "Three Rivers Tech",
+  name: "Grovex Tech & Solutions LLC",
   description:
-    "Three Rivers Tech delivers trustworthy technology help for Turtle Creek and nearby communities, covering computer repair, modern web experiences, and dependable IT support with a hometown focus.",
+    "Grovex Tech & Solutions LLC delivers trustworthy technology help for Turtle Creek and nearby communities, covering computer repair, modern web experiences, and dependable IT support with a hometown focus.",
   phone: "(412) 206-9453",
-  email: "info@three-rivers-tech.com",
+  email: "info@grovextech.com",
   address: {
     street: "124 Grant Street",
     city: "Turtle Creek",
@@ -45,9 +45,9 @@ export const businessInfo = {
     sunday: "Sunday: 11:00 AM - 5:00 PM"
   },
   socialMedia: {
-    linkedin: "https://www.linkedin.com/company/three-rivers-tech",
-    twitter: "https://twitter.com/three_rivers_tech",
-    facebook: "https://www.facebook.com/threeriverstech"
+    linkedin: "https://www.linkedin.com/company/grovextech",
+    twitter: "https://twitter.com/grovextech",
+    facebook: "https://www.facebook.com/grovextech"
   },
   serviceAreas: [
     "Turtle Creek, PA",
@@ -152,7 +152,7 @@ export function generateServiceMetadata(
   
   return generatePageMetadata({
     title: `${serviceName} Services - Professional ${serviceName} Solutions`,
-    description: `Expert ${serviceName.toLowerCase()} services from Three Rivers Tech. ${serviceDescription}`,
+    description: `Expert ${serviceName.toLowerCase()} services from Grovex Tech & Solutions LLC. ${serviceDescription}`,
     keywords: [serviceName.toLowerCase(), ...serviceKeywords],
     canonical: `${siteConfig.url}/services/${serviceKey}`,
     ogTitle: `${serviceName} Services - ${siteConfig.name}`,
@@ -206,10 +206,10 @@ export function generatePortfolioMetadata(
   
   return generatePageMetadata({
     title: `${projectName} - Portfolio Case Study`,
-    description: `${projectDescription} - A successful project by Three Rivers Tech showcasing our expertise.`,
+    description: `${projectDescription} - A successful project by Grovex Tech & Solutions LLC showcasing our expertise.`,
     keywords: ["portfolio", "case study", "project", ...technologies],
     canonical: `${siteConfig.url}/portfolio/${projectKey}`,
-    ogTitle: `${projectName} - Three Rivers Tech Portfolio`,
+    ogTitle: `${projectName} - Grovex Tech & Solutions LLC Portfolio`,
     ogDescription: projectDescription,
     ogImage: portfolioImage
   });

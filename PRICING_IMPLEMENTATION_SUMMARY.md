@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document summarizes the implementation of the missing pricing elements for Three Rivers Tech, as outlined in the problem statement. The implementation follows the existing pricing philosophy of "small-town prices, big-city know-how" with transparent, upfront pricing.
+This document summarizes the implementation of the missing pricing elements for Grovex Tech & Solutions LLC, as outlined in the problem statement. The implementation follows the existing pricing philosophy of "small-town prices, big-city know-how" with transparent, upfront pricing.
 
 ## What Was Implemented
 
@@ -180,4 +180,4 @@ console.log(`Basic plan: $${basicPlan.monthlyFee}/month`);
 For questions about the pricing structure or implementation:
 - **Documentation**: `/website/docs/PRICING_MANAGEMENT.md`
 - **Test Suite**: `/website/src/test/pricing-validation.test.ts`
-- **Business Contact**: info@threeriverstech.com | (412) 206-9453
+- **Business Contact**: info@grovextech.com | (412) 206-9453

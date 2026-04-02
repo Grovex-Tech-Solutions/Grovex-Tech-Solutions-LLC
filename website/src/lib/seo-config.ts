@@ -5,7 +5,7 @@ import type { ServicesSeoConfig, ServiceSeoConfig } from "@/types/seo";
 export const seoConfig: Record<string, PageMetadataConfig> = {
   // Homepage
   home: {
-    title: "Computer Repair Turtle Creek PA | IT Services 15145 | Three Rivers Tech",
+    title: "Computer Repair Turtle Creek PA | IT Services 15145 | Grovex Tech & Solutions LLC",
     description: "Computer repair Turtle Creek PA 15145, IT services for Mon Valley small businesses, and web design for Monroeville area. Contact us for a consultation.",
     keywords: [
       "computer repair Turtle Creek PA",
@@ -17,8 +17,8 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "website design Western Pennsylvania",
       "home computer repair PA"
     ],
-    canonical: "https://threeriverstech.com",
-    ogTitle: "Three Rivers Tech - Your Hometown Tech Partner in Turtle Creek PA",
+    canonical: "https://grovextech.com",
+    ogTitle: "Grovex Tech & Solutions LLC - Your Hometown Tech Partner in Turtle Creek PA",
     ogDescription: "Computer repair, IT services, and web design for Turtle Creek PA 15145 and Mon Valley communities. Big-city expertise at small-town prices."
   },
 
@@ -36,8 +36,8 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "tech support for seniors",
       "local computer services"
     ],
-    canonical: "https://threeriverstech.com/services",
-    ogTitle: "Local Tech Services - Three Rivers Tech Turtle Creek PA",
+    canonical: "https://grovextech.com/services",
+    ogTitle: "Local Tech Services - Grovex Tech & Solutions LLC Turtle Creek PA",
     ogDescription: "Computer repair, IT support, and website design services for Turtle Creek PA 15145 and Mon Valley communities."
   },
 
@@ -55,17 +55,17 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "React development",
       "Node.js development"
     ],
-    canonical: "https://threeriverstech.com/software-development",
-    ogTitle: "Custom Software Development Services - Three Rivers Tech",
+    canonical: "https://grovextech.com/software-development",
+    ogTitle: "Custom Software Development Services - Grovex Tech & Solutions LLC",
     ogDescription: "Expert software development services including web apps, mobile apps, and APIs. Built with modern technologies for scalable, reliable solutions."
   },
 
   // About page
   about: {
-    title: "About Three Rivers Tech Turtle Creek PA | Local Tech Partners",
-    description: "Meet Christian Penrod, founder of Three Rivers Tech in Turtle Creek PA. Local tech partner serving Mon Valley with computer repair, IT support, and community involvement. Penn State cybersecurity graduate.",
+    title: "About Grovex Tech & Solutions LLC Turtle Creek PA | Local Tech Partners",
+    description: "Meet Christian Penrod, founder of Grovex Tech & Solutions LLC in Turtle Creek PA. Local tech partner serving Mon Valley with computer repair, IT support, and community involvement. Penn State cybersecurity graduate.",
     keywords: [
-      "about Three Rivers Tech Turtle Creek",
+      "about Grovex Tech & Solutions LLC Turtle Creek",
       "Christian Penrod founder Turtle Creek PA",
       "local tech company Mon Valley",
       "Turtle Creek resident tech support",
@@ -74,34 +74,34 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "Mon Valley tech partners",
       "Turtle Creek computer repair owner"
     ],
-    canonical: "https://threeriverstech.com/about",
-    ogTitle: "About Three Rivers Tech - Your Local Turtle Creek PA Tech Partners",
-    ogDescription: "Meet Christian Penrod and learn how Three Rivers Tech became Turtle Creek's trusted local technology partner serving the Mon Valley community."
+    canonical: "https://grovextech.com/about",
+    ogTitle: "About Grovex Tech & Solutions LLC - Your Local Turtle Creek PA Tech Partners",
+    ogDescription: "Meet Christian Penrod and learn how Grovex Tech & Solutions LLC became Turtle Creek's trusted local technology partner serving the Mon Valley community."
   },
 
   // Contact page
   contact: {
-    title: "Contact Three Rivers Tech Turtle Creek PA | Connect With Our Team",
-    description: "Three Rivers Tech — Turtle Creek, PA for computer repair, IT support, and website design serving Mon Valley neighbors. Contact us to schedule local help.",
+    title: "Contact Grovex Tech & Solutions LLC Turtle Creek PA | Connect With Our Team",
+    description: "Grovex Tech & Solutions LLC — Turtle Creek, PA for computer repair, IT support, and website design serving Mon Valley neighbors. Contact us to schedule local help.",
     keywords: [
-      "contact Three Rivers Tech Turtle Creek",
+      "contact Grovex Tech & Solutions LLC Turtle Creek",
       "computer repair contact PA",
       "IT support Turtle Creek contact",
       "tech help Mon Valley",
       "local computer services contact",
       "Turtle Creek tech support contact",
       "schedule computer repair PA",
-      "connect with Three Rivers Tech"
+      "connect with Grovex Tech & Solutions LLC"
     ],
-    canonical: "https://threeriverstech.com/contact",
-    ogTitle: "Contact Three Rivers Tech - Turtle Creek PA",
-    ogDescription: "Contact Three Rivers Tech in Turtle Creek PA for computer repair, IT support, and website design. Send us a message or schedule online."
+    canonical: "https://grovextech.com/contact",
+    ogTitle: "Contact Grovex Tech & Solutions LLC - Turtle Creek PA",
+    ogDescription: "Contact Grovex Tech & Solutions LLC in Turtle Creek PA for computer repair, IT support, and website design. Send us a message or schedule online."
   },
 
   // Community Involvement page
   "community-involvement": {
     title: "Community Involvement Turtle Creek PA | Local Partnerships & Events",
-    description: "Three Rivers Tech's community involvement in Turtle Creek PA. Local partnerships, Memorial Day parade sponsorship, senior tech workshops, and Mon Valley business support.",
+    description: "Grovex Tech & Solutions LLC's community involvement in Turtle Creek PA. Local partnerships, Memorial Day parade sponsorship, senior tech workshops, and Mon Valley business support.",
     keywords: [
       "community involvement Turtle Creek PA",
       "local partnerships Mon Valley",
@@ -112,15 +112,15 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "Turtle Creek Senior Center workshops",
       "community education technology"
     ],
-    canonical: "https://threeriverstech.com/community-involvement",
-    ogTitle: "Community Involvement - Three Rivers Tech Turtle Creek PA",
-    ogDescription: "Learn about Three Rivers Tech's commitment to Turtle Creek through local partnerships, event sponsorships, and community education programs."
+    canonical: "https://grovextech.com/community-involvement",
+    ogTitle: "Community Involvement - Grovex Tech & Solutions LLC Turtle Creek PA",
+    ogDescription: "Learn about Grovex Tech & Solutions LLC's commitment to Turtle Creek through local partnerships, event sponsorships, and community education programs."
   },
 
   // Portfolio page
   portfolio: {
     title: "Our Work - Portfolio of Successful Technology Projects",
-    description: "Explore Three Rivers Tech's portfolio of successful projects. See real examples of our software development, IT consulting, and technology solutions in action.",
+    description: "Explore Grovex Tech & Solutions LLC's portfolio of successful projects. See real examples of our software development, IT consulting, and technology solutions in action.",
     keywords: [
       "portfolio",
       "case studies",
@@ -130,8 +130,8 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "software projects",
       "IT implementations"
     ],
-    canonical: "https://threeriverstech.com/portfolio",
-    ogTitle: "Our Portfolio - Three Rivers Tech Success Stories",
+    canonical: "https://grovextech.com/portfolio",
+    ogTitle: "Our Portfolio - Grovex Tech & Solutions LLC Success Stories",
     ogDescription: "Discover our successful technology projects and see how we've helped businesses achieve their goals."
   },
 
@@ -148,8 +148,8 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "IT planning",
       "business technology consulting"
     ],
-    canonical: "https://threeriverstech.com/services/it-consulting",
-    ogTitle: "IT Consulting Services - Three Rivers Tech",
+    canonical: "https://grovextech.com/services/it-consulting",
+    ogTitle: "IT Consulting Services - Grovex Tech & Solutions LLC",
     ogDescription: "Professional IT consulting services to optimize your technology infrastructure and drive business growth."
   },
 
@@ -166,8 +166,8 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "productivity tools",
       "enterprise SaaS"
     ],
-    canonical: "https://threeriverstech.com/services/saas-products",
-    ogTitle: "SaaS Products - Three Rivers Tech",
+    canonical: "https://grovextech.com/services/saas-products",
+    ogTitle: "SaaS Products - Grovex Tech & Solutions LLC",
     ogDescription: "Innovative SaaS solutions to automate and optimize your business processes with flexible pricing and reliable support."
   },
 
@@ -185,8 +185,8 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "computer help seniors Turtle Creek",
       "local computer repair PA"
     ],
-    canonical: "https://threeriverstech.com/services/computer-repair",
-    ogTitle: "Computer Repair Turtle Creek PA - Three Rivers Tech", 
+    canonical: "https://grovextech.com/services/computer-repair",
+    ogTitle: "Computer Repair Turtle Creek PA - Grovex Tech & Solutions LLC", 
     ogDescription: "Professional computer repair in Turtle Creek PA 15145. Home visits available for virus removal, hardware fixes, and system optimization."
   }
 };

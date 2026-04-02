@@ -101,7 +101,7 @@ export const STANDARD_IMAGE_SIZES = {
  */
 export const IMAGE_ALT_TEXT = {
   // Company branding
-  'company_logo.png': 'Three Rivers Tech - Comprehensive Technology Solutions Company Logo',
+  'company_logo.png': 'Grovex Tech & Solutions LLC - Comprehensive Technology Solutions Company Logo',
   
   // Service icons
   'service-icon-dev.png': 'Software Development Services - Custom web and mobile applications icon',
@@ -128,14 +128,14 @@ export const IMAGE_ALT_TEXT = {
   'portfolio-saas.jpg': 'SaaS Product Development - Innovative software-as-a-service solution case study',
   
   // Favicon variations
-  'favicon-circle-16x16.png': 'Three Rivers Tech favicon - 16x16 circular logo',
-  'favicon-circle-32x32.png': 'Three Rivers Tech favicon - 32x32 circular logo',
-  'favicon-circle-48x48.png': 'Three Rivers Tech favicon - 48x48 circular logo',
-  'favicon-circle-192x192.png': 'Three Rivers Tech favicon - 192x192 circular logo for mobile',
-  'favicon-rounded-16x16.png': 'Three Rivers Tech favicon - 16x16 rounded logo',
-  'favicon-rounded-32x32.png': 'Three Rivers Tech favicon - 32x32 rounded logo',
-  'favicon-rounded-48x48.png': 'Three Rivers Tech favicon - 48x48 rounded logo',
-  'favicon-rounded-192x192.png': 'Three Rivers Tech favicon - 192x192 rounded logo for mobile',
+  'favicon-circle-16x16.png': 'Grovex Tech & Solutions LLC favicon - 16x16 circular logo',
+  'favicon-circle-32x32.png': 'Grovex Tech & Solutions LLC favicon - 32x32 circular logo',
+  'favicon-circle-48x48.png': 'Grovex Tech & Solutions LLC favicon - 48x48 circular logo',
+  'favicon-circle-192x192.png': 'Grovex Tech & Solutions LLC favicon - 192x192 circular logo for mobile',
+  'favicon-rounded-16x16.png': 'Grovex Tech & Solutions LLC favicon - 16x16 rounded logo',
+  'favicon-rounded-32x32.png': 'Grovex Tech & Solutions LLC favicon - 32x32 rounded logo',
+  'favicon-rounded-48x48.png': 'Grovex Tech & Solutions LLC favicon - 48x48 rounded logo',
+  'favicon-rounded-192x192.png': 'Grovex Tech & Solutions LLC favicon - 192x192 rounded logo for mobile',
   
   // SVG icons
   'file.svg': 'File document icon',

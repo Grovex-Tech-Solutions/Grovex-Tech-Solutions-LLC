@@ -1,9 +1,9 @@
 {
-  "name": "Three Rivers Tech",
-  "description": "Three Rivers Tech is a leading technology solutions provider delivering comprehensive IT services to businesses throughout the Pittsburgh metropolitan area. We specialize in enterprise software development, strategic IT infrastructure consulting, SaaS platform integration, and professional hardware support services. With extensive industry experience, our team combines deep technical expertise with practical business acumen to deliver solutions that drive operational efficiency and sustainable growth.",
+  "name": "Grovex Tech & Solutions LLC",
+  "description": "Grovex Tech & Solutions LLC is a leading technology solutions provider delivering comprehensive IT services to businesses throughout the Pittsburgh metropolitan area. We specialize in enterprise software development, strategic IT infrastructure consulting, SaaS platform integration, and professional hardware support services. With extensive industry experience, our team combines deep technical expertise with practical business acumen to deliver solutions that drive operational efficiency and sustainable growth.",
 
   "phone": "(412) 206-9453",
-  "email": "info@three-rivers-tech.com",
+  "email": "info@grovextech.com",
   "address": {
     "street": "124 Grant Street",
     "city": "Turtle Creek",
@@ -49,8 +49,8 @@
     }
   ],
   "socialMedia": {
-    "linkedin": "https://www.linkedin.com/company/three-rivers-tech",
-    "twitter": "https://x.com/3RiversTech"
+    "linkedin": "https://www.linkedin.com/company/grovextech",
+    "twitter": "https://twitter.com/grovextech"
   },
   "foundedYear": 2014,
   "employeeCount": "10-50",

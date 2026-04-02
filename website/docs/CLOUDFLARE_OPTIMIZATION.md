@@ -1,6 +1,6 @@
 # Cloudflare Pages Optimization Guide
 
-Comprehensive guide for optimizing the Three Rivers Tech website for Cloudflare Pages deployment, including static export requirements, edge computing, and performance optimization.
+Comprehensive guide for optimizing the Grovex Tech & Solutions LLC website for Cloudflare Pages deployment, including static export requirements, edge computing, and performance optimization.
 
 ## 🎯 Quick Reference
 
@@ -421,7 +421,7 @@ Before deploying to Cloudflare Pages:
 3. Cloudflare Pages pulls code
 4. Runs: npm install && npm run build
 5. Deploys /out to CDN
-6. Site live at threeriverstech.pages.dev
+6. Site live at grovextech.pages.dev
 ```
 
 ### Deployment Configuration
@@ -441,8 +441,8 @@ Environment variables:
 
 Cloudflare Pages creates preview deployments for branches:
 
-- **Production**: `master` → `threeriverstech.pages.dev`
-- **Preview**: `feature-xyz` → `feature-xyz.threeriverstech.pages.dev`
+- **Production**: `master` → `grovextech.pages.dev`
+- **Preview**: `feature-xyz` → `feature-xyz.grovextech.pages.dev`
 
 **Benefits**:
 - Test changes before merging
@@ -582,8 +582,8 @@ jobs:
       - uses: treosh/lighthouse-ci-action@v9
         with:
           urls: |
-            https://threeriverstech.pages.dev/
-            https://threeriverstech.pages.dev/about/
+            https://grovextech.pages.dev/
+            https://grovextech.pages.dev/about/
           uploadArtifacts: true
 ```
 

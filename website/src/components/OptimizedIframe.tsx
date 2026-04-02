@@ -117,7 +117,7 @@ export function GoogleCalendarIframe({
     <div className="w-full border-2 border-border rounded-lg overflow-hidden bg-background-secondary">
       <OptimizedIframe
         src={src}
-        title="Schedule an appointment with Three Rivers Tech - Google Calendar booking system"
+        title="Schedule an appointment with Grovex Tech & Solutions LLC - Google Calendar booking system"
         width="100%"
         height={height}
         className={`w-full ${className}`}
@@ -150,7 +150,7 @@ export function MapIframe({
   return (
     <OptimizedIframe
       src={src}
-      title="Location map showing Three Rivers Tech office"
+      title="Location map showing Grovex Tech & Solutions LLC office"
       width="100%"
       height={height}
       className={`w-full rounded-lg ${className}`}

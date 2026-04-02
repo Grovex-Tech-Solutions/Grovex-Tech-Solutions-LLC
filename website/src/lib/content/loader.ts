@@ -346,25 +346,25 @@ function createFallbackPageContent(pageName: string): PageContent {
       backgroundType: 'solid',
     },
     seo: {
-      title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - Three Rivers Tech`,
+      title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - Grovex Tech & Solutions LLC`,
       description: 'Professional technology solutions for your business needs.',
       keywords: ['technology', 'solutions', 'business'],
       openGraph: {
-        title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - Three Rivers Tech`,
+        title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - Grovex Tech & Solutions LLC`,
         description: 'Professional technology solutions for your business needs.',
         images: [{
           url: '/images/og-default.jpg',
           width: 1200,
           height: 630,
-          alt: 'Three Rivers Tech',
+          alt: 'Grovex Tech & Solutions LLC',
         }],
         type: 'website',
-        siteName: 'Three Rivers Tech',
+        siteName: 'Grovex Tech & Solutions LLC',
         locale: 'en_US',
       },
       twitter: {
         card: 'summary_large_image',
-        title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - Three Rivers Tech`,
+        title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - Grovex Tech & Solutions LLC`,
         description: 'Professional technology solutions for your business needs.',
         images: ['/company_logo.png'],
       },
@@ -374,10 +374,10 @@ function createFallbackPageContent(pageName: string): PageContent {
 
 function createFallbackBusinessInfo(): BusinessInfo {
   return {
-    name: 'Three Rivers Tech',
+    name: 'Grovex Tech & Solutions LLC',
     description: 'Comprehensive technology solutions for your business',
     phone: '(412) 206-9453',
-    email: 'info@three-rivers-tech.com',
+    email: 'info@grovextech.com',
     address: {
       street: '124 Grant Street',
       city: 'Turtle Creek',
@@ -447,7 +447,7 @@ function createDefaultNavigation() {
 
 function createDefaultFooter() {
   return {
-    description: 'Three Rivers Tech provides comprehensive technology solutions.',
+    description: 'Grovex Tech & Solutions LLC provides comprehensive technology solutions.',
     sections: [
       {
         title: 'Services',
@@ -459,15 +459,15 @@ function createDefaultFooter() {
         ],
       },
     ],
-    bottomText: '© 2024 Three Rivers Tech. All rights reserved.',
+    bottomText: '© 2024 Grovex Tech & Solutions LLC. All rights reserved.',
     showSocialMedia: true,
   };
 }
 
 function createDefaultGlobalSEO() {
   return {
-    siteName: 'Three Rivers Tech',
-    defaultTitle: 'Three Rivers Tech - Comprehensive Technology Solutions',
+    siteName: 'Grovex Tech & Solutions LLC',
+    defaultTitle: 'Grovex Tech & Solutions LLC - Comprehensive Technology Solutions',
     defaultDescription: 'Professional technology solutions including software development, IT consulting, SaaS products, and computer repair services.',
     defaultKeywords: ['technology', 'software development', 'IT consulting', 'SaaS', 'computer repair'],
     defaultImage: '/images/og-default.jpg',

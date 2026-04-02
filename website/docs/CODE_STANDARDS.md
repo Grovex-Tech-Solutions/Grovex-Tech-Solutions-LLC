@@ -1,6 +1,6 @@
 # Code Standards & Conventions
 
-Comprehensive guide to code standards, conventions, and best practices for the Three Rivers Tech website codebase.
+Comprehensive guide to code standards, conventions, and best practices for the Grovex Tech & Solutions LLC website codebase.
 
 ## 🎯 Quick Reference
 

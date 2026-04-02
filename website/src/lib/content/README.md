@@ -149,19 +149,19 @@ console.log(`Loaded ${stats.services} services and ${stats.testimonials} testimo
 ### JSON Format
 ```json
 {
-  "name": "Three Rivers Tech",
+  "name": "Grovex Tech & Solutions LLC",
   "description": "Comprehensive technology solutions",
   "phone": "Business phone line coming soon",
-  "email": "info@threeriverstech.com"
+  "email": "info@grovextech.com"
 }
 ```
 
 ### YAML Format
 ```yaml
-name: Three Rivers Tech
+name: Grovex Tech & Solutions LLC
 description: Comprehensive technology solutions
 phone: "Business phone line coming soon"
-email: info@threeriverstech.com
+email: info@grovextech.com
 ```
 
 ## Error Handling

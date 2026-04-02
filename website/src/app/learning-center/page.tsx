@@ -72,7 +72,7 @@ export default function LearningCenterPage() {
             "description": "Free workshops and educational resources for Turtle Creek residents and local small businesses. Learn about computer skills, online safety, and digital marketing.",
             "provider": {
               "@type": "LocalBusiness",
-              "name": "Three Rivers Tech",
+              "name": "Grovex Tech & Solutions LLC",
               "address": "124 Grant Street, Turtle Creek, PA 15145"
             }
           })
@@ -143,7 +143,7 @@ export default function LearningCenterPage() {
           <div className="bg-background-secondary rounded-xl shadow-lg p-6 sm:p-8 lg:p-10">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 text-center">Making Technology Accessible</h2>
             <p className="text-foreground-secondary text-center mb-6 max-w-3xl mx-auto">
-              At Three Rivers Tech, we believe everyone in our community should have access to the technology skills they need to thrive. 
+              At Grovex Tech & Solutions LLC, we believe everyone in our community should have access to the technology skills they need to thrive. 
               That&apos;s why we offer free workshops and resources to help residents and local businesses make the most of technology.
             </p>
             

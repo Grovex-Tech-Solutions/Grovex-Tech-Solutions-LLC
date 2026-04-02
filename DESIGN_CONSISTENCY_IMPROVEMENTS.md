@@ -1,7 +1,7 @@
 # Design Consistency Improvements
 
 ## Overview
-Comprehensive design audit and consistency improvements applied across the Three Rivers Tech website.
+Comprehensive design audit and consistency improvements applied across the Grovex Tech & Solutions LLC website.
 
 ## Changes Made
 

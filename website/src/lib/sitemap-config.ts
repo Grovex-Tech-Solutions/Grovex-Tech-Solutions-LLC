@@ -8,8 +8,8 @@ export interface SitemapPage {
 }
 
 export const SITE_CONFIG = {
-  baseUrl: 'https://threeriverstech.com',
-  name: 'Three Rivers Tech',
+  baseUrl: 'https://grovextech.com',
+  name: 'Grovex Tech & Solutions LLC',
   description: 'Comprehensive Technology Solutions for Your Business',
 }
 

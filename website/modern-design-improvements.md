@@ -169,4 +169,4 @@ The website now features:
 - ✅ Accessibility compliance maintained
 - ✅ Performance optimized
 
-This transformation elevates the Three Rivers Tech website from a standard business site to a modern, engaging digital experience that effectively communicates professionalism and technical expertise.
+This transformation elevates the Grovex Tech & Solutions LLC website from a standard business site to a modern, engaging digital experience that effectively communicates professionalism and technical expertise.

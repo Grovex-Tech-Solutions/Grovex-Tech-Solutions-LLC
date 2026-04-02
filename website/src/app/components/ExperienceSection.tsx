@@ -111,10 +111,10 @@ export default function ExperienceSection() {
         {/* Call to Action */}
         <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 sm:p-10 border border-primary/10 text-center">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground">
-            Growing Three Rivers Tech Full-Time
+            Growing Grovex Tech & Solutions LLC Full-Time
           </h3>
           <p className="text-lg text-foreground-secondary mb-6 max-w-3xl mx-auto leading-relaxed">
-            Currently working as a Help Desk Technician by day while building Three Rivers Tech as my side business, {/* eslint-disable-next-line react/no-unescaped-entities */}
+            Currently working as a Help Desk Technician by day while building Grovex Tech & Solutions LLC as my side business, {/* eslint-disable-next-line react/no-unescaped-entities */}
             my goal is to make this a full-time operation serving our community's technology needs. Every client helps 
             me get closer to that dream of being your dedicated local tech partner.
           </p>

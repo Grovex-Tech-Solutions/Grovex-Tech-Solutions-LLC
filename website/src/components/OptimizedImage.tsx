@@ -221,7 +221,7 @@ export function LogoImage({ className = "", priority = true }: { className?: str
   return (
     <OptimizedImage
       src="/company_logo.png"
-      alt="Three Rivers Tech - Comprehensive Technology Solutions Company Logo"
+      alt="Grovex Tech & Solutions LLC - Comprehensive Technology Solutions Company Logo"
       width={48}
       height={48}
       className={className}

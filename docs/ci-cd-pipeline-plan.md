@@ -1,7 +1,7 @@
-# CI/CD Pipeline Setup Plan for Three Rivers Tech Website
+# CI/CD Pipeline Setup Plan for Grovex Tech & Solutions LLC Website
 
 ## Overview
-This document outlines the plan for setting up a CI/CD pipeline for the Three Rivers Tech website, which is a Next.js application. According to the website specification, the intended deployment platform is Vercel.
+This document outlines the plan for setting up a CI/CD pipeline for the Grovex Tech & Solutions LLC website, which is a Next.js application. According to the website specification, the intended deployment platform is Vercel.
 
 ## Current State Analysis
 - The website is built with Next.js 15 (App Router), TypeScript, and Tailwind CSS
@@ -151,4 +151,4 @@ jobs:
 5. Implement automated rollback on failed deployments
 
 ## Conclusion
-This CI/CD pipeline will automate the deployment process for the Three Rivers Tech website, ensuring that code changes are properly tested and deployed to Vercel without manual intervention. The pipeline focuses on reliability, speed, and maintainability.
+This CI/CD pipeline will automate the deployment process for the Grovex Tech & Solutions LLC website, ensuring that code changes are properly tested and deployed to Vercel without manual intervention. The pipeline focuses on reliability, speed, and maintainability.

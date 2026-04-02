@@ -1,10 +1,10 @@
 # Pricing Management Guide
 
-This document outlines the pricing structure and management process for Three Rivers Tech services.
+This document outlines the pricing structure and management process for Grovex Tech & Solutions LLC services.
 
 ## Overview
 
-Three Rivers Tech follows a transparent, customer-focused pricing philosophy: **"Small-town prices, big-city know-how."** All pricing information is centralized in `/website/src/content/pricing.json` to ensure consistency across the website.
+Grovex Tech & Solutions LLC follows a transparent, customer-focused pricing philosophy: **"Small-town prices, big-city know-how."** All pricing information is centralized in `/website/src/content/pricing.json` to ensure consistency across the website.
 
 ## Pricing Structure
 
@@ -223,6 +223,6 @@ Every pricing quote follows this process:
 ## Contact for Pricing Questions
 
 For questions about pricing structure or updates, contact:
-- **Email:** info@threeriverstech.com
+- **Email:** info@grovextech.com
 - **Phone:** (412) 206-9453
 - **Location:** 124 Grant Street, Turtle Creek, PA 15145

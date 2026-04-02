@@ -1,8 +1,8 @@
-# Three Rivers Tech Project Context
+# Grovex Tech & Solutions LLC Project Context
 
 ## Project Overview
 
-Three Rivers Tech is a professional IT services business website transformation project. The goal is to convert the current website from casual, inconsistent messaging into a credible, professional business presence. The main application is a Next.js 15 website with TypeScript and Tailwind CSS, configured for static export and deployment on platforms like Cloudflare Pages or Vercel.
+Grovex Tech & Solutions LLC is a professional IT services business website transformation project. The goal is to convert the current website from casual, inconsistent messaging into a credible, professional business presence. The main application is a Next.js 15 website with TypeScript and Tailwind CSS, configured for static export and deployment on platforms like Cloudflare Pages or Vercel.
 
 ## Technologies & Architecture
 

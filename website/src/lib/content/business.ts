@@ -42,8 +42,8 @@ export const getOrganizationSchema = () => ({
   "@type": "Organization",
   "name": business.name,
   "description": business.description,
-  "url": "https://threeriverstech.com",
-  "logo": "https://threeriverstech.com/company_logo.png",
+  "url": "https://grovextech.com",
+  "logo": "https://grovextech.com/company_logo.png",
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": formatPhoneForTel(business.phone),
@@ -69,7 +69,7 @@ export const getLocalBusinessSchema = () => ({
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": business.name,
-  "image": "https://threeriverstech.com/company_logo.png",
+  "image": "https://grovextech.com/company_logo.png",
   "telephone": formatPhoneForTel(business.phone),
   "email": business.email,
   "address": {

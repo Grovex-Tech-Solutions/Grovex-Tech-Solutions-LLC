@@ -19,7 +19,7 @@ export default function Footer() {
                   className="h-12 w-12 opacity-80 hover:opacity-100 transition-opacity select-none flex-shrink-0"
                   priority={false}
                 />
-                <h3 className="text-xl font-bold text-foreground tracking-tight">Three Rivers Tech</h3>
+                <h3 className="text-xl font-bold text-foreground tracking-tight">Grovex Tech & Solutions LLC</h3>
               </div>
             </div>
             <p className="text-base text-foreground-secondary mb-6 max-w-sm leading-relaxed mx-auto md:mx-0">
@@ -29,7 +29,7 @@ export default function Footer() {
               <ul className="flex justify-center md:justify-start space-x-4">
                 <li>
                   <a
-                    href="https://x.com/3RiversTech"
+                    href="https://twitter.com/grovextech"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group text-foreground-secondary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md p-2"
@@ -40,7 +40,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/company/three-rivers-tech/"
+                    href="https://www.linkedin.com/company/grovextech/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group text-foreground-secondary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md p-2"
@@ -150,10 +150,10 @@ export default function Footer() {
 
               <p>
                 <a 
-                  href="mailto:info@three-rivers-tech.com" 
+                  href="mailto:info@grovextech.com" 
                   className="text-foreground-secondary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md py-1 no-underline block"
                 >
-                  Email: info@three-rivers-tech.com
+                  Email: info@grovextech.com
                 </a>
               </p>
             </address>
@@ -161,7 +161,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-foreground-secondary text-sm">
-          <p>&copy; {new Date().getFullYear()} Three Rivers Tech. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Grovex Tech & Solutions LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -146,7 +146,7 @@ export default function PortfolioPage() {
             "@type": "CollectionPage",
             "name": "Our Portfolio - Local Projects & Community Impact",
             "description": "Explore our featured technology projects and case studies for businesses and organizations in Turtle Creek and the Mon Valley area.",
-            "url": "https://threeriverstech.com/portfolio",
+            "url": "https://grovextech.com/portfolio",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -154,13 +154,13 @@ export default function PortfolioPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://threeriverstech.com"
+                  "item": "https://grovextech.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Portfolio",
-                  "item": "https://threeriverstech.com/portfolio"
+                  "item": "https://grovextech.com/portfolio"
                 }
               ]
             }

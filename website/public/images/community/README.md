@@ -1,6 +1,6 @@
-# Community-Focused Imagery for Three Rivers Tech
+# Community-Focused Imagery for Grovex Tech & Solutions LLC
 
-This directory contains images that support the community-focused transformation of the Three Rivers Tech website.
+This directory contains images that support the community-focused transformation of the Grovex Tech & Solutions LLC website.
 
 ## Image Strategy
 

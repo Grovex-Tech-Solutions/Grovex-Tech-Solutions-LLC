@@ -5,7 +5,7 @@ const testimonials = [
     id: "1",
     name: "Sarah Johnson",
     role: "Small Business Owner",
-    content: "Three Rivers Tech helped us set up a new point-of-sale system that's increased our efficiency by 40%. Their team was patient and thorough.",
+    content: "Grovex Tech & Solutions LLC helped us set up a new point-of-sale system that's increased our efficiency by 40%. Their team was patient and thorough.",
     rating: 5,
   },
   {

@@ -1,6 +1,6 @@
 # Animation Guide
 
-Comprehensive guide to animations and transitions used throughout the Three Rivers Tech website. Ensures smooth, performant, and accessible motion design.
+Comprehensive guide to animations and transitions used throughout the Grovex Tech & Solutions LLC website. Ensures smooth, performant, and accessible motion design.
 
 ## 🎯 Animation Philosophy
 

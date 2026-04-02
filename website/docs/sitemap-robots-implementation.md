@@ -1,7 +1,7 @@
 
 # Automated Sitemap and Robots.txt Summary
 
-The Three Rivers Tech website uses automated generation of `sitemap.xml` and `robots.txt` via Next.js 15 metadata APIs. The system is SEO-optimized, maintainable, and compatible with static export for Cloudflare Pages.
+The Grovex Tech & Solutions LLC website uses automated generation of `sitemap.xml` and `robots.txt` via Next.js 15 metadata APIs. The system is SEO-optimized, maintainable, and compatible with static export for Cloudflare Pages.
 
 Key features:
 - Automated, extensible sitemap and robots.txt generation
@@ -29,7 +29,7 @@ All configuration and validation scripts are maintained for easy updates and rel
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://threeriverstech.com/</loc>
+    <loc>https://grovextech.com/</loc>
     <lastmod>2025-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -59,8 +59,8 @@ Allow: /
 Disallow: /api/
 Disallow: /_next/
 
-Sitemap: https://threeriverstech.com/sitemap.xml
-Host: https://threeriverstech.com
+Sitemap: https://grovextech.com/sitemap.xml
+Host: https://grovextech.com
 ```
 
 ## Static Export Compatibility

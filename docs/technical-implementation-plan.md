@@ -1,8 +1,8 @@
-# Technical Implementation Plan for Three Rivers Tech Website
+# Technical Implementation Plan for Grovex Tech & Solutions LLC Website
 
 ## Overview
 
-This document outlines the step-by-step technical implementation plan for building the Three Rivers Tech website based on the detailed specification. The implementation will leverage the existing Next.js 15 setup with React 19 and Tailwind CSS v4.
+This document outlines the step-by-step technical implementation plan for building the Grovex Tech & Solutions LLC website based on the detailed specification. The implementation will leverage the existing Next.js 15 setup with React 19 and Tailwind CSS v4.
 
 ## Current Project Status
 
@@ -628,7 +628,7 @@ We'll implement a mobile-first approach with breakpoints:
 
 ## Conclusion
 
-This technical implementation plan provides a comprehensive roadmap for building the Three Rivers Tech website. By following this phased approach, we'll create a modern, performant, and accessible website that effectively showcases the company's services and generates leads.
+This technical implementation plan provides a comprehensive roadmap for building the Grovex Tech & Solutions LLC website. By following this phased approach, we'll create a modern, performant, and accessible website that effectively showcases the company's services and generates leads.
 
 The plan emphasizes:
 - Modular component development
@@ -638,4 +638,4 @@ The plan emphasizes:
 - Comprehensive testing
 - Scalable architecture
 
-This approach will result in a professional website that positions Three Rivers Tech as a modern technology solutions provider while providing an excellent user experience across all devices and browsers.
+This approach will result in a professional website that positions Grovex Tech & Solutions LLC as a modern technology solutions provider while providing an excellent user experience across all devices and browsers.

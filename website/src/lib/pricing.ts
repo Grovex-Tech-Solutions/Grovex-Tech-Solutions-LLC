@@ -1,4 +1,4 @@
-// Pricing data loader for Three Rivers Tech
+// Pricing data loader for Grovex Tech & Solutions LLC
 import pricingData from '@/content/pricing.json';
 import type { 
   PricingStructure, 

@@ -232,7 +232,7 @@ function checkContactFormOptimization() {
   const phonePattern = /(?:\(\d{3}\)|\d{3})[-.\s]?\d{3}[-.\s]?\d{4}/;
   const hasPhoneNumber = phonePattern.test(contactContent);
   const phonePresent = hasPhoneNumber && !phoneComingSoon;
-  const hasEmail = contactContent.includes('info@threeriverstech.com');
+  const hasEmail = contactContent.includes('info@grovextech.com');
   const hasAddress = contactContent.includes('124 Grant Street');
   
   console.log(`✅ Phone contact: ${phonePresent ? 'Present' : 'Missing'}`);

@@ -282,7 +282,7 @@ export function generateLocalBusinessSchema(): LocalBusinessSchema & {
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Three Rivers Tech Services",
+      name: "Grovex Tech & Solutions LLC Services",
       itemListElement: [
         {
           "@type": "Offer",
@@ -568,7 +568,7 @@ export function generatePageStructuredData(
     case "home":
       schemas.push(generateLocalBusinessSchema());
       schemas.push(generateWebPageSchema(
-        "Three Rivers Tech - Simple Technology Solutions That Work",
+        "Grovex Tech & Solutions LLC - Simple Technology Solutions That Work",
         siteConfig.description,
         siteConfig.url,
         [{ name: "Home", url: siteConfig.url }]

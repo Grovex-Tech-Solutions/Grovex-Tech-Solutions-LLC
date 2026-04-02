@@ -94,10 +94,10 @@ export function generatePortfolioPageMetadata(
   
   return generatePageMetadata({
     title: `${title} - Portfolio Case Study`,
-    description: `${description} ${client ? `Project for ${client}` : ''} ${year ? `(${year})` : ''} - A successful project by Three Rivers Tech.`,
+    description: `${description} ${client ? `Project for ${client}` : ''} ${year ? `(${year})` : ''} - A successful project by Grovex Tech & Solutions LLC.`,
     keywords: ["portfolio", "case study", "project", ...technologies],
     canonical: `${siteConfig.url}/portfolio/${projectId}`,
-    ogTitle: `${title} - Three Rivers Tech Portfolio`,
+    ogTitle: `${title} - Grovex Tech & Solutions LLC Portfolio`,
     ogDescription: description,
     ogImage: image || siteConfig.ogImage
   });
@@ -120,11 +120,11 @@ export function generateBlogPageMetadata(
   if (!slug || !articleData) {
     // Blog listing page
     return generatePageMetadata({
-      title: "Tech Insights & Blog - Three Rivers Tech",
-      description: "Stay updated with the latest technology insights, tutorials, and industry news from Three Rivers Tech. Expert perspectives on software development, IT consulting, and more.",
+      title: "Tech Insights & Blog - Grovex Tech & Solutions LLC",
+      description: "Stay updated with the latest technology insights, tutorials, and industry news from Grovex Tech & Solutions LLC. Expert perspectives on software development, IT consulting, and more.",
       keywords: ["tech blog", "technology insights", "software development", "IT consulting", "tutorials"],
       canonical: `${siteConfig.url}/blog`,
-      ogTitle: "Tech Blog - Three Rivers Tech",
+      ogTitle: "Tech Blog - Grovex Tech & Solutions LLC",
       ogDescription: "Expert insights and tutorials on technology, software development, and business solutions."
     });
   }
@@ -160,12 +160,12 @@ export function generateBlogPageMetadata(
  */
 export function generateSearchPageMetadata(query?: string): Metadata {
   const title = query 
-    ? `Search Results for "${query}" - Three Rivers Tech`
-    : "Search - Three Rivers Tech";
+    ? `Search Results for "${query}" - Grovex Tech & Solutions LLC`
+    : "Search - Grovex Tech & Solutions LLC";
     
   const description = query
-    ? `Search results for "${query}" on Three Rivers Tech. Find information about our technology services, portfolio, and expertise.`
-    : "Search Three Rivers Tech for information about our technology services, portfolio, case studies, and expertise.";
+    ? `Search results for "${query}" on Grovex Tech & Solutions LLC. Find information about our technology services, portfolio, and expertise.`
+    : "Search Grovex Tech & Solutions LLC for information about our technology services, portfolio, case studies, and expertise.";
 
   return generatePageMetadata({
     title,
@@ -197,7 +197,7 @@ export function generateErrorPageMetadata(errorCode: number): Metadata {
   };
 
   return generatePageMetadata({
-    title: `${errorInfo.title} - Three Rivers Tech`,
+    title: `${errorInfo.title} - Grovex Tech & Solutions LLC`,
     description: errorInfo.description,
     keywords: ["error", "help", "support"],
     noIndex: true, // Don't index error pages

@@ -23,7 +23,7 @@ export default function Header() {
         <Link 
           href="/" 
           className="group flex items-center text-xl sm:text-2xl font-bold text-primary hover:text-primary-hover focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-2 -m-2 transition-all duration-300 border border-transparent hover:border-primary/20"
-          aria-label="Three Rivers Tech - Go to homepage"
+          aria-label="Grovex Tech & Solutions LLC - Go to homepage"
         >
           <div className="relative">
             <LogoImage className="h-8 w-8 mr-3 group-hover:scale-110 transition-transform duration-300" priority={true} />
@@ -31,10 +31,10 @@ export default function Header() {
             <div className="absolute inset-0 bg-primary/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
           <span className="hidden sm:inline text-foreground font-bold">
-            Three Rivers Tech
+            Grovex Tech & Solutions LLC
           </span>
           <span className="sm:hidden text-foreground font-bold">
-            TRT
+            GTS
           </span>
         </Link>
 
@@ -57,7 +57,7 @@ export default function Header() {
           <Link
             href="/contact"
             className="sm:hidden mr-1 inline-flex items-center justify-center rounded-lg border border-border bg-background px-3 py-2 text-sm font-semibold text-foreground transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hover:bg-background-secondary"
-            aria-label="Contact Three Rivers Tech"
+            aria-label="Contact Grovex Tech & Solutions LLC"
           >
             <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V8a2 2 0 00-2-2H3a2 2 0 00-2 2v6a2 2 0 002 2z" />

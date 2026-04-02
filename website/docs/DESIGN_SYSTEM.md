@@ -1,6 +1,6 @@
-# Three Rivers Tech Design System
+# Grovex Tech & Solutions LLC Design System
 
-A comprehensive guide to the visual language, components, and patterns used throughout the Three Rivers Tech website.
+A comprehensive guide to the visual language, components, and patterns used throughout the Grovex Tech & Solutions LLC website.
 
 ## 🎨 Design Philosophy
 

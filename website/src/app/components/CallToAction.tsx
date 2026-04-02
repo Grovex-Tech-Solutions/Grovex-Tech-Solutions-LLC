@@ -17,7 +17,7 @@ export default function CallToAction() {
             Request an Assessment
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
-            Get in touch with Three Rivers Tech, your hometown tech partner. We&apos;ll assess your tech needs and help you find affordable solutions.
+            Get in touch with Grovex Tech & Solutions LLC, your hometown tech partner. We&apos;ll assess your tech needs and help you find affordable solutions.
           </p>
         </header>
 
@@ -32,13 +32,13 @@ export default function CallToAction() {
               <a
                 href="tel:+14122069453"
                 className="block w-full bg-white text-primary font-bold py-4 px-8 rounded-xl hover:bg-gray-50 hover:shadow-large transform hover:-translate-y-1 transition-all duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary min-h-[48px] text-lg border border-primary/30 focus:border-primary"
-                aria-label="Call Three Rivers Tech for tech assessment"
+                aria-label="Call Grovex Tech & Solutions LLC for tech assessment"
               >
                 📞 Call Now: (412) 206-9453
               </a>
 
               <a
-                href="mailto:info@three-rivers-tech.com?subject=Tech Assessment Request&body=Hi! I'd like to request an assessment for:%0D%0A%0D%0ADevice/Service Type: %0D%0AProblem Description: %0D%0A%0D%0APlease contact me to schedule a visit.%0D%0A%0D%0AThank you!"
+                href="mailto:info@grovextech.com?subject=Tech Assessment Request&body=Hi! I'd like to request an assessment for:%0D%0A%0D%0ADevice/Service Type: %0D%0AProblem Description: %0D%0A%0D%0APlease contact me to schedule a visit.%0D%0A%0D%0AThank you!"
                 className="block w-full bg-white/20 backdrop-blur-sm text-white font-bold py-4 px-8 rounded-xl hover:bg-white/30 hover:shadow-large transform hover:-translate-y-1 transition-all duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary min-h-[48px] text-lg border border-white/30 focus:border-white"
                 aria-label="Send email for tech assessment"
               >

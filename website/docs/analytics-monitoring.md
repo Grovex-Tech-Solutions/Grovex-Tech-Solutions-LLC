@@ -1,6 +1,6 @@
 # Analytics and Error Monitoring Summary
 
-The Three Rivers Tech website uses Google Analytics 4 (GA4) for custom event tracking and conversion goals, with automatic initialization and real-time performance monitoring. Error monitoring captures JavaScript errors, API failures, and performance issues, providing alerts and logging for development and production.
+The Grovex Tech & Solutions LLC website uses Google Analytics 4 (GA4) for custom event tracking and conversion goals, with automatic initialization and real-time performance monitoring. Error monitoring captures JavaScript errors, API failures, and performance issues, providing alerts and logging for development and production.
 
 All key user interactions and conversion events are tracked, and the system is integrated for maintainability and business insights.
 

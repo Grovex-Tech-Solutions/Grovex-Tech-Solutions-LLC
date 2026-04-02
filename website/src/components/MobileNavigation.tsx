@@ -123,7 +123,7 @@ export default function MobileNavigation() {
               <div className="flex items-center gap-3">
                 <LogoImage className="h-8 w-8" priority={false} />
                 <h2 id="mobile-menu-title" className="text-lg font-bold text-foreground">
-                  Three Rivers Tech
+                  Grovex Tech & Solutions LLC
                 </h2>
               </div>
               <button

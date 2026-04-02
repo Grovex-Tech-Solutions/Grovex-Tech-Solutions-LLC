@@ -1,6 +1,6 @@
 # Image Guidelines & Specifications
 
-Comprehensive guidelines for images used across the Three Rivers Tech website to ensure visual consistency, optimal performance, and accessibility.
+Comprehensive guidelines for images used across the Grovex Tech & Solutions LLC website to ensure visual consistency, optimal performance, and accessibility.
 
 ## 🎯 Quick Reference
 
@@ -260,7 +260,7 @@ import { OptimizedImage } from "@/components/OptimizedImage";
 
 #### ✅ Good Alt Text:
 ```tsx
-alt="Three Rivers Tech team helping senior client with laptop in Turtle Creek home"
+alt="Grovex Tech & Solutions LLC team helping senior client with laptop in Turtle Creek home"
 ```
 - Descriptive and specific
 - Includes context and relevant details

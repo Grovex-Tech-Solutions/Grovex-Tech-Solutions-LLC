@@ -14,12 +14,12 @@ const __dirname = path.dirname(__filename);
 
 // Expected community messaging elements
 const expectedElements = {
-  businessName: "Three Rivers Tech",
+  businessName: "Grovex Tech & Solutions LLC",
   tagline: "Your hometown tech partner",
   location: "Turtle Creek, PA 15145",
   address: "124 Grant Street",
   phone: "(412) 206-9453",
-  email: "info@threeriverstech.com",
+  email: "info@grovextech.com",
   valueProposition: "big-city know-how at small-town prices",
   serviceAreas: ["Turtle Creek", "Monroeville", "Wilmerding", "Mon Valley"],
   ctaPrimary: "Contact Our Team for a Free Consultation",

@@ -1,5 +1,5 @@
-<!-- Copilot / AI agent instructions for Three Rivers Tech repository -->
-# Three Rivers Tech — AI Agent Productivity Guide
+<!-- Copilot / AI agent instructions for Grovex Tech & Solutions LLC repository -->
+# Grovex Tech & Solutions LLC — AI Agent Productivity Guide
 
 This guide enables AI coding agents to be immediately productive in this monorepo. It summarizes current architecture, workflows, and conventions, referencing key files and documentation.
 

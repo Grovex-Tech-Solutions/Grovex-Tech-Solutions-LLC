@@ -11,9 +11,9 @@ export default function ContactPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ContactPage",
-            "name": "Contact Us - Get in Touch with Three Rivers Tech",
-            "description": "Contact Three Rivers Tech for technology solutions. Reach out to our team for software development, IT consulting, SaaS products, or computer repair services.",
-            "url": "https://threeriverstech.com/contact",
+            "name": "Contact Us - Get in Touch with Grovex Tech & Solutions LLC",
+            "description": "Contact Grovex Tech & Solutions LLC for technology solutions. Reach out to our team for software development, IT consulting, SaaS products, or computer repair services.",
+            "url": "https://grovextech.com/contact",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -21,13 +21,13 @@ export default function ContactPage() {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://threeriverstech.com"
+                  "item": "https://grovextech.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Contact",
-                  "item": "https://threeriverstech.com/contact"
+                  "item": "https://grovextech.com/contact"
                 }
               ]
             }
@@ -76,12 +76,12 @@ export default function ContactPage() {
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="mr-2 text-blue-800" aria-hidden="true">✉️</span>
                     <a
-                      href="mailto:info@three-rivers-tech.com?subject=Tech Help Request&body=Hi! I need help with:%0D%0A%0D%0ADevice Type: %0D%0AProblem: %0D%0A%0D%0APlease contact me to schedule a visit.%0D%0A%0D%0AThank you!"
+                      href="mailto:info@grovextech.com?subject=Tech Help Request&body=Hi! I need help with:%0D%0A%0D%0ADevice Type: %0D%0AProblem: %0D%0A%0D%0APlease contact me to schedule a visit.%0D%0A%0D%0AThank you!"
                       className="text-blue-700 hover:text-blue-900 underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-1 -mx-1"
-                      aria-label="Email the Three Rivers Tech support team"
+                      aria-label="Email the Grovex Tech & Solutions LLC support team"
                     >
                       <span className="sr-only">Email address:</span>
-                      <span>Email us: info@three-rivers-tech.com</span>
+                      <span>Email us: info@grovextech.com</span>
                     </a>
                   </div>
                   <div className="flex items-center">
@@ -127,10 +127,10 @@ export default function ContactPage() {
                 <div className="flex-grow">
                   <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2">Email</h3>
                   <a 
-                    href="mailto:info@three-rivers-tech.com"
+                    href="mailto:info@grovextech.com"
                     className="text-sm sm:text-base lg:text-lg text-foreground-secondary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md p-1 -m-1 break-all"
                   >
-                    info@three-rivers-tech.com
+                    info@grovextech.com
                   </a>
                 </div>
               </div>

@@ -11,34 +11,34 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 // Base domain for absolute URLs (update if production domain differs)
-const siteUrl = 'https://www.three-rivers-tech.com';
+const siteUrl = 'https://grovextech.com';
 // Public analytics identifier (only load GA when defined)
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Three Rivers Tech — Honest Local IT & Web Services',
-    template: '%s | Three Rivers Tech'
+    default: 'Grovex Tech & Solutions LLC — Honest Local IT & Web Services',
+    template: '%s | Grovex Tech & Solutions LLC'
   },
   description: 'Straightforward, community-focused technology services: web design, IT support, repairs, and custom software for small business & neighbors.',
-  applicationName: 'Three Rivers Tech',
+  applicationName: 'Grovex Tech & Solutions LLC',
   keywords: [
     'IT support','web design','software development','computer repair','Mon Valley','small business tech','computer repair Turtle Creek PA'
   ],
-  authors: [{ name: 'Three Rivers Tech' }],
-  creator: 'Three Rivers Tech',
-  publisher: 'Three Rivers Tech',
+  authors: [{ name: 'Grovex Tech & Solutions LLC' }],
+  creator: 'Grovex Tech & Solutions LLC',
+  publisher: 'Grovex Tech & Solutions LLC',
   openGraph: {
     type: 'website',
     url: siteUrl,
-    siteName: 'Three Rivers Tech',
-    title: 'Three Rivers Tech — Honest Local IT & Web Services',
+    siteName: 'Grovex Tech & Solutions LLC',
+    title: 'Grovex Tech & Solutions LLC — Honest Local IT & Web Services',
     description: 'Straightforward, community-focused technology services built for trust and clarity.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Three Rivers Tech — Honest Local IT & Web Services',
+    title: 'Grovex Tech & Solutions LLC — Honest Local IT & Web Services',
     description: 'Straightforward, community-focused technology services built for trust and clarity.'
   },
   robots: {

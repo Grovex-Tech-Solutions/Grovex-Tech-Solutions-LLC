@@ -1,4 +1,4 @@
-// Content Management Types for Three Rivers Tech Website
+// Content Management Types for Grovex Tech & Solutions LLC Website
 
 export interface BusinessHours {
   day: string;

@@ -95,12 +95,12 @@ describe('Performance Optimization for Local Users', () => {
     it('exposes email and booking options with accessible attributes', () => {
       render(<ContactPage />);
 
-      const emailLink = screen.getByRole('link', { name: /info@three-rivers-tech\.com/i });
+      const emailLink = screen.getByRole('link', { name: /info@grovextech\.com/i });
       expect(emailLink).toHaveAttribute('href', expect.stringContaining('mailto:'));
       expect(emailLink.className).toContain('focus:ring-2');
 
       const bookingFrame = screen.getByRole('application', {
-        name: /schedule an appointment with three rivers tech/i,
+        name: /schedule an appointment with grovex tech & solutions llc/i,
       });
       expect(bookingFrame).toHaveAttribute('src', 'https://calendar.app.google/1EwGScdmrC1dcwMR8');
       expect(bookingFrame).toHaveAttribute('loading', 'lazy');
@@ -120,7 +120,7 @@ describe('Performance Optimization for Local Users', () => {
       const contactLink = screen.getByRole('link', { name: 'Contact' });
       expect(contactLink.className).toContain('min-h-[48px]');
 
-      const mobileCallLink = screen.getByRole('link', { name: /contact three rivers tech/i });
+      const mobileCallLink = screen.getByRole('link', { name: /contact grovex tech & solutions llc/i });
       expect(mobileCallLink).toHaveAttribute('href', '/contact');
       expect(mobileCallLink.className).toContain('focus:ring-2');
     });
@@ -165,7 +165,7 @@ describe('Performance Optimization for Local Users', () => {
       render(<Header />);
 
       const logo = screen.getByRole('img', {
-        name: /three rivers tech - comprehensive technology solutions company logo/i,
+        name: /grovex tech & solutions llc - comprehensive technology solutions company logo/i,
       });
       expect(logo).toHaveAttribute('src', expect.stringContaining('/company_logo.avif'));
       expect(logo).toHaveAttribute('loading', 'eager');
@@ -225,7 +225,7 @@ describe('Performance Optimization for Local Users', () => {
 
     it('generates organization schemas that reference local service areas', () => {
       const schema = generateOrganizationSchema();
-      expect(schema.sameAs ?? []).toContain('https://www.facebook.com/threeriverstech');
+      expect(schema.sameAs ?? []).toContain('https://www.facebook.com/grovextech');
       expect(schema.areaServed ?? []).toContain('Mon Valley, PA');
     });
   });
@@ -252,7 +252,7 @@ describe('Performance Optimization for Local Users', () => {
     it('keeps primary contact links keyboard-focusable on the contact page', () => {
       render(<ContactPage />);
 
-      const emailLinks = screen.getAllByRole('link', { name: /info@three-rivers-tech\.com/i });
+      const emailLinks = screen.getAllByRole('link', { name: /info@grovextech\.com/i });
       emailLinks.forEach((link) => {
         expect(link.className).toContain('focus:ring-2');
       });

@@ -1,6 +1,6 @@
 # Visual Standards & Consistency Guide
 
-This document ensures visual consistency across all pages and components of the Three Rivers Tech website.
+This document ensures visual consistency across all pages and components of the Grovex Tech & Solutions LLC website.
 
 ## 🎯 Quick Reference
 
@@ -291,7 +291,7 @@ Always use warm gradients that match brand:
 ### Section Titles (H2)
 ```tsx
 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-  Why Choose Three Rivers Tech
+  Why Choose Grovex Tech & Solutions LLC
 </h2>
 ```
 - Size: 30px → 36px → 48px → 60px
@@ -359,7 +359,7 @@ Every clickable element must:
 <a 
   href="/contact"
   className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg"
-  aria-label="Contact Three Rivers Tech"
+  aria-label="Contact Grovex Tech & Solutions LLC"
 >
   Contact Us
 </a>

@@ -1,5 +1,5 @@
 /**
- * Brand Voice Guidelines for Three Rivers Tech
+ * Brand Voice Guidelines for Grovex Tech & Solutions LLC
  * 
  * This file defines the consistent brand voice and messaging standards
  * to be applied across all website components and content.

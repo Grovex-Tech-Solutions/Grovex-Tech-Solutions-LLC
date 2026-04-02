@@ -1,6 +1,6 @@
 # Icon Component Library
 
-This directory contains reusable icon components for the Three Rivers Tech website.
+This directory contains reusable icon components for the Grovex Tech & Solutions LLC website.
 
 ## Usage
 

@@ -19,7 +19,7 @@ console.log('='.repeat(50));
 console.log('\n1. Testing expected configuration...');
 const expectedPages = ['/', '/services/', '/about/', '/portfolio/', '/software-development/', '/contact/'];
 console.log('✅ Expected pages:', expectedPages.join(', '));
-console.log('✅ Base URL: https://threeriverstech.com');
+console.log('✅ Base URL: https://grovextech.com');
 console.log('✅ Static pages configured: 6 pages');
 
 // Test 2: Validate file structure

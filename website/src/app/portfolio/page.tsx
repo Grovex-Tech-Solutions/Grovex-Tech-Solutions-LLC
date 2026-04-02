@@ -3,13 +3,13 @@ import Link from "next/link";
 import GitHubStats from "@/app/portfolio/GitHubStats";
 
 export const metadata: Metadata = {
-  title: 'Our Work & Credentials | Three Rivers Tech',
-  description: 'See what our clients say about us and explore our open-source projects. Real reviews and proven technical work from Three Rivers Tech.',
+  title: 'Our Work & Credentials | Grovex Tech & Solutions LLC',
+  description: 'See what our clients say about us and explore our open-source projects. Real reviews and proven technical work from Grovex Tech & Solutions LLC.',
   openGraph: {
-    title: 'Our Work & Credentials | Three Rivers Tech',
-    description: 'Client reviews and GitHub projects from Three Rivers Tech',
+    title: 'Our Work & Credentials | Grovex Tech & Solutions LLC',
+    description: 'Client reviews and GitHub projects from Grovex Tech & Solutions LLC',
     type: 'website',
-    url: 'https://threeriverstech.com/portfolio',
+    url: 'https://grovextech.com/portfolio',
   },
 };
 
@@ -22,9 +22,9 @@ export default function PortfolioPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Three Rivers Tech, LLC",
+            "name": "Grovex Tech & Solutions LLC, LLC",
             "description": "Computer repair, website development, and IT services in Turtle Creek, PA",
-            "url": "https://threeriverstech.com/portfolio",
+            "url": "https://grovextech.com/portfolio",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "124 Grant Street",
@@ -49,7 +49,7 @@ export default function PortfolioPage() {
             Our Work & Credentials
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed px-2">
-            Real client feedback and proven technical expertise from Three Rivers Tech
+            Real client feedback and proven technical expertise from Grovex Tech & Solutions LLC
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export default function PortfolioPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Three Rivers Tech, LLC - Google Maps"
+                title="Grovex Tech & Solutions LLC, LLC - Google Maps"
               />
               <div className="mt-4 text-center">
                 <a

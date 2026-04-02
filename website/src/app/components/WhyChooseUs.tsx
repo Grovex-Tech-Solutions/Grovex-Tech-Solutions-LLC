@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up text-foreground">
-            Why Choose Three Rivers Tech
+            Why Choose Grovex Tech & Solutions LLC
           </h2>
           
           <p className="text-lg sm:text-xl md:text-2xl text-foreground-secondary max-w-4xl mx-auto leading-relaxed animate-slide-up animation-delay-200 font-medium">

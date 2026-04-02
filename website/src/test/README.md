@@ -1,6 +1,6 @@
 # Testing Suite Documentation
 
-This directory contains comprehensive tests for the Three Rivers Tech website optimization and SEO implementation.
+This directory contains comprehensive tests for the Grovex Tech & Solutions LLC website optimization and SEO implementation.
 
 ## Test Categories
 
@@ -178,4 +178,4 @@ npm run test:coverage
 - Use test results to guide optimization efforts
 - Monitor test performance and update as needed
 
-This testing suite ensures the Three Rivers Tech website maintains high standards for SEO, accessibility, and content quality throughout development and deployment.
+This testing suite ensures the Grovex Tech & Solutions LLC website maintains high standards for SEO, accessibility, and content quality throughout development and deployment.

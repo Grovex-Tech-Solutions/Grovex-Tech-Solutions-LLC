@@ -87,28 +87,28 @@
 
   <!-- dashboard -->
   <g transform="translate(960 62)" class="mono">
-    <rect x="0" y="0" width="280" height="170" rx="4" fill="#09060f" stroke="#2a223d"/>
+    <rect x="0" y="0" width="280" height="188" rx="4" fill="#09060f" stroke="#2a223d"/>
     <text x="12" y="18" font-size="10" fill="#a5a1ff">╔═ DERRR DASHBOARD ═ LIVE <tspan fill="#ff6ac1" class="flicker2">●</tspan> ══╗</text>
 
-    <text x="12" y="38" font-size="9" fill="#6e7681">DEBUG STYLE</text>
-    <text x="12" y="52" font-size="11" fill="#ff7b72">vibes goblin</text>
-    <text x="110" y="52" font-size="11" fill="#6e7681">→</text>
-    <text x="124" y="52" font-size="11" fill="#7ee787">goblin w/ clipboard</text>
+    <text x="12" y="40" font-size="10" fill="#6e7681">DEBUG STYLE</text>
+    <text x="12" y="56" font-size="12" fill="#ff7b72">vibes goblin</text>
+    <text x="110" y="56" font-size="12" fill="#6e7681">→</text>
+    <text x="124" y="56" font-size="12" fill="#7ee787">goblin w/ clipboard</text>
 
-    <text x="12" y="74" font-size="9" fill="#6e7681">WORK UNIT</text>
-    <text x="12" y="88" font-size="11" fill="#ff7b72">screaming blob</text>
-    <text x="120" y="88" font-size="11" fill="#6e7681">→</text>
-    <text x="134" y="88" font-size="11" fill="#7ee787">narrow slice</text>
+    <text x="12" y="80" font-size="10" fill="#6e7681">WORK UNIT</text>
+    <text x="12" y="96" font-size="12" fill="#ff7b72">screaming blob</text>
+    <text x="120" y="96" font-size="12" fill="#6e7681">→</text>
+    <text x="134" y="96" font-size="12" fill="#7ee787">narrow slice</text>
 
-    <text x="12" y="110" font-size="9" fill="#6e7681">SYSTEM STATE</text>
-    <text x="12" y="124" font-size="11" fill="#ff7b72">cursed raccoon</text>
-    <text x="120" y="124" font-size="11" fill="#6e7681">→</text>
-    <text x="134" y="124" font-size="11" fill="#7ee787">legible raccoon</text>
+    <text x="12" y="120" font-size="10" fill="#6e7681">SYSTEM STATE</text>
+    <text x="12" y="136" font-size="12" fill="#ff7b72">cursed raccoon</text>
+    <text x="120" y="136" font-size="12" fill="#6e7681">→</text>
+    <text x="134" y="136" font-size="12" fill="#7ee787">legible raccoon</text>
 
-    <text x="12" y="146" font-size="9" fill="#6e7681">SUCCESS CRITERION</text>
-    <text x="12" y="160" font-size="11" fill="#ff7b72">"seems fine?"</text>
-    <text x="110" y="160" font-size="11" fill="#6e7681">→</text>
-    <text x="124" y="160" font-size="11" fill="#7ee787">proved in review</text>
+    <text x="12" y="160" font-size="10" fill="#6e7681">SUCCESS CRITERION</text>
+    <text x="12" y="176" font-size="12" fill="#ff7b72">"seems fine?"</text>
+    <text x="110" y="176" font-size="12" fill="#6e7681">→</text>
+    <text x="124" y="176" font-size="12" fill="#7ee787">proved in review</text>
   </g>
 
   <!-- goblin ASCII (trimmed, tucked right of tagline) -->

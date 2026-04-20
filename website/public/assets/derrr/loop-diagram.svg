@@ -69,7 +69,7 @@
       <text x="0" y="38" fill="#a5a1ff">restart</text>
     </g>
   </g>
-  <text x="500" y="606" text-anchor="middle" class="mono" font-size="15" fill="#8b949e" font-style="italic">
+  <text x="500" y="540" text-anchor="middle" class="mono" font-size="15" fill="#8b949e" font-style="italic">
     record first, then touch the system
   </text>
 
@@ -81,8 +81,8 @@
     <circle r="56" fill="#0e1a10" stroke="#7ee787" stroke-width="2.5"/>
     <text y="-8" text-anchor="middle" class="mono" font-size="11" fill="#4b4666">01</text>
     <text y="12" text-anchor="middle" class="mono" font-weight="900" font-size="22" fill="#7ee787">D</text>
-    <text y="-84" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#7ee787">Document</text>
-    <text y="-60" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">record the active slice</text>
+    <text y="78" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#7ee787">Document</text>
+    <text y="100" text-anchor="middle" class="mono" font-size="14" fill="#8b949e">record the active slice</text>
   </g>
 
   <!-- Execute (top-right, θ=342°) -->

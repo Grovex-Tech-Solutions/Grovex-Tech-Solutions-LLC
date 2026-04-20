@@ -51,6 +51,8 @@
     </symbol>
   </defs>
 
+  <rect width="880" height="260" rx="12" fill="#040407"/>
+
   <g transform="translate(144 130)">
     <use href="#goblin" width="220" height="260" x="-110" y="-120"/>
   </g>
@@ -63,8 +65,8 @@
     <text x="684" y="164" fill="#a5a1ff">R</text>
   </g>
 
-  <g font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Inter,sans-serif" font-size="23" font-weight="650">
+  <g font-family="ui-sans-serif,system-ui,-apple-system,'Segoe UI',Inter,sans-serif" font-size="19" font-weight="600">
     <text x="280" y="206" fill="#d0d7de">Document · Execute · Review · Research · Restart</text>
-    <text x="280" y="232" fill="#8b949e" font-size="18">method-first, slightly feral, audit trail included</text>
+    <text x="280" y="230" fill="#8b949e" font-size="15">method-first, slightly feral, audit trail included</text>
   </g>
 </svg>

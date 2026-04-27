@@ -18,9 +18,6 @@ export default function SpaceStorySection() {
             <p className="text-lg sm:text-xl text-foreground-secondary leading-relaxed mb-6">
               GroveX is being shaped around more than services. The long-term vision is a place where technology, creativity, and local commerce strengthen each other—starting with a tech studio alongside a flower shop.
             </p>
-            <p className="text-base sm:text-lg text-foreground-secondary leading-relaxed mb-8">
-              Now that the fly-through is ready, this section can finally show the space itself: the storefront energy, the physical presence, and the kind of place that makes the brand feel real before a customer ever reaches out.
-            </p>
 
             <div className="mb-8 rounded-3xl overflow-hidden border border-border/60 shadow-large bg-black">
               <video

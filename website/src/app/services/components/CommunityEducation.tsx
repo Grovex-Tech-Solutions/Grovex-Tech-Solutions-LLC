@@ -5,7 +5,7 @@ export default function CommunityEducation() {
     <section id="community-education" className="py-16 bg-background-secondary rounded-2xl p-8 scroll-mt-24">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">Community Education & Learning Center</h2>
+          <h2 className="text-3xl font-bold mb-4 text-black">Community Education & Learning Center</h2>
           <p className="text-foreground-secondary mb-6">
             We believe technology should be accessible to everyone in our community. That&apos;s why we offer free workshops and educational programs specifically designed for Turtle Creek residents and local small businesses.
           </p>

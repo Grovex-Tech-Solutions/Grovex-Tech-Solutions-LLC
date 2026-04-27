@@ -95,7 +95,7 @@ export default function AboutPage() {
                   Shortly after graduation, I was able to purchase 124 Grant Street and start building what is now becoming GroveX right here in our community.
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary mb-4 sm:mb-6 leading-relaxed">
-                  GroveX is a rebrand with a clearer direction: lean into growth. The name reflects the kind of work I want to do for local businesses—help them grow with better systems, stronger web presence, and dependable day-to-day technology. It also reflects the physical space itself, where my tech work and my girlfriend&apos;s flower shop vision can live alongside each other and strengthen one another.
+                  GroveX Tech is a rebrand with a clearer direction: lean into growth. The name reflects the kind of work I want to do for local businesses—help them grow with better systems, a stronger web presence, and dependable day-to-day technology that supports the next stage of their business.
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">
                   Having grown up in this area, I understand the challenges small businesses face when the brand, the website, and the operations layer are all fighting each other. I speak plain English, not tech jargon. GroveX is built to help owners tighten the foundation first so marketing, referrals, and future paid traffic have a better chance to work.

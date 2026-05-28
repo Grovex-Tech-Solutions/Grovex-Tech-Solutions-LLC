@@ -36,6 +36,11 @@ export const STATIC_PAGES: SitemapPage[] = [
     changeFrequency: 'weekly',
   },
   {
+    path: '/portfolio/finance-feedback-engine/',
+    priority: 0.75,
+    changeFrequency: 'weekly',
+  },
+  {
     path: '/software-development/',
     priority: 0.8,
     changeFrequency: 'monthly',

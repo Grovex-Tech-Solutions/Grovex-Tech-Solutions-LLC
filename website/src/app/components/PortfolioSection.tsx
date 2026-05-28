@@ -6,21 +6,32 @@ const serviceCapabilities = [
     title: "Growth Foundations",
     description: "Websites, landing pages, messaging cleanup, and infrastructure that helps local businesses look trustworthy before they scale traffic.",
     category: "Strategy",
-    icon: "🌱"
+    icon: "🌱",
+    href: "/services"
   },
   {
     id: "operations-support",
     title: "Operations, IT & Repair Support",
     description: "Support for devices, networks, workflows, and critical repair/troubleshooting needs so the business runs cleaner behind the scenes.",
     category: "Operations",
-    icon: "🛠️"
+    icon: "🛠️",
+    href: "/services"
   },
   {
     id: "custom-systems",
     title: "Custom Systems",
     description: "Software, automations, and internal tools that cut friction, reduce repeat work, and support better decision-making.",
     category: "Build",
-    icon: "⚙️"
+    icon: "⚙️",
+    href: "/services"
+  },
+  {
+    id: "finance-feedback-engine",
+    title: "Finance Feedback Engine",
+    description: "A public technical showcase for auditable trading-system feedback loops, experiment gates, and measured decision-quality improvement.",
+    category: "Systems Proof",
+    icon: "📈",
+    href: "/portfolio/finance-feedback-engine"
   },
 ];
 
@@ -43,7 +54,7 @@ export default function PortfolioSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 max-w-7xl mx-auto">
           {serviceCapabilities.map((service, index) => (
             <article
               key={service.id}
@@ -63,8 +74,8 @@ export default function PortfolioSection() {
 
                 <p className="text-foreground-secondary mb-4">{service.description}</p>
 
-                <Link href="/services" className="inline-flex items-center text-primary font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md py-1 text-sm">
-                  Learn More
+                <Link href={service.href} className="inline-flex items-center text-primary font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md py-1 text-sm">
+                  {service.id === "finance-feedback-engine" ? "View Showcase" : "Learn More"}
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>

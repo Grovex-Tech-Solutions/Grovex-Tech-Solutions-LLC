@@ -18,7 +18,8 @@ const showcaseProjects = [
       "Live trading-system work centered on runtime correctness, auditability, and cleaner feedback loops so decisions can be measured and improved with more confidence.",
     image: "/assets/derrr/social-preview.png",
     repoUrl: "https://github.com/Grovex-Tech-Solutions/finance_feedback_engine",
-    liveUrl: "https://github.com/Zzzero-hash/derrr",
+    liveUrl: "/portfolio/finance-feedback-engine",
+    liveLabel: "View Showcase",
     tags: ["Python", "LLM Systems", "Trading Infrastructure"],
   },
   {
@@ -236,14 +237,23 @@ export default function PortfolioPage() {
                     >
                       View Code
                     </a>
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center rounded-xl border border-border px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/30 hover:text-primary"
-                    >
-                      Open Project
-                    </a>
+                    {project.liveUrl.startsWith("/") ? (
+                      <Link
+                        href={project.liveUrl}
+                        className="inline-flex items-center justify-center rounded-xl border border-border px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/30 hover:text-primary"
+                      >
+                        {"liveLabel" in project ? project.liveLabel : "Open Project"}
+                      </Link>
+                    ) : (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center rounded-xl border border-border px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/30 hover:text-primary"
+                      >
+                        {"liveLabel" in project ? project.liveLabel : "Open Project"}
+                      </a>
+                    )}
                   </div>
                 </div>
               </article>

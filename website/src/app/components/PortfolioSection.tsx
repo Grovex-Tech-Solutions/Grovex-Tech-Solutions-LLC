@@ -62,9 +62,33 @@ export default function PortfolioSection() {
               role="article"
               aria-labelledby={`service-${service.id}-title`}
             >
-              <div className="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-6xl">
-                {service.icon}
-              </div>
+              {service.id === "finance-feedback-engine" ? (
+                <div className="relative h-48 overflow-hidden bg-slate-950 text-white">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(34,211,238,0.35),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(168,85,247,0.3),transparent_32%),radial-gradient(circle_at_55%_90%,rgba(16,185,129,0.25),transparent_35%)]" />
+                  <svg aria-hidden="true" viewBox="0 0 420 210" className="absolute inset-0 h-full w-full opacity-90">
+                    <defs>
+                      <linearGradient id="homeFfeLine" x1="0" x2="1" y1="0" y2="0">
+                        <stop offset="0%" stopColor="#22d3ee" />
+                        <stop offset="55%" stopColor="#a78bfa" />
+                        <stop offset="100%" stopColor="#34d399" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M38 154 C96 76 142 126 188 78 S285 68 342 116 382 92 396 44" fill="none" stroke="url(#homeFfeLine)" strokeLinecap="round" strokeWidth="8" />
+                    {[38, 126, 188, 272, 342, 396].map((x, i) => {
+                      const y = [154, 104, 78, 76, 116, 44][i];
+                      return <circle key={x} cx={x} cy={y} r="8" fill="#020617" stroke="#67e8f9" strokeWidth="3" />;
+                    })}
+                  </svg>
+                  <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/10 bg-white/10 p-3 backdrop-blur">
+                    <div className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-100">Systems proof</div>
+                    <div className="mt-1 text-lg font-black">Feedback loops with evidence gates</div>
+                  </div>
+                </div>
+              ) : (
+                <div className="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-6xl">
+                  {service.icon}
+                </div>
+              )}
 
               <div className="p-6 sm:p-8">
                 <div className="flex justify-between items-start mb-2">

@@ -107,14 +107,6 @@ export default function Footer() {
                     Community Involvement
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    href="/learning-center"
-                    className="text-foreground-secondary hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md py-1 no-underline block"
-                  >
-                    Learning Center
-                  </Link>
-                </li>
               </ul>
             </nav>
           </section>

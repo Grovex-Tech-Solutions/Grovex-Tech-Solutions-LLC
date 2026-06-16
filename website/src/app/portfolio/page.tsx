@@ -15,12 +15,12 @@ const showcaseProjects = [
   {
     title: "Finance Feedback Engine",
     description:
-      "Live trading-system work centered on runtime correctness, auditability, and cleaner feedback loops so decisions can be measured and improved with more confidence.",
+      "Technical trading-system research focused on runtime correctness, audit trails, and safer feedback loops. The public showcase explains the engineering process without presenting returns, advice, or live-account performance.",
     image: "/assets/derrr/social-preview.png",
     repoUrl: "https://github.com/Grovex-Tech-Solutions/finance_feedback_engine",
     liveUrl: "/portfolio/finance-feedback-engine",
     liveLabel: "View Showcase",
-    tags: ["Python", "LLM Systems", "Trading Infrastructure"],
+    tags: ["Python", "LLM Systems", "Research Infrastructure"],
   },
   {
     title: "Client Web & Automation Builds",

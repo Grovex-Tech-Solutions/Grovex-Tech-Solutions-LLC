@@ -13,7 +13,7 @@ export default function CommunityInvolvementPage() {
             "@context": "https://schema.org",
             "@type": "Article",
             name: "Community Involvement - GroveX",
-            description: "Learn how GroveX supports Turtle Creek through local partnerships, workshops, and a stronger shared-space vision.",
+            description: "Learn how GroveX supports Turtle Creek through local partnerships, practical technology guidance, and a stronger shared-space vision.",
             url: "https://grovextech.com/community-involvement",
             publisher: {
               "@type": "LocalBusiness",

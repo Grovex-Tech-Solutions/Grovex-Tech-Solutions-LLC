@@ -5,70 +5,48 @@ export default function CommunityEducation() {
     <section id="community-education" className="py-16 bg-background-secondary rounded-2xl p-8 scroll-mt-24">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4 text-black">Community Education & Learning Center</h2>
+          <h2 className="text-3xl font-bold mb-4 text-black">Strategy, Training & Readiness</h2>
           <p className="text-foreground-secondary mb-6">
-            We believe technology should be accessible to everyone in our community. That&apos;s why we offer free workshops and educational programs specifically designed for Turtle Creek residents and local small businesses.
+            GroveX helps local owners and teams get clearer offers, stronger digital foundations, and practical technology guidance through direct consulting engagements.
           </p>
-          
+
           <div className="space-y-4 mb-6">
             <div className="bg-background border border-border p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-primary mb-2">Free Workshops & Training</h3>
+              <h3 className="text-lg font-semibold text-primary mb-2">Digital Readiness Support</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Basic Computer Skills:</strong> Perfect for beginners and seniors</span>
+                  <span className="text-foreground"><strong>Offer clarity:</strong> sharpen what you sell and who it is for</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Online Safety Training:</strong> Protect yourself from scams and viruses</span>
+                  <span className="text-foreground"><strong>Website readiness:</strong> identify gaps before spending on traffic</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Smartphone & Tablet Training:</strong> Get comfortable with your devices</span>
+                  <span className="text-foreground"><strong>Marketing foundations:</strong> improve local search, content, and conversion basics</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Email & Internet Basics:</strong> Stay connected with family and friends</span>
+                  <span className="text-foreground"><strong>Practical systems guidance:</strong> choose simple tools that match your workflow</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-background border border-border p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-primary mb-2">Small Business Digital Marketing</h3>
+              <h3 className="text-lg font-semibold text-primary mb-2">One-on-One Guidance</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Social Media for Local Shops:</strong> Facebook, Instagram basics</span>
+                  <span className="text-foreground"><strong>Small business reviews:</strong> understand what is helping or hurting your online presence</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Google My Business:</strong> Get found by local customers</span>
+                  <span className="text-foreground"><strong>Action plans:</strong> prioritize the next few improvements instead of chasing every tactic</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Simple Website Management:</strong> Update your own content</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Online Reviews & Reputation:</strong> Build trust with customers</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-background border border-border p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-primary mb-2">Learning Resources</h3>
-              <ul className="space-y-2 text-sm">
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Downloadable Guides:</strong> Step-by-step tutorials you can keep</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Video Tutorials:</strong> Watch and learn at your own pace</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground"><strong>Tech Tips Newsletter:</strong> Monthly helpful hints and updates</span>
+                  <span className="text-foreground"><strong>Founder/operator support:</strong> translate business goals into practical digital steps</span>
                 </li>
               </ul>
             </div>
@@ -76,31 +54,28 @@ export default function CommunityEducation() {
 
           <div className="bg-primary/10 p-4 rounded-lg mb-6">
             <p className="text-sm font-medium text-primary">
-              📍 Workshops held monthly at Turtle Creek Senior Center and our Grant Street location. All workshops are FREE for community members!
+              Need practical help prioritizing your next digital improvements? Start with a focused conversation about your current goals and constraints.
             </p>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="/learning-center"
+              href="/contact?service=community-education"
               className="inline-flex items-center justify-center bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-hover transition-colors"
             >
-              View Workshop Schedule
-              <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              Request Strategy Help
             </a>
             <a
-              href="/contact?service=community-education"
+              href="/services"
               className="inline-flex items-center justify-center border border-primary text-primary font-semibold py-3 px-6 rounded-lg hover:bg-primary hover:text-white transition-colors"
             >
-              Sign Up for Classes
+              View Services
             </a>
           </div>
         </div>
         <div className="md:w-1/2">
           <div className="bg-background-secondary dark:bg-background p-4 rounded-xl relative overflow-hidden border border-border">
-            {/* Education/Learning themed animated elements */}
+            {/* Education/readiness themed animated elements */}
             <div className="absolute top-6 right-5 w-7 h-8 bg-primary/20 rounded animate-pulse [animation-delay:0.3s]">
               <div className="w-full h-1 bg-primary/40 mt-1"></div>
               <div className="w-5 h-1 bg-primary/30 mt-1"></div>
@@ -122,7 +97,7 @@ export default function CommunityEducation() {
             </div>
             <OptimizedImage
               src="/community_ed.png"
-              alt="Community Education & Learning Center - Free technology workshops and training for Turtle Creek residents"
+              alt="Strategy, training, and readiness guidance for local business owners"
               width={600}
               height={400}
               className="rounded-lg w-full h-64 md:h-80 object-contain relative z-10"

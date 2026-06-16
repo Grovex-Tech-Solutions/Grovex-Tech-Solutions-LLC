@@ -28,7 +28,7 @@ const serviceCapabilities = [
   {
     id: "finance-feedback-engine",
     title: "Finance Feedback Engine",
-    description: "A public technical showcase for auditable trading-system feedback loops, experiment gates, and measured decision-quality improvement.",
+    description: "A public technical showcase for auditable trading-system feedback loops, experiment gates, and evidence-gated research workflows.",
     category: "Systems Proof",
     icon: "📈",
     href: "/portfolio/finance-feedback-engine"

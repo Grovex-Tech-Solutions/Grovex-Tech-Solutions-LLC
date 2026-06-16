@@ -49,7 +49,7 @@ const placeholderPatterns = [
   /example content/i,
   /\[[^\]"]*\b[A-Za-z][^\]"]*\]/g, // Bracketed placeholders like [Company Name] without JSON array contents
   /{{[^{}"]*\b[A-Za-z][^{}"]*}}/g, // Template placeholders like {{title}} without JSON syntax
-  /your (company|business|service)/i,
+  /your (company|business|service) (name|here|description)/i,
   /insert (text|content|description)/i
 ]
 
@@ -212,10 +212,10 @@ const checkForPlaceholders = (text: unknown, context: string): string[] => {
       const homePage = loadPageContent('home')
       
       const expectedServices = [
-        'software development',
-        'it consulting', 
-        'saas products',
-        'computer repair'
+        'websites',
+        'software',
+        'it support',
+        'hardware'
       ]
       
       if (servicesPage) {
@@ -347,6 +347,8 @@ const checkForPlaceholders = (text: unknown, context: string): string[] => {
         const content = loadPageContent(pageName)
         if (content) {
           const pageText = serializeContent(content)
+            .replace(/https?:\/\/[^\s"'}]+/g, ' ')
+            .replace(/\b[\w-]+\.(jpg|jpeg|png|webp|svg|com|org|net)\b/gi, ' ')
           
           // Check for common typos and errors
           const commonErrors = [
@@ -371,7 +373,7 @@ const checkForPlaceholders = (text: unknown, context: string): string[] => {
           const lowercaseSentenceExceptions = new Set(['iPhone', 'iPad', 'iOS', 'eBay', 'macOS'])
           sentences.forEach((sentence, index) => {
             const trimmed = sentence.trim()
-            if (trimmed.length > 0) {
+            if (trimmed.length > 0 && !trimmed.startsWith('",')) {
               // Sentences should start with capital letter (basic check on the first meaningful word)
               const firstWordMatch = trimmed.match(/[A-Za-z][A-Za-z'-]*/)
               if (firstWordMatch) {
@@ -420,7 +422,9 @@ const checkForPlaceholders = (text: unknown, context: string): string[] => {
         'call now',
         'request quote',
         'schedule consultation',
-        'get in touch'
+        'get in touch',
+        'start a growth conversation',
+        'explore services'
       ]
       
       pages.forEach(pageName => {

@@ -31,7 +31,7 @@ export default function ServicesPage() {
 
         <div className="text-center mt-16 sm:mt-20">
           <p className="text-foreground-secondary mb-6 text-lg max-w-2xl mx-auto">
-            If you&apos;re trying to improve lead quality, clean up operations, or get your site ready for stronger paid traffic performance, we can scope the right next move together.
+            If you&apos;re trying to improve lead quality, clean up operations, or make future paid campaigns easier to manage, we can scope the right next move together.
           </p>
           <a
             href="/contact"

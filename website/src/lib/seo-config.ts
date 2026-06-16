@@ -95,15 +95,15 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "community involvement Turtle Creek PA",
       "local partnerships Mon Valley",
       "Memorial Day parade sponsor Turtle Creek",
-      "senior tech workshops PA",
+      "digital readiness guidance PA",
       "community events Turtle Creek",
       "local business support Mon Valley",
-      "Turtle Creek Senior Center workshops",
+      "Turtle Creek technology guidance",
       "shared storefront vision"
     ],
     canonical: "https://grovextech.com/community-involvement",
     ogTitle: "Community Involvement | GroveX in Turtle Creek",
-    ogDescription: "Learn how GroveX supports local momentum through partnerships, workshops, and a stronger shared-space vision at 124 Grant Street."
+    ogDescription: "Learn how GroveX supports local momentum through partnerships, practical technology guidance, and a stronger shared-space vision at 124 Grant Street."
   },
   portfolio: {
     title: "Our Work | GroveX Growth Systems & Client Results",

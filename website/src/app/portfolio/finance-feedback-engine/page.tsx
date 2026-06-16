@@ -15,7 +15,7 @@ const portalLinks = [
   {
     label: "Roadmap",
     href: "http://ffe.grovextech.com/roadmap.html",
-    description: "Milestone framing from runtime correctness toward measured trading-quality improvement.",
+    description: "Milestone framing from runtime correctness toward evidence-gated research workflows.",
   },
   {
     label: "Experiment ledger",
@@ -84,10 +84,22 @@ const researchSignals = [
   { label: "Public surface", value: "Sanitized", caption: "Proof without account exposure." },
 ] as const;
 
-const metricBars = [
-  { label: "Auditability", width: "92%", color: "bg-cyan-300" },
-  { label: "Experiment discipline", width: "84%", color: "bg-violet-300" },
-  { label: "Runtime observability", width: "88%", color: "bg-emerald-300" },
+const technicalSignals = [
+  {
+    label: "Audit trail",
+    value: "Inspectable",
+    caption: "Decision records are built to be reviewed.",
+  },
+  {
+    label: "Experiment gates",
+    value: "Explicit",
+    caption: "Changes need defined evidence and rollback rules.",
+  },
+  {
+    label: "Runtime visibility",
+    value: "Observable",
+    caption: "Health and policy metadata stay visible to reviewers.",
+  },
 ] as const;
 
 export const metadata: Metadata = {
@@ -100,7 +112,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Finance Feedback Engine | GroveX Portfolio",
     description:
-      "A GroveX technical showcase for trading-system runtime correctness, auditability, and measured decision-quality improvement.",
+      "A GroveX technical showcase for trading-system runtime correctness, auditability, and evidence-gated research workflows.",
     type: "website",
     url: "https://grovextech.com/portfolio/finance-feedback-engine",
     images: [
@@ -164,15 +176,11 @@ function SignalGraph() {
         </svg>
 
         <div className="grid gap-3 sm:grid-cols-3">
-          {metricBars.map((metric) => (
-            <div key={metric.label} className="rounded-2xl border border-white/10 bg-white/[0.05] p-3">
-              <div className="mb-2 flex items-center justify-between text-xs text-slate-300">
-                <span>{metric.label}</span>
-                <span>{metric.width}</span>
-              </div>
-              <div className="h-2 rounded-full bg-white/10">
-                <div className={`h-full rounded-full ${metric.color}`} style={{ width: metric.width }} />
-              </div>
+          {technicalSignals.map((signal) => (
+            <div key={signal.label} className="rounded-2xl border border-white/10 bg-white/[0.05] p-3">
+              <div className="text-xs uppercase tracking-[0.2em] text-slate-400">{signal.label}</div>
+              <div className="mt-2 text-lg font-black text-white">{signal.value}</div>
+              <div className="mt-1 text-xs leading-5 text-slate-300">{signal.caption}</div>
             </div>
           ))}
         </div>
@@ -198,7 +206,7 @@ export default function FinanceFeedbackEnginePortfolioPage() {
               Finance Feedback Engine
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200 sm:text-xl">
-              A living technical showcase for building trading-system feedback loops with production discipline: audit trails, typed decision contracts, replayable evidence, and experiment gates that ask whether changes actually improve decision quality.
+              A living technical showcase for building trading-system feedback loops with production discipline: audit trails, typed decision contracts, replayable evidence, and experiment gates for evaluating changes before promotion.
             </p>
 
             <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:max-w-2xl">

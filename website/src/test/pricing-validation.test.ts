@@ -122,12 +122,12 @@ describe('Pricing Structure Validation', () => {
       expect(pricingData.pricing.tripCharges.businessVisit.fee).toBe(0);
     });
 
-    it('should have community education services as free', () => {
+    it('should not advertise deprecated community workshops as an active package', () => {
       const communityServices = pricingData.pricing.servicePackages.communityEducation;
-      
-      Object.values(communityServices).forEach((service) => {
-        expect(service.price).toBe(0);
-      });
+
+      expect(communityServices.workshops).toBeUndefined();
+      expect(communityServices.readinessConsulting).toBeDefined();
+      expect(communityServices.readinessConsulting.notes).toContain('current consulting options');
     });
   });
 
@@ -166,10 +166,10 @@ describe('Pricing Structure Validation', () => {
             expect(webDev.pricing.startingPrice).toBe('$500');
           }
           
-          // Check community education service
+          // Check strategy/training readiness service
           const communityEd = services.find((s: { id: string }) => s.id === 'community-education');
           if (communityEd) {
-            expect(communityEd.pricing.startingPrice).toBe('Free');
+            expect(communityEd.pricing.startingPrice).toBe('Contact us');
           }
         }
       } catch (error) {

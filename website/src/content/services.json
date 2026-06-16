@@ -73,39 +73,32 @@
   },
   {
     "id": "community-education",
-    "title": "Community Education & Learning Center",
-    "description": "Free workshops on basic computer skills, online safety, and digital marketing for local businesses and residents, plus downloadable guides and tutorials.",
-    "shortDescription": "Free tech workshops and learning resources for the community",
+    "title": "Strategy, Training & Readiness",
+    "description": "Practical guidance for local owners who need clearer offers, stronger digital foundations, or a more ad-ready setup before scaling spend.",
+    "shortDescription": "Practical strategy and digital-readiness guidance for local owners",
     "icon": "FaBook",
     "features": [
-      "Free Basic Computer Skills Classes",
-      "Online Safety & Security Training",
-      "Smartphone & Tablet Training Sessions",
-      "Email & Internet Basics",
-      "Digital Marketing for Small Businesses",
-      "Social Media for Local Shops",
-      "Google My Business Training",
-      "Downloadable Guides & Tutorials",
-      "Video Learning Resources",
-      "Monthly Tech Tips Newsletter"
+      "Offer and positioning clarity",
+      "Website readiness reviews",
+      "Marketing foundation checks",
+      "Local search and content guidance",
+      "Simple systems and workflow guidance",
+      "One-on-one action planning"
     ],
     "benefits": [
-      "No cost to community members",
-      "Small, helpful group sizes",
-      "Patient instruction for beginners",
-      "Practical, everyday applications",
-      "Build confidence with technology",
-      "Connect with other community members",
-      "Ongoing support after classes",
-      "Learn at your own pace with resources"
+      "Clearer next steps before spending on traffic",
+      "Practical improvements matched to your current capacity",
+      "Reduced confusion around tools and tactics",
+      "Better alignment between business goals and digital execution",
+      "A simple action plan you can implement in stages"
     ],
     "pricing": {
-      "startingPrice": "Free",
-      "customPricing": false
+      "startingPrice": "Contact us",
+      "customPricing": true
     },
     "cta": {
-      "text": "View Workshop Schedule",
-      "href": "/learning-center"
+      "text": "Request Strategy Help",
+      "href": "/contact?service=community-education"
     },
     "image": "/images/services/community-education.jpg"
   },

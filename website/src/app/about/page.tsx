@@ -140,7 +140,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">Build the Foundation Before You Scale</h3>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary mb-4 leading-relaxed">
-                  Too many businesses try to buy growth before the foundation is ready. A cleaner website, a clearer offer, stronger tracking, and fewer operational bottlenecks usually create better returns than rushing straight into more ad spend.
+                  Too many businesses try to buy growth before the foundation is ready. A cleaner website, a clearer offer, stronger tracking, and fewer operational bottlenecks can reduce wasted spend and make future marketing easier to evaluate.
                 </p>
                 <div className="bg-background rounded-xl p-4 mb-4">
                   <h4 className="font-semibold mb-2 text-primary">What That Foundation Looks Like:</h4>
@@ -340,7 +340,7 @@ export default function AboutPage() {
                     <div className="bg-primary rounded-full p-1 mr-3 flex-shrink-0 mt-1">
                       <CheckmarkIcon className="h-4 w-4 text-white" />
                     </div>
-                    <span className="text-sm sm:text-base text-foreground-secondary">Monthly tech workshops at Turtle Creek Community Center</span>
+                    <span className="text-sm sm:text-base text-foreground-secondary">Practical technology and digital-readiness guidance for local organizations</span>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-primary rounded-full p-1 mr-3 flex-shrink-0 mt-1">

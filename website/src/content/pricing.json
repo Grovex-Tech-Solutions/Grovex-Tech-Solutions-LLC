@@ -257,17 +257,15 @@
         }
       },
       "communityEducation": {
-        "workshops": {
-          "price": 0,
-          "description": "Free community workshops and training",
+        "readinessConsulting": {
+          "description": "Strategy, training, and digital-readiness guidance by request",
           "includes": [
-            "Basic computer skills classes",
-            "Online safety and security training",
-            "Smartphone and tablet training",
-            "Digital marketing for small businesses",
-            "Social media for local shops"
+            "Offer and positioning review",
+            "Website readiness review",
+            "Marketing foundation guidance",
+            "Simple systems and workflow planning"
           ],
-          "notes": "All workshops are free for community members"
+          "notes": "Contact GroveX for current consulting options."
         }
       },
       "commodityHardware": {

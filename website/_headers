@@ -3,6 +3,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Link: </.well-known/api-catalog>; rel="api-catalog"
 
 # Cache static assets for 1 year
 /_next/static/*

@@ -15,7 +15,7 @@ const showcaseProjects = [
   {
     title: "Finance Feedback Engine",
     description:
-      "Technical trading-system research focused on runtime correctness, audit trails, and safer feedback loops. The public showcase explains the engineering process without presenting returns, advice, or live-account performance.",
+      "Live public technical showcase for trading-system research focused on runtime correctness, audit trails, safer feedback loops, and a workflow-gated paper-mode evidence feed.",
     image: "/assets/derrr/social-preview.png",
     repoUrl: "https://github.com/Grovex-Tech-Solutions/finance_feedback_engine",
     liveUrl: "/portfolio/finance-feedback-engine",

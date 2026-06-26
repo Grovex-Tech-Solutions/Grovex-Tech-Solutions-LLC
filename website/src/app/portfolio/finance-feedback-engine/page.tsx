@@ -1,11 +1,17 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import FfeLiveFeedPanel from "./FfeLiveFeedPanel";
 
 const portalLinks = [
   {
     label: "Technical portal",
-    href: "http://ffe.grovextech.com/",
-    description: "Public entry point for the FFE architecture, roadmap, and evidence surfaces.",
+    href: "https://ffe.grovextech.com/",
+    description: "Live public entry point for the FFE architecture, roadmap, and evidence surfaces.",
+  },
+  {
+    label: "Live public-safe feed",
+    href: "https://ffe.grovextech.com/feed.json",
+    description: "Workflow-published JSON feed with paper-mode, delayed, allowlisted metrics only.",
   },
   {
     label: "GitHub source",
@@ -14,18 +20,18 @@ const portalLinks = [
   },
   {
     label: "Roadmap",
-    href: "http://ffe.grovextech.com/roadmap.html",
+    href: "https://ffe.grovextech.com/roadmap.html",
     description: "Milestone framing from runtime correctness toward evidence-gated research workflows.",
   },
   {
     label: "Experiment ledger",
-    href: "http://ffe.grovextech.com/experimentation.html",
+    href: "https://ffe.grovextech.com/experimentation.html",
     description: "Sanitized public view of how experiment outcomes are tracked and promoted, tuned, or killed.",
   },
   {
     label: "Publication policy",
-    href: "http://ffe.grovextech.com/publication-policy.html",
-    description: "Boundaries for what FFE can publish without exposing private account, broker, or live-position data.",
+    href: "https://ffe.grovextech.com/publication-policy.html",
+    description: "Fail-closed boundaries for what FFE can publish without exposing private account, broker, or live-position data.",
   },
 ] as const;
 
@@ -49,6 +55,7 @@ const proofPillars = [
 
 const maturitySignals = [
   "GitHub Pages technical portal deployed at ffe.grovextech.com",
+  "Live public-safe feed deployed through GitHub Actions with a PII/sensitive-content gate",
   "Roadmap organized around evidence-backed milestones and exit gates",
   "Experiment catalog designed around baseline, post-change, and spillover readouts",
   "Publication policy separates public proof from sensitive trading/account state",
@@ -221,7 +228,7 @@ export default function FinanceFeedbackEnginePortfolioPage() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
-                href="http://ffe.grovextech.com/"
+                href="https://ffe.grovextech.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-cyan-300 px-6 py-3 font-bold text-slate-950 shadow-[0_0_40px_rgba(103,232,249,0.35)] transition hover:scale-[1.02] hover:bg-cyan-200"
@@ -242,6 +249,8 @@ export default function FinanceFeedbackEnginePortfolioPage() {
           <SignalGraph />
         </div>
       </section>
+
+      <FfeLiveFeedPanel />
 
       <section className="bg-background px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">

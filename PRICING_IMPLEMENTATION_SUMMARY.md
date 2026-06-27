@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document summarizes the implementation of the missing pricing elements for Grovex Tech & Solutions LLC, as outlined in the problem statement. The implementation follows the existing pricing philosophy of "small-town prices, big-city know-how" with transparent, upfront pricing.
+This document summarizes the implementation of the missing pricing elements for Grovex Technologies & Software Solutions LLC, as outlined in the problem statement. The implementation follows the existing pricing philosophy of "small-town prices, big-city know-how" with transparent, upfront pricing.
 
 ## What Was Implemented
 

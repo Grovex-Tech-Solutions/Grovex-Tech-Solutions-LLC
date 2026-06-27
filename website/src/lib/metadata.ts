@@ -8,7 +8,7 @@ export const siteConfig = {
   description: "A growth-minded local studio in Turtle Creek, PA blending websites, IT support, software, and practical business systems for neighbors and small businesses.",
   url: "https://grovextech.com",
   ogImage: "/company_logo.png",
-  creator: "GroveX Tech & Solutions LLC",
+  creator: "Grovex Technologies & Software Solutions LLC",
   keywords: [
     "local business growth Turtle Creek",
     "website design Mon Valley",
@@ -25,7 +25,7 @@ export const siteConfig = {
 
 // Business information for consistent contact details
 export const businessInfo = {
-  name: "GroveX Tech & Solutions LLC",
+  name: "Grovex Technologies & Software Solutions LLC",
   description:
     "GroveX delivers trustworthy technology and growth infrastructure for Turtle Creek and nearby communities, covering websites, digital systems, modern web experiences, and dependable IT support with a local focus.",
   phone: "(412) 206-9453",

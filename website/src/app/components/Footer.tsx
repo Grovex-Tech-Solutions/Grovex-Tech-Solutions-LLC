@@ -20,7 +20,7 @@ export default function Footer() {
                   priority={false}
                 />
                 <h3 className="text-xl font-bold text-foreground tracking-tight">GroveX</h3>
-                <p className="text-xs text-foreground-secondary">GroveX Tech &amp; Solutions LLC</p>
+                <p className="text-xs text-foreground-secondary">Grovex Technologies &amp; Software Solutions LLC</p>
               </div>
             </div>
             <p className="text-base text-foreground-secondary mb-6 max-w-sm leading-relaxed mx-auto md:mx-0">
@@ -154,7 +154,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-foreground-secondary text-sm">
-          <p>&copy; {new Date().getFullYear()} GroveX Tech &amp; Solutions LLC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Grovex Technologies &amp; Software Solutions LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>

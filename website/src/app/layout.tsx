@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   keywords: [
     'IT support','web design','software development','computer repair','Mon Valley','small business systems','Google Ads landing pages'
   ],
-  authors: [{ name: 'GroveX Tech & Solutions LLC' }],
-  creator: 'GroveX Tech & Solutions LLC',
-  publisher: 'GroveX Tech & Solutions LLC',
+  authors: [{ name: 'Grovex Technologies & Software Solutions LLC' }],
+  creator: 'Grovex Technologies & Software Solutions LLC',
+  publisher: 'Grovex Technologies & Software Solutions LLC',
   openGraph: {
     type: 'website',
     url: siteUrl,

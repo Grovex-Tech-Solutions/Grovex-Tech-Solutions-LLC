@@ -1,4 +1,4 @@
-# Refactoring Summary - Grovex Tech & Solutions LLC Website
+# Refactoring Summary - Grovex Technologies & Software Solutions LLC Website
 
 ## Overview
 Completed refactoring to reduce code duplication and improve maintainability by extracting repeated patterns into reusable components.

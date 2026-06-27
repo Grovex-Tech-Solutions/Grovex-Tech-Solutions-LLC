@@ -54,7 +54,7 @@ export default function PortfolioPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "GroveX Tech & Solutions LLC",
+            name: "Grovex Technologies & Software Solutions LLC",
             description:
               "Websites, software, IT support, and growth systems in Turtle Creek, PA",
             url: "https://grovextech.com/portfolio",

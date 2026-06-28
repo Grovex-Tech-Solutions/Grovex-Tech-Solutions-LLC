@@ -228,7 +228,7 @@ export function generateLocalBusinessSchema(): LocalBusinessSchema & {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: businessInfo.name,
-    description: "A growth-minded local studio in Turtle Creek, PA offering websites, software, IT support, and practical business systems for sustainable local growth.",
+    description: "A local business technology partner in Turtle Creek, PA offering websites, software, IT support, and practical business systems for small businesses.",
     image: `${siteConfig.url}${siteConfig.ogImage}`,
     telephone: businessInfo.phone,
     email: businessInfo.email,

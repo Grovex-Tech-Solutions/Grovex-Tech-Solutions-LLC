@@ -90,17 +90,17 @@
       },
       "managedCareEnterprise": {
         "monthlyFee": 299,
-        "name": "Enterprise Partnership",
+        "name": "Advanced Support Partnership",
         "description": "Dedicated IT department for established businesses",
         "includes": [
           "All Complete Care features",
           "Priority help desk support (response within 1 hour)",
           "Unlimited on-site visits",
-          "24/7 emergency support hotline",
+          "Emergency escalation path for critical outages",
           "Comprehensive cybersecurity suite with threat monitoring",
           "Monthly technology strategy sessions",
           "Proactive system optimization",
-          "Dedicated account manager",
+          "Named point of contact",
           "20% discount on additional services"
         ],
         "idealFor": "Established businesses with 15+ computers or complex IT needs",
@@ -127,14 +127,14 @@
       "computerRepair": {
         "diagnostics": {
           "price": 0,
-          "description": "Premium Diagnostic Assessment",
+          "description": "Diagnostic Assessment",
           "includes": [
             "Comprehensive system health analysis",
             "Written report with findings",
             "Honest recommendation (repair vs. replace)",
             "Upfront pricing before any work begins"
           ],
-          "notes": "Our free diagnostic goes beyond the basics - we identify root causes, not just symptoms"
+          "notes": "We identify likely root causes and give clear next-step pricing before work begins"
         },
         "virusRemoval": {
           "price": 99,
@@ -190,7 +190,7 @@
             "Direct line to technician",
             "On-site within 2 hours (local area)"
           ],
-          "notes": "For critical business systems where downtime costs money. Value-based pricing for the speed and peace of mind.",
+          "notes": "For critical business systems where downtime costs money. Priority pricing reflects urgent scheduling and business-continuity impact.",
           "isEmergency": true
         }
       },

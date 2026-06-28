@@ -24,7 +24,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-base text-foreground-secondary mb-6 max-w-sm leading-relaxed mx-auto md:mx-0">
-              Websites, systems, and practical growth foundations for small businesses in Turtle Creek and the Mon Valley.
+              Websites, systems, and practical technology support for small businesses in Turtle Creek and the Mon Valley.
             </p>
             <nav>
               <ul className="flex justify-center md:justify-start space-x-4">
@@ -117,17 +117,17 @@ export default function Footer() {
             <div className="text-foreground-secondary text-base space-y-2">
               <p className="font-semibold text-primary">Small Business Owners</p>
               <p>Service Businesses</p>
-              <p>Local Shops & Studios</p>
+              <p>Local Shops & Service Businesses</p>
               <p>Founders & Operators</p>
               <p>Teams Needing Better Systems</p>
-              <p>Brands Preparing for Paid Growth</p>
+              <p>Businesses Preparing for Better Customer Acquisition</p>
               <p className="text-sm italic mt-3">Rooted in Turtle Creek, serving the Mon Valley region</p>
             </div>
           </section>
 
           {/* Contact Info */}
           <section className="text-center md:text-left">
-            <h4 className="text-lg font-semibold mb-6 text-foreground">Start a Conversation</h4>
+            <h4 className="text-lg font-semibold mb-6 text-foreground">Request a Review</h4>
             <address className="not-italic text-foreground-secondary text-base space-y-2">
               <p className="font-semibold text-foreground">124 Grant Street</p>
               <p className="font-semibold text-foreground">Turtle Creek, PA 15145</p>

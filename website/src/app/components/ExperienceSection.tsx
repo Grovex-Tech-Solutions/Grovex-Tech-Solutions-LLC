@@ -31,15 +31,15 @@ export default function ExperienceSection() {
       skills: ["Next.js", "Landing Pages", "SEO", "Conversion Foundations"]
     },
     {
-      title: "Local Commitment",
-      description: "GroveX is being built as a long-term local asset. The vision is bigger than one service—it is about strengthening how neighborhood businesses present, operate, and grow.",
+      title: "Local Accountability",
+      description: "GroveX is being built as a long-term local business. The focus is straightforward: help nearby companies present clearly, operate reliably, and choose technology they can maintain.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      skills: ["Community Presence", "Shared-Space Vision", "Practical Growth", "Local Business Support"]
+      skills: ["Community Presence", "Accountable Support", "Practical Systems", "Local Business Support"]
     }
   ];
 
@@ -49,14 +49,14 @@ export default function ExperienceSection() {
         <header className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-medium mb-6 animate-fade-in">
             <span className="w-2 h-2 bg-secondary rounded-full mr-2 animate-pulse"></span>
-            Real Experience, Real Results
+            Practical Experience, Practical Results
           </div>
 
           <h2 id="experience-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-foreground">
             What GroveX Is Built On
           </h2>
           <p className="text-lg text-foreground-secondary max-w-3xl mx-auto">
-            GroveX blends technical depth, support experience, and local commitment into a business designed to help other local businesses grow more sustainably.
+            GroveX blends technical depth, support experience, and local accountability into a business designed to solve practical problems for other small businesses.
           </p>
         </header>
 
@@ -96,13 +96,13 @@ export default function ExperienceSection() {
         </div>
 
         <div className="bg-gradient-to-br from-primary/5 to-secondary/5 rounded-2xl p-8 sm:p-10 border border-primary/10 text-center">
-          <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground">Growing GroveX with Intention</h3>
+          <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-foreground">Building GroveX Around Real Work</h3>
           <p className="text-lg text-foreground-secondary mb-6 max-w-3xl mx-auto leading-relaxed">
-            This brand is being built carefully: first the foundation, then the momentum. Every project helps strengthen the systems, trust, and positioning needed for GroveX to grow into a durable local growth company.
+            GroveX is being built around useful delivery first: clear scopes, working systems, local support, and evidence from real projects rather than inflated claims.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="/about" className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-hover hover:shadow-glow hover:scale-105 transition-all duration-300 min-h-[48px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
-              <span>Learn More About the Vision</span>
+              <span>Learn More About GroveX</span>
             </a>
             <a href="/contact" className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-primary text-primary font-semibold rounded-xl hover:bg-primary hover:text-white hover:shadow-glow hover:scale-105 transition-all duration-300 min-h-[48px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
               <span>Start a Conversation</span>

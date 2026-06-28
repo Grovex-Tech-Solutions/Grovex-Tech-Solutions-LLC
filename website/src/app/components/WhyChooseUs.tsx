@@ -5,13 +5,13 @@ export default function WhyChooseUs() {
     { value: "Grounded", label: "Built for the Real World", icon: "🌱" },
     { value: "Clear", label: "Plain-English Guidance", icon: "🧭" },
     { value: "Local", label: "Community Rooted", icon: "🏘️" },
-    { value: "Ready", label: "Growth-Focused Systems", icon: "📈" }
+    { value: "Reliable", label: "Operationally Useful Systems", icon: "📈" }
   ];
 
   const features = [
     {
-      title: "Foundation Before Hype",
-      description: "We focus on the website, systems, offers, and operations that need to be stable before you pour money into growth channels.",
+      title: "Operations Before Hype",
+      description: "We focus on the website, systems, devices, and workflows that need to be stable before a business spends more money on marketing or new software.",
       icon: <FaBullseye className="w-8 h-8 text-primary" suppressHydrationWarning={true} />
     },
     {
@@ -25,8 +25,8 @@ export default function WhyChooseUs() {
       icon: <FaTools className="w-8 h-8 text-primary" suppressHydrationWarning={true} />
     },
     {
-      title: "Long-Term Local Investment",
-      description: "GroveX is being built for the long haul in Turtle Creek, with a brand and space designed to strengthen the local business ecosystem.",
+      title: "Real Local Accountability",
+      description: "GroveX is based in Turtle Creek and works with nearby businesses that need direct, accountable technical help rather than a remote handoff.",
       icon: <FaDollarSign className="w-8 h-8 text-primary" suppressHydrationWarning={true} />
     }
   ];
@@ -41,11 +41,11 @@ export default function WhyChooseUs() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up text-foreground">
-            Why GroveX Fits This Next Chapter
+            Why GroveX Fits Practical B2B Work
           </h2>
 
           <p className="text-lg sm:text-xl md:text-2xl text-foreground-secondary max-w-4xl mx-auto leading-relaxed animate-slide-up animation-delay-200 font-medium">
-            We help local businesses build the kind of clear, durable foundation that makes growth easier to trust and easier to scale.
+            We help local businesses make practical technology decisions, improve customer-facing assets, and reduce operational friction without inflated sales language.
           </p>
         </div>
 

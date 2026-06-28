@@ -29,8 +29,8 @@ export default function AboutPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "AboutPage",
-            "name": "About GroveX - Local Growth & Technology Partners",
-            "description": "Learn about GroveX, our commitment to the Turtle Creek community, and how we are blending technology, creativity, and local growth under one brand.",
+            "name": "About GroveX - Local Business Technology Partner",
+            "description": "Learn about GroveX, our commitment to Turtle Creek, and how we help local businesses with websites, systems, and practical technology support.",
             "url": "https://grovextech.com/about",
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -56,7 +56,7 @@ export default function AboutPage() {
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">About GroveX</h1>
           <p className="text-base sm:text-lg md:text-xl text-foreground-secondary max-w-4xl mx-auto leading-relaxed px-2">
-            A local growth studio helping small businesses build stronger websites, clearer systems, and better foundations for long-term customer acquisition
+            A local business technology partner helping small businesses build stronger websites, clearer systems, and more dependable operations
           </p>
         </div>
 
@@ -95,10 +95,10 @@ export default function AboutPage() {
                   Shortly after graduation, I was able to purchase 124 Grant Street and start building what is now becoming GroveX right here in our community.
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary mb-4 sm:mb-6 leading-relaxed">
-                  GroveX Tech is a rebrand with a clearer direction: lean into growth. The name reflects the kind of work I want to do for local businesses—help them grow with better systems, a stronger web presence, and dependable day-to-day technology that supports the next stage of their business.
+                  GroveX Tech is a rebrand with a clearer direction: practical business technology. The name reflects the kind of work I want to do for local businesses—better websites, dependable day-to-day support, and systems that make the next stage of the business easier to manage.
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">
-                  Having grown up in this area, I understand the challenges small businesses face when the brand, the website, and the operations layer are all fighting each other. I speak plain English, not tech jargon. GroveX is built to help owners tighten the foundation first so marketing, referrals, and future paid traffic have a better chance to work.
+                  Having grown up in this area, I understand the challenges small businesses face when the website, tools, and operations layer are all working against each other. I speak plain English, not tech jargon. GroveX is built to help owners fix the practical bottlenecks first so referrals, search, and future campaigns have a better chance to work.
                 </p>
               </div>
             </div>
@@ -113,10 +113,10 @@ export default function AboutPage() {
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary mb-4 leading-relaxed">
                   After growing up in Braddock Hills and completing my Cybersecurity degree at Penn State Greater Allegheny, 
                   I knew I wanted to stay in this area. The Mon Valley has always been home, and I wanted to contribute 
-                  to our community&apos;s growth and technological advancement.
+                  to stronger local businesses and better day-to-day technology.
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">
-                  When I graduated in 2025, I was able to purchase 124 Grant Street and saw an opportunity to build something rooted here. What started as helping neighbors and local businesses with practical tech work is evolving into GroveX: a fuller brand centered on growth, useful systems, and a more intentional local presence.
+                  When I graduated in 2025, I was able to purchase 124 Grant Street and saw an opportunity to build something rooted here. What started as helping neighbors and local businesses with practical tech work is evolving into GroveX: a business technology company centered on useful systems, clear websites, and practical local support.
                 </p>
               </div>
               
@@ -127,7 +127,7 @@ export default function AboutPage() {
                   and owner-operators who are trying to build something durable. It&apos;s the right place to build a business based on relationships, not transactions.
                 </p>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">
-                  I chose to set up shop at 124 Grant Street because I wanted to be right in the heart of our community. As the space evolves, I want it to feel alive and welcoming—a place where a neighborhood flower shop downstairs and a local technology studio can both contribute to the same idea: helping good things grow close to home.
+                  I chose to set up shop at 124 Grant Street because I wanted GroveX to be reachable and accountable. As the space evolves, the goal is simple: be a useful local place for practical technology help, business websites, and systems work.
                 </p>
               </div>
             </div>
@@ -135,12 +135,12 @@ export default function AboutPage() {
 
           {/* Community Commitment Section */}
           <div className="bg-background-secondary rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-foreground text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">My Promise to Local Business Owners</h2>
+            <h2 className="text-foreground text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">My Promise to Small Business Owners</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10">
               <div>
-                <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">Build the Foundation Before You Scale</h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">Fix the Operational Foundation First</h3>
                 <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary mb-4 leading-relaxed">
-                  Too many businesses try to buy growth before the foundation is ready. A cleaner website, a clearer offer, stronger tracking, and fewer operational bottlenecks can reduce wasted spend and make future marketing easier to evaluate.
+                  Too many businesses buy tools or traffic before the operational foundation is ready. A cleaner website, clearer service pages, stronger tracking, and fewer workflow bottlenecks can reduce wasted spend and make future marketing easier to evaluate.
                 </p>
                 <div className="bg-background rounded-xl p-4 mb-4">
                   <h4 className="font-semibold mb-2 text-primary">What That Foundation Looks Like:</h4>
@@ -168,7 +168,7 @@ export default function AboutPage() {
                     <li>• Websites that look decent but don&apos;t convert clearly</li>
                     <li>• Operations held together by too many manual steps</li>
                     <li>• Marketing efforts outpacing the underlying customer journey</li>
-                    <li>• Business owners who want plain advice, not inflated agency talk</li>
+                    <li>• Business owners who want plain advice, not inflated sales language</li>
                     <li>• Strong local businesses that deserve stronger systems</li>
                   </ul>
                 </div>
@@ -180,7 +180,7 @@ export default function AboutPage() {
             
             <div className="mt-6 sm:mt-8 p-4 sm:p-6 bg-primary/10 rounded-xl border-l-4 border-primary">
               <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed italic">
-                &quot;Growth works better when the foundation is strong. My job is to help local businesses build websites, systems, and support structures that make future marketing perform better instead of leak value.&quot;
+                &quot;Technology works better when the foundation is clear. My job is to help local businesses build websites, systems, and support structures that reduce friction and make customer acquisition easier to evaluate.&quot;
               </p>
               <p className="text-sm font-semibold text-primary mt-2">- Christian Penrod, Founder</p>
             </div>
@@ -190,20 +190,20 @@ export default function AboutPage() {
             <div className="bg-background-secondary rounded-xl shadow-lg p-6 sm:p-8 lg:p-10">
               <h3 className="text-foreground text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">Our Mission</h3>
               <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">
-                To help local businesses grow with stronger websites, clearer systems, and practical support that improves both day-to-day operations and long-term customer acquisition.
+                To help local businesses operate better with stronger websites, clearer systems, and practical support that improves day-to-day work and customer acquisition.
               </p>
             </div>
 
             <div className="bg-background-secondary rounded-xl shadow-lg p-6 sm:p-8 lg:p-10">
               <h3 className="text-foreground text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">Our Vision</h3>
               <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">
-                To become the growth and systems partner trusted by small businesses across Turtle Creek and the Mon Valley when they&apos;re ready to look sharper, run cleaner, and scale more intentionally.
+                To become the business technology partner trusted by small businesses across Turtle Creek and the Mon Valley when they need clearer websites, cleaner operations, and dependable support.
               </p>
             </div>
           </div>
 
           <div className="bg-background-secondary rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-foreground text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8">Why Choose Local?</h2>
+            <h2 className="text-foreground text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 lg:mb-8">Why Work With a Local B2B Technology Partner?</h2>
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
               <li className="flex items-start">
                 <div className="bg-primary rounded-full p-2 sm:p-3 mr-3 sm:mr-4 flex-shrink-0">
@@ -227,7 +227,7 @@ export default function AboutPage() {
                 <div className="bg-primary rounded-full p-2 sm:p-3 mr-3 sm:mr-4 flex-shrink-0">
                   <CheckmarkIcon className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </div>
-                <span className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">Personal service that large companies can&apos;t offer</span>
+                <span className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">Direct accountability that large vendors often cannot offer</span>
               </li>
               <li className="flex items-start">
                 <div className="bg-primary rounded-full p-2 sm:p-3 mr-3 sm:mr-4 flex-shrink-0">
@@ -239,7 +239,7 @@ export default function AboutPage() {
                 <div className="bg-primary rounded-full p-2 sm:p-3 mr-3 sm:mr-4 flex-shrink-0">
                   <CheckmarkIcon className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
                 </div>
-                <span className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">Fair, transparent pricing that serves the community</span>
+                <span className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed">Fair, transparent pricing scoped around the business need</span>
               </li>
             </ul>
           </div>

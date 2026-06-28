@@ -3,8 +3,8 @@ import Link from "next/link";
 const serviceCapabilities = [
   {
     id: "growth-foundation",
-    title: "Growth Foundations",
-    description: "Websites, landing pages, messaging cleanup, and infrastructure that helps local businesses look trustworthy before they scale traffic.",
+    title: "Web & Operations Foundations",
+    description: "Websites, landing pages, service-page cleanup, and infrastructure that helps local businesses explain what they do and capture qualified inquiries.",
     category: "Strategy",
     icon: "🌱",
     href: "/services"
@@ -46,11 +46,11 @@ export default function PortfolioSection() {
           </div>
 
           <h2 id="capabilities-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-slide-up text-foreground">
-            Growth Infrastructure for Local Business
+            Business Technology Infrastructure for Local Operators
           </h2>
 
           <p className="text-lg sm:text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
-            GroveX brings together websites, support, and systems work so local businesses can grow from a stronger, more dependable base.
+            GroveX brings together websites, support, and systems work so local businesses can operate from a stronger, more dependable base.
           </p>
         </div>
 

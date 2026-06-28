@@ -14,15 +14,15 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "software development Turtle Creek",
       "IT support for local business",
       "growth infrastructure Pennsylvania",
-      "creative storefront technology"
+      "business technology support"
     ],
     canonical: "https://grovextech.com",
-    ogTitle: "GroveX | Build Sustainable Growth from Turtle Creek",
-    ogDescription: "Websites, software, IT support, and growth infrastructure for local businesses that want stronger systems and better momentum."
+    ogTitle: "GroveX | Websites, Systems, and IT Support from Turtle Creek",
+    ogDescription: "Websites, software, IT support, and workflow infrastructure for local businesses that want stronger systems and fewer bottlenecks."
   },
   services: {
     title: "GroveX Services | Websites, Systems, IT Support & Growth Ops",
-    description: "Explore GroveX services for websites, software, IT support, operations cleanup, and practical growth infrastructure designed for local businesses and community-rooted brands.",
+    description: "Explore GroveX services for websites, software, IT support, operations cleanup, and practical business technology infrastructure designed for local businesses and community-rooted brands.",
     keywords: [
       "website design services Turtle Creek",
       "local business systems",
@@ -31,11 +31,11 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "operations support Pennsylvania",
       "marketing-ready websites",
       "small business automation",
-      "growth services Turtle Creek"
+      "business technology services Turtle Creek"
     ],
     canonical: "https://grovextech.com/services",
-    ogTitle: "GroveX Services | Sustainable Growth Infrastructure",
-    ogDescription: "From websites to internal systems, GroveX helps local operators build a stronger foundation for growth."
+    ogTitle: "GroveX Services | Business Technology Infrastructure",
+    ogDescription: "From websites to internal systems, GroveX helps local operators build a stronger foundation for reliable work."
   },
   "software-development": {
     title: "Custom Software Development for Sustainable Growth | GroveX",
@@ -55,38 +55,38 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
     ogDescription: "Custom software and internal tools designed to support sustainable growth, cleaner operations, and better customer experiences."
   },
   about: {
-    title: "About GroveX | Turtle Creek Growth Studio",
-    description: "Meet Christian Penrod and learn how GroveX is growing from a local tech foundation into a sustainable growth studio rooted in Turtle Creek, community trust, and practical execution.",
+    title: "About GroveX | Turtle Creek Business Technology Partner",
+    description: "Meet Christian Penrod and learn how GroveX is growing from a local tech foundation into a practical business technology partner rooted in Turtle Creek, community trust, and practical execution.",
     keywords: [
       "about GroveX Turtle Creek",
       "Christian Penrod founder Turtle Creek PA",
-      "local growth studio Mon Valley",
+      "business technology partner Mon Valley",
       "community-rooted business systems",
       "community involvement technology PA",
       "local business Turtle Creek 15145",
-      "Mon Valley growth partner",
+      "Mon Valley business technology partner",
       "Turtle Creek entrepreneur"
     ],
     canonical: "https://grovextech.com/about",
-    ogTitle: "About GroveX | A Local Growth Studio Taking Root",
+    ogTitle: "About GroveX | A Local Business Technology Partner Taking Root",
     ogDescription: "Learn how GroveX is combining technology, local business support, and long-term growth thinking from 124 Grant Street."
   },
   contact: {
-    title: "Contact GroveX | Start a Growth Conversation",
+    title: "Contact GroveX | Request a Business Systems Review",
     description: "Talk with GroveX about websites, software, IT support, local business systems, or a stronger foundation for future Google Ads and customer acquisition.",
     keywords: [
       "contact GroveX Turtle Creek",
       "website consultation Pennsylvania",
       "IT support Turtle Creek contact",
-      "growth systems consultation",
+      "business systems consultation",
       "local business services contact",
-      "Turtle Creek business growth contact",
+      "Turtle Creek business technology contact",
       "Google Ads landing page help",
       "connect with GroveX"
     ],
     canonical: "https://grovextech.com/contact",
-    ogTitle: "Contact GroveX | Build the Next Stage of Growth",
-    ogDescription: "Reach out to GroveX to map out websites, software, support systems, and practical growth infrastructure for your business."
+    ogTitle: "Contact GroveX | Plan the Next Practical Systems Fix",
+    ogDescription: "Reach out to GroveX to map out websites, software, support systems, and practical business technology infrastructure for your business."
   },
   "community-involvement": {
     title: "Community Involvement Turtle Creek PA | Local Partnerships & Events",
@@ -119,8 +119,8 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "marketing-ready websites"
     ],
     canonical: "https://grovextech.com/portfolio",
-    ogTitle: "GroveX Portfolio | Growth Foundations in Action",
-    ogDescription: "See how GroveX turns local business needs into stronger websites, clearer systems, and sustainable growth momentum."
+    ogTitle: "GroveX Portfolio | Business Systems in Action",
+    ogDescription: "See how GroveX turns local business needs into stronger websites, clearer systems, and more reliable operations."
   },
   "it-consulting": {
     title: "IT Consulting & Business Systems Strategy | GroveX",
@@ -140,7 +140,7 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
   },
   "saas-products": {
     title: "Software Products & Automation Tools | GroveX",
-    description: "Explore GroveX software products and automation tools built to simplify operations, support customer growth, and create repeatable momentum for small businesses.",
+    description: "Explore GroveX software products and automation tools built to simplify operations, support customer follow-up, and create repeatable momentum for small businesses.",
     keywords: [
       "SaaS products",
       "business software",
@@ -151,7 +151,7 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "enterprise SaaS"
     ],
     canonical: "https://grovextech.com/services/saas-products",
-    ogTitle: "GroveX Software Products | Growth Tools That Compound",
+    ogTitle: "GroveX Software Products | Workflow Tools That Reduce Friction",
     ogDescription: "Automation, reporting, and workflow tools that help growing businesses operate with more clarity and less friction."
   },
   "computer-repair": {

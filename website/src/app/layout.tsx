@@ -18,10 +18,10 @@ const gaId = process.env.NEXT_PUBLIC_GA_ID;
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'GroveX — Technology & Growth for Local Business',
+    default: 'GroveX — Websites, Systems & IT Support for Local Business',
     template: '%s | GroveX'
   },
-  description: 'Community-rooted websites, IT support, creative systems, and practical growth infrastructure for local businesses.',
+  description: 'Community-rooted websites, IT support, workflow systems, and practical technology infrastructure for local businesses.',
   applicationName: 'GroveX',
   keywords: [
     'IT support','web design','software development','computer repair','Mon Valley','small business systems','Google Ads landing pages'
@@ -33,13 +33,13 @@ export const metadata: Metadata = {
     type: 'website',
     url: siteUrl,
     siteName: 'GroveX',
-    title: 'GroveX — Technology & Growth for Local Business',
-    description: 'Community-rooted technology, websites, and growth systems built for trust, clarity, and momentum.',
+    title: 'GroveX — Websites, Systems & IT Support for Local Business',
+    description: 'Community-rooted technology, websites, and workflow systems built for trust, clarity, and reliable operations.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'GroveX — Technology & Growth for Local Business',
-    description: 'Community-rooted technology, websites, and growth systems built for trust, clarity, and momentum.'
+    title: 'GroveX — Websites, Systems & IT Support for Local Business',
+    description: 'Community-rooted technology, websites, and workflow systems built for trust, clarity, and reliable operations.'
   },
   robots: {
     index: true,

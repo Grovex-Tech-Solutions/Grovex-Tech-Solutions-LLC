@@ -5,14 +5,14 @@ export default function CommunityEducation() {
     <section id="community-education" className="py-16 bg-background-secondary rounded-2xl p-8 scroll-mt-24">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4 text-black">Strategy, Training & Readiness</h2>
+          <h2 className="text-3xl font-bold mb-4 text-black">Business Readiness & Training</h2>
           <p className="text-foreground-secondary mb-6">
-            GroveX helps local owners and teams get clearer offers, stronger digital foundations, and practical technology guidance through direct consulting engagements.
+            GroveX helps local owners and teams clarify service pages, improve local search basics, choose practical tools, and document repeatable workflows through direct consulting engagements.
           </p>
 
           <div className="space-y-4 mb-6">
             <div className="bg-background border border-border p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-primary mb-2">Digital Readiness Support</h3>
+              <h3 className="text-lg font-semibold text-primary mb-2">Operational Readiness Support</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>

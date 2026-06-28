@@ -179,7 +179,7 @@ export function generateLocalSeoMetadata(baseMetadata: Metadata): Metadata {
   const localKeywords = [
     "local business growth Turtle Creek",
     "website design Turtle Creek Pennsylvania",
-    "Mon Valley growth systems",
+    "Mon Valley business systems",
     "small business IT Turtle Creek PA",
     "Google Ads landing pages Pennsylvania",
     "website development Mon Valley",
@@ -188,7 +188,7 @@ export function generateLocalSeoMetadata(baseMetadata: Metadata): Metadata {
     "Wilmerding PA tech support",
     "Pittsburgh suburb web design",
     "Western Pennsylvania software development",
-    "local growth studio 15145",
+    "local business technology partner 15145",
     "affordable IT support Turtle Creek"
   ];
 

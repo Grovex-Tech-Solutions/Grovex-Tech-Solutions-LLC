@@ -1,10 +1,10 @@
 {
   "hero": {
-    "headline": "Technology that helps local businesses grow",
-    "subheadline": "Websites • IT Support • Custom Systems • Creative Growth Infrastructure",
-    "description": "GroveX builds practical digital systems for local businesses, service shops, and community-driven brands. From dependable tech support to polished web experiences, we help growth take root without jargon, bloat, or guesswork.",
+    "headline": "Technology that helps local businesses operate better",
+    "subheadline": "Websites • IT Support • Custom Systems • Workflow Infrastructure",
+    "description": "GroveX builds practical digital systems for local businesses and service companies. From dependable tech support to clear websites and workflow cleanup, we help operations run cleaner without jargon, bloat, or guesswork.",
     "primaryCTA": {
-      "text": "Start a Growth Conversation",
+      "text": "Request a Business Systems Review",
       "href": "/contact",
       "variant": "primary"
     },
@@ -18,50 +18,50 @@
       "Community-Rooted Strategy",
       "Plain English Communication",
       "Tech That Scales With You",
-      "Built for Real Local Growth"
+      "Built for Real Local Operations"
     ]
   },
   "callToAction": {
-    "headline": "Ready to grow something stronger?",
-    "description": "Let’s map out the systems, website, and support structure your business needs to grow with confidence—from the storefront to the back office.",
+    "headline": "Ready to fix the next business bottleneck?",
+    "description": "Let’s map out the systems, website, and support structure your business needs to operate with confidence—from the customer-facing site to the back office.",
     "primaryButton": {
-      "text": "Start a Growth Conversation",
+      "text": "Request a Business Systems Review",
       "href": "/contact"
     },
     "backgroundType": "gradient",
     "backgroundColor": "from-blue-600 to-purple-600"
   },
   "messaging": {
-    "introParagraph": "GroveX is the next chapter of our local work: a brand built around growth, resilience, and practical momentum. We help neighborhood businesses clarify their digital presence, tighten up operations, and build systems they can actually maintain. Every recommendation is shaped around plain language, realistic budgets, and what will move the business forward now—not someday.",
-    "communityParagraph": "That growth mindset extends beyond screens. At 124 Grant Street, we’re shaping a space where technology, retail, and creativity reinforce each other. With a flower shop growing alongside the tech studio, the brand is intentionally leaning into something more alive: stronger roots, better systems, and a storefront that reflects the energy of the community around it.",
-    "serviceParagraph": "Our work still spans websites, software, IT support, hardware, and day-to-day troubleshooting—but the positioning is sharper now. GroveX helps founders and local operators create polished customer experiences out front and dependable systems behind the scenes, whether that means a new website, point-of-sale workflow, Wi-Fi cleanup, or a custom tool that cuts out repetitive admin work.",
-    "ctaParagraph": "If you’re building something local and want a partner who understands both the technical side and the growth side, let’s talk. We’ll help you shape the next version of the business with systems that feel grounded, useful, and ready to scale."
+    "introParagraph": "GroveX is the next chapter of our local work: a business technology company built around resilience, practical operations, and maintainable systems. We help neighborhood businesses clarify their digital presence, tighten up operations, and build tools they can actually maintain. Every recommendation is shaped around plain language, realistic budgets, and what will move the business forward now—not someday.",
+    "communityParagraph": "That practical mindset extends beyond screens. At 124 Grant Street, GroveX is building from a real local presence so nearby businesses know where to find accountable technology help, website support, and systems work.",
+    "serviceParagraph": "Our work still spans websites, software, IT support, hardware, and day-to-day troubleshooting—but the positioning is sharper now. GroveX helps founders and local operators create clear customer-facing pages and dependable systems behind the scenes, whether that means a new website, point-of-sale workflow, Wi-Fi cleanup, or a custom tool that cuts out repetitive admin work.",
+    "ctaParagraph": "If you’re building something local and want a partner who understands both the technical side and the operator side, let’s talk. We’ll help you shape the next version of the business with systems that feel grounded, useful, and maintainable."
   },
   "seo": {
-    "title": "GroveX - Technology That Helps Local Businesses Grow",
-    "description": "Community-rooted websites, IT support, software, and growth systems for local businesses in Turtle Creek and the Mon Valley.",
+    "title": "GroveX - Websites, Systems, and IT Support for Local Business",
+    "description": "Community-rooted websites, IT support, software, and workflow systems for local businesses in Turtle Creek and the Mon Valley.",
     "keywords": [
-      "growth systems",
+      "business systems",
       "software development",
       "IT consulting",
-      "local business growth",
-      "community-rooted web design",
+      "local business technology",
+      "business website design",
       "Turtle Creek",
       "Pennsylvania",
       "custom software",
       "web development",
-      "creative business systems"
+      "workflow systems"
     ],
     "canonical": "https://grovextech.com/",
     "openGraph": {
-      "title": "GroveX - Technology That Helps Local Businesses Grow",
-      "description": "Community-rooted websites, IT support, software, and growth systems for local businesses in Turtle Creek and the Mon Valley.",
+      "title": "GroveX - Websites, Systems, and IT Support for Local Business",
+      "description": "Community-rooted websites, IT support, software, and workflow systems for local businesses in Turtle Creek and the Mon Valley.",
       "images": [
         {
           "url": "https://grovextech.com/images/og/homepage.jpg",
           "width": 1200,
           "height": 630,
-          "alt": "GroveX - technology and growth studio"
+          "alt": "GroveX - business technology and systems support"
         }
       ],
       "type": "website",
@@ -70,8 +70,8 @@
     },
     "twitter": {
       "card": "summary_large_image",
-      "title": "GroveX - Technology That Helps Local Businesses Grow",
-      "description": "Community-rooted websites, IT support, software, and growth systems for local businesses.",
+      "title": "GroveX - Websites, Systems, and IT Support for Local Business",
+      "description": "Community-rooted websites, IT support, software, and business systems for local businesses.",
       "images": [
         "https://grovextech.com/images/twitter/homepage.jpg"
       ]
@@ -80,7 +80,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "GroveX",
-      "description": "Technology and growth systems for local businesses",
+      "description": "Technology and business systems for local businesses",
       "url": "https://grovextech.com",
       "logo": "https://grovextech.com/images/logo.png",
       "address": {

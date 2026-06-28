@@ -3,19 +3,19 @@ import Link from "next/link";
 export default function EnhancedHero() {
   const slides = [
     {
-      title: "Build Sustainable Growth from Turtle Creek",
+      title: "Reliable Websites, Systems, and IT Support for Local Business",
       subtitle:
-        "GroveX helps local businesses strengthen the foundation first—clear websites, dependable systems, and practical support that can later power stronger Google Ads results without leading as a consumer repair brand.",
-      ctaPrimary: "Start a Growth Conversation",
+        "GroveX helps small businesses improve the practical pieces that make work run better: websites, support systems, workflow cleanup, and business technology that owners can actually maintain.",
+      ctaPrimary: "Request a Business Systems Review",
       ctaSecondary: "Explore Services",
       ctaPrimaryLink: "/contact",
       ctaSecondaryLink: "/services",
       bgColor: "from-teal-600 to-emerald-700"
     },
     {
-      title: "Websites, Systems, and Real Local Momentum",
+      title: "Websites, Support, and Operations That Hold Up",
       subtitle:
-        "From storefront presentation to behind-the-scenes operations, we build practical infrastructure that helps local brands look sharper and run cleaner.",
+        "From customer-facing websites to behind-the-scenes operations, GroveX builds practical infrastructure for owner-led businesses that need clearer communication and fewer technical bottlenecks.",
       ctaPrimary: "See What We Do",
       ctaSecondary: "Book a Consultation",
       ctaPrimaryLink: "/services",
@@ -23,9 +23,9 @@ export default function EnhancedHero() {
       bgColor: "from-emerald-600 to-teal-700"
     },
     {
-      title: "A Growth Studio Taking Root at 124 Grant Street",
+      title: "A Local Business Technology Partner at 124 Grant Street",
       subtitle:
-        "Technology, retail energy, and community presence are coming together in one place—designed to help good local businesses grow with confidence.",
+        "GroveX is building from a real local address with a practical focus: dependable technical help, clear business websites, and systems that support day-to-day operations.",
       ctaPrimary: "Learn Our Story",
       ctaSecondary: "Get in Touch",
       ctaPrimaryLink: "/about",

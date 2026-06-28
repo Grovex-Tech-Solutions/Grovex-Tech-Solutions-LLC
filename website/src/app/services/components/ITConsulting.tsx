@@ -5,15 +5,15 @@ export default function ITConsulting() {
     <section id="small-business-it" className="py-16 border-b border-border scroll-mt-24">
       <div className="flex flex-col md:flex-row gap-8 items-center">
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">Business Systems & Growth Support</h2>
+          <h2 className="text-3xl font-bold mb-4">Business Systems & IT Support</h2>
           <p className="text-foreground-secondary mb-6">
-            Practical support for small businesses that need stronger websites, cleaner operations, and more reliable technology before scaling growth efforts. GroveX helps owners tighten the foundation so customer acquisition works better.
+            Practical support for small businesses that need stronger websites, cleaner operations, and more reliable technology. GroveX helps owners reduce downtime, clarify the customer path, and make the next technology decision with confidence.
           </p>
           
           <div className="space-y-6">
             {/* Starter Website Package */}
             <div className="bg-background-secondary border border-border p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-primary mb-3">Starter Website & Conversion Package - $499</h3>
+              <h3 className="text-lg font-semibold text-primary mb-3">Starter Website & Contact-Path Package - $499</h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
@@ -78,12 +78,12 @@ export default function ITConsulting() {
                   <p className="text-sm text-foreground-secondary">Priority support, network monitoring, health reports</p>
                 </div>
                 <div className="border-l-2 border-primary pl-4 bg-primary/10 -ml-px py-2 rounded-r">
-                  <p className="font-medium text-primary">Peace of Mind - Complete Care - $149/month <span className="text-xs bg-primary text-white px-2 py-0.5 rounded ml-2">Best Value</span></p>
-                  <p className="text-sm text-foreground-secondary">Everything in Business Protection + monthly on-site visit, advanced cybersecurity, and quarterly growth/planning reviews</p>
+                  <p className="font-medium text-primary">Complete Care - $149/month <span className="text-xs bg-primary text-white px-2 py-0.5 rounded ml-2">Best Value</span></p>
+                  <p className="text-sm text-foreground-secondary">Everything in Business Protection plus a monthly on-site visit, advanced cybersecurity, and quarterly systems/planning reviews</p>
                 </div>
                 <div className="border-l-2 border-border pl-4">
-                  <p className="font-medium text-foreground">Enterprise Partnership - $299/month</p>
-                  <p className="text-sm text-foreground-secondary">Unlimited on-site visits, 24/7 support, dedicated account manager</p>
+                  <p className="font-medium text-foreground">Advanced Support Partnership - $299/month</p>
+                  <p className="text-sm text-foreground-secondary">Expanded on-site support, emergency escalation, and a named point of contact</p>
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@ export default function ITConsulting() {
 
           <div className="mt-6 p-4 bg-primary/10 rounded-lg">
             <p className="text-sm font-medium text-primary">
-              💡 All packages include transparent pricing with no hidden fees. The goal is to help you strengthen the customer journey and operations layer before wasting money on weak foundations.
+              💡 All packages include transparent pricing with no hidden fees. The goal is to strengthen the customer path and operations layer before adding more tools or spend.
             </p>
           </div>
 
@@ -100,7 +100,7 @@ export default function ITConsulting() {
               href="/contact?service=small-business-it"
               className="inline-flex items-center justify-center bg-primary text-white font-semibold py-3 px-6 rounded-lg hover:bg-primary-hover transition-colors"
             >
-              Book a Growth Consultation
+              Request a Business Systems Review
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

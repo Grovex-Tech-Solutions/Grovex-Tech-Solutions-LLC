@@ -25,9 +25,9 @@ export default function ContactPage() {
       />
       <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20 max-w-7xl">
         <div className="text-center mb-12 sm:mb-16 lg:mb-20">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">Start a Growth Conversation</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6">Request a Business Systems Review</h1>
           <p className="text-base sm:text-lg md:text-xl text-foreground-secondary max-w-4xl mx-auto leading-relaxed px-2">
-            Let&apos;s talk about what your business needs first: a sharper website, cleaner systems, better support, or a stronger base for future Google Ads and lead generation.
+            Let&apos;s talk about what your business needs first: a sharper website, cleaner systems, better support, or a less fragile workflow.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function ContactPage() {
               <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-6">
                 <h3 className="text-xl font-semibold text-blue-800 mb-4">What We Can Talk Through</h3>
                 <p className="text-blue-700 mb-4">
-                  Website improvements, landing pages, software ideas, IT cleanup, workflow problems, local growth strategy, or the groundwork needed before advertising harder.
+                  Website improvements, landing pages, software ideas, IT cleanup, workflow problems, local search basics, or the groundwork needed before adding more spend.
                 </p>
                 <div className="space-y-3">
                   <div className="flex flex-wrap items-center gap-2">
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="mr-2 text-blue-800" aria-hidden="true">✉️</span>
                     <a
-                      href="mailto:info@grovextech.com?subject=Growth Consultation Request&body=Hi! I'd like to talk about:%0D%0A%0D%0ABusiness/Project: %0D%0ACurrent bottleneck: %0D%0AGrowth goal: %0D%0A%0D%0APlease contact me to schedule a conversation.%0D%0A%0D%0AThank you!"
+                      href="mailto:info@grovextech.com?subject=Business Systems Review Request&body=Hi! I'd like to talk about:%0D%0A%0D%0ABusiness/Project: %0D%0ACurrent bottleneck: %0D%0ABusiness goal: %0D%0A%0D%0APlease contact me to schedule a conversation.%0D%0A%0D%0AThank you!"
                       className="text-blue-700 hover:text-blue-900 underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-1 -mx-1"
                       aria-label="Email the GroveX team"
                     >
@@ -107,7 +107,7 @@ export default function ContactPage() {
               <div className="flex items-start">
                 <div className="bg-primary rounded-full p-3 sm:p-4 mr-3 sm:mr-4 flex-shrink-0"><FaMapMarkerAlt className="h-5 w-5 sm:h-6 sm:w-6 text-white" /></div>
                 <div className="flex-grow">
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2">Studio Location</h3>
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2">Business Location</h3>
                   <address className="not-italic text-sm sm:text-base lg:text-lg text-foreground-secondary">
                     <p>124 Grant Street</p>
                     <p>Turtle Creek, PA 15145</p>

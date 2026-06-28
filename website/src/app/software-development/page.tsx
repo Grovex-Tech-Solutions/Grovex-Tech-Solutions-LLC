@@ -10,7 +10,7 @@ export default function SoftwareDevelopmentSkillsPage() {
     <>
       <StructuredData data={generatePageStructuredData("service", {
         name: "Software Development Skills - GroveX",
-        description: "Comprehensive software development expertise including web applications, mobile apps, API development, and cutting-edge growth systems.",
+        description: "Software development support for web applications, internal tools, APIs, and business workflow systems.",
         url: "https://grovextech.com/software-development",
         breadcrumbs: [
           { name: "Home", url: "https://grovextech.com" },
@@ -18,42 +18,42 @@ export default function SoftwareDevelopmentSkillsPage() {
           { name: "Software Development", url: "https://grovextech.com/software-development" }
         ],
         serviceName: "Custom Software Development",
-        serviceDescription: "Professional custom software development services including web applications, mobile apps, APIs, and enterprise software solutions."
+        serviceDescription: "Custom software development services for web applications, internal tools, APIs, and practical business systems."
       })} />
       <div className="container mx-auto px-6 py-16">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Software Development Expertise</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Software Development for Business Operations</h1>
           <p className="text-xl text-foreground-secondary max-w-3xl mx-auto">
-            Transforming ideas into powerful digital solutions with cutting-edge technology
+            Building practical web apps, internal tools, and integrations for business workflows
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Our Technical Skills</h2>
+            <h2 className="text-3xl font-bold mb-6">Technical Capabilities</h2>
             <div className="space-y-6">
               <div className="border-l-4 border-primary pl-4 py-1">
                 <h3 className="text-xl font-semibold mb-2">Frontend Development</h3>
                 <p className="text-foreground-secondary">
-                  Creating responsive, interactive user interfaces using modern frameworks like React, Next.js, Vue.js, and Angular.
+                  Creating responsive, maintainable user interfaces for websites, dashboards, portals, and internal business tools.
                 </p>
               </div>
               <div className="border-l-4 border-primary pl-4 py-1">
                 <h3 className="text-xl font-semibold mb-2">Backend Development</h3>
                 <p className="text-foreground-secondary">
-                  Building robust server-side applications with Node.js, Python, Java, and .NET, ensuring scalability and performance.
+                  Building server-side applications, APIs, and integrations with clear data flow, maintainable deployment paths, and practical performance targets.
                 </p>
               </div>
               <div className="border-l-4 border-primary pl-4 py-1">
                 <h3 className="text-xl font-semibold mb-2">Mobile Development</h3>
                 <p className="text-foreground-secondary">
-                  Developing cross-platform mobile applications using React Native, Flutter, and native iOS/Android technologies.
+                  Designing mobile-friendly workflows and, when needed, cross-platform mobile applications for field teams, customers, or internal operations.
                 </p>
               </div>
               <div className="border-l-4 border-primary pl-4 py-1">
                 <h3 className="text-xl font-semibold mb-2">Database Design</h3>
                 <p className="text-foreground-secondary">
-                  Expertise in SQL and NoSQL databases including PostgreSQL, MySQL, MongoDB, and Redis for optimal data management.
+                  Data modeling and storage using tools like PostgreSQL, SQLite, and cloud databases when the business needs reliable records and reporting.
                 </p>
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function SoftwareDevelopmentSkillsPage() {
 
           <div className="max-w-3xl mx-auto">
             <p className="text-xl text-foreground-secondary mb-8">
-              Our team stays current with the latest technologies and best practices to deliver innovative solutions that drive your business forward.
+              GroveX chooses proven tools based on the business problem, maintainability, and the ability to support the system after launch.
             </p>
             <a
               href="/contact"

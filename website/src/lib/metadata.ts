@@ -5,7 +5,7 @@ import { getSocialImage } from "./social-images";
 // Base configuration for consistent metadata across the site
 export const siteConfig = {
   name: "GroveX",
-  description: "A growth-minded local studio in Turtle Creek, PA blending websites, IT support, software, and practical business systems for neighbors and small businesses.",
+  description: "A local business technology partner in Turtle Creek, PA providing websites, IT support, software, and practical systems for small businesses.",
   url: "https://grovextech.com",
   ogImage: "/company_logo.png",
   creator: "Grovex Technologies & Software Solutions LLC",
@@ -15,9 +15,9 @@ export const siteConfig = {
     "software development Pennsylvania",
     "IT support Mon Valley",
     "small business systems Turtle Creek",
-    "growth infrastructure",
+    "business technology infrastructure",
     "Google Ads landing pages",
-    "creative storefront technology",
+    "business technology support",
     "Turtle Creek technology",
     "Mon Valley business support"
   ]
@@ -27,7 +27,7 @@ export const siteConfig = {
 export const businessInfo = {
   name: "Grovex Technologies & Software Solutions LLC",
   description:
-    "GroveX delivers trustworthy technology and growth infrastructure for Turtle Creek and nearby communities, covering websites, digital systems, modern web experiences, and dependable IT support with a local focus.",
+    "GroveX delivers trustworthy technology and business technology infrastructure for Turtle Creek and nearby communities, covering websites, digital systems, modern web experiences, and dependable IT support with a local focus.",
   phone: "(412) 206-9453",
   email: "info@grovextech.com",
   address: {

@@ -25,7 +25,7 @@ export default function SoftwareDevelopment() {
             </div>
             <OptimizedImage 
               src="/simple-web-design.png"
-              alt="Simple Website Design - Custom web design solution for local businesses"
+              alt="Business Website Design - Custom web design solution for local businesses"
               width={600}
               height={480}
               className="rounded-lg w-full h-64 md:h-80 object-contain relative z-10"
@@ -34,9 +34,9 @@ export default function SoftwareDevelopment() {
           </div>
         </div>
         <div className="md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">Simple Website Design</h2>
+          <h2 className="text-3xl font-bold mb-4">Business Website Design</h2>
           <p className="text-foreground-secondary mb-6">
-            Professional, affordable websites for local businesses and community organizations. We focus on simple, effective designs that help you reach more customers in Turtle Creek and the surrounding area.
+            Professional websites for local businesses that need clear service pages, contact paths, local search basics, and a site they can maintain without an open-ended retainer.
           </p>
           <div className="space-y-4">
             {/* Website Pricing Tiers */}
@@ -51,14 +51,14 @@ export default function SoftwareDevelopment() {
                 </div>
                 <div className="flex justify-between items-start border-b border-border pb-3 bg-primary/10 -mx-5 px-5 py-2">
                   <div>
-                    <p className="font-medium text-primary">Professional Website - $899 <span className="text-xs bg-primary text-white px-2 py-0.5 rounded ml-2">Popular</span></p>
-                    <p className="text-sm text-foreground-secondary">Up to 10 pages, custom design, CMS, advanced SEO, analytics, 6 months support</p>
+                    <p className="font-medium text-primary">Business Website - $899 <span className="text-xs bg-primary text-white px-2 py-0.5 rounded ml-2">Popular</span></p>
+                    <p className="text-sm text-foreground-secondary">Up to 10 pages, custom page structure, CMS, local SEO, analytics, 6 months support</p>
                   </div>
                 </div>
                 <div className="flex justify-between items-start">
                   <div>
-                    <p className="font-medium text-foreground">Enterprise Website - $1,299+</p>
-                    <p className="text-sm text-foreground-secondary">Unlimited pages, e-commerce, booking system, custom features, 12 months support</p>
+                    <p className="font-medium text-foreground">Advanced Business Website - $1,299+</p>
+                    <p className="text-sm text-foreground-secondary">Expanded page set, e-commerce or booking support, custom features, 12 months support</p>
                   </div>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function SoftwareDevelopment() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>
-                  <span className="text-foreground">Integration with social media and Google Business</span>
+                  <span className="text-foreground">Google Business Profile and basic analytics setup</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-primary mr-2 flex-shrink-0 font-bold">✓</span>

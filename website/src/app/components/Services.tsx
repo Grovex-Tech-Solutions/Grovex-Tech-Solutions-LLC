@@ -8,7 +8,7 @@ const services = [
   {
     id: "web-development",
     title: "Websites & Landing Pages",
-    description: "High-trust websites and campaign landing pages built to help small businesses convert more traffic into qualified conversations.",
+    description: "Credible business websites and landing pages that explain the offer clearly, support local search, and make it easier for qualified customers to reach you.",
     icon: WebsiteDesignIcon,
     link: "/services#web-development",
   },
@@ -29,7 +29,7 @@ const services = [
   {
     id: "community-education",
     title: "Strategy, Training & Readiness",
-    description: "Practical guidance for owners who need clearer offers, better marketing foundations, or a more ad-ready digital setup before scaling spend.",
+    description: "Practical guidance for owners who need clearer service pages, stronger local search basics, and a realistic technology plan before adding more tools or ad spend.",
     icon: CommunityEducationIcon,
     link: "/services#community-education",
   },
@@ -42,15 +42,15 @@ export default function Services() {
         <header className="text-center mb-16 sm:mb-20 lg:mb-24">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-in">
             <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-            B2B Growth Foundation
+            B2B Technology Foundation
           </div>
 
           <h2 id="services-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up text-foreground">
-            The Systems Layer Behind Better Growth
+            Business Websites, Systems, and Support
           </h2>
 
           <p className="text-lg sm:text-xl md:text-2xl text-foreground-secondary max-w-4xl mx-auto leading-relaxed animate-slide-up animation-delay-200 font-medium">
-            GroveX helps small-business owners strengthen websites, lead flow, operations, and support systems before they push harder on traffic or ads.
+            GroveX helps small-business owners strengthen the operational basics: credible websites, reliable devices and networks, cleaner workflows, and support that reduces downtime.
           </p>
 
           <div className="flex justify-center mt-8 animate-fade-in animation-delay-400">
@@ -114,7 +114,7 @@ export default function Services() {
 
         <div className="text-center mt-16 sm:mt-20 animate-fade-in animation-delay-1200">
           <p className="text-foreground-secondary mb-6 text-lg max-w-3xl mx-auto">
-            If your business needs a stronger website, cleaner systems, or better conversion foundations before scaling marketing, this is the conversation to start.
+            If your business needs a stronger website, cleaner operations, or more dependable technology, this is the place to start.
           </p>
           <PrimaryButton
             href="/contact"
@@ -124,7 +124,7 @@ export default function Services() {
               </svg>
             }
           >
-            Book a Growth Consultation
+            Request a Business Systems Review
           </PrimaryButton>
         </div>
       </div>

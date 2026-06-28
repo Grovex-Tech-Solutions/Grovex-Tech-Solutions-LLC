@@ -49,11 +49,11 @@ export const brandVoice: BrandVoiceGuidelines = {
     use: [
       'efficient solutions',
       'business clients',
-      'strategic partnerships',
-      'comprehensive approach',
-      'proven methodologies',
+      'practical scoping',
+      'clear implementation plan',
+      'evidence-based recommendations',
       'tailored solutions',
-      'enterprise-grade',
+      'business-grade',
       'scalable systems',
       'reliable infrastructure',
       'expert consultation'
@@ -68,9 +68,9 @@ export const brandVoice: BrandVoiceGuidelines = {
 
   callToAction: {
     primary: [
-      'Schedule a Consultation',
-      'Get Started Today',
-      'Contact Our Experts',
+      'Request a Business Systems Review',
+      'Scope the Next Step',
+      'Contact GroveX',
       'Request a Quote',
       'Discuss Your Project'
     ],
@@ -175,7 +175,7 @@ export const messagingTemplates = {
   },
   
   serviceIntros: {
-    development: "Transform your business operations with custom software solutions designed for scalability and efficiency.",
+    development: "Improve business operations with custom software solutions designed for maintainability and efficiency.",
     consulting: "Strategic IT guidance that aligns technology investments with your business objectives.",
     support: "Comprehensive IT infrastructure management ensuring optimal performance and security.",
     saas: "Seamless integration and optimization of business software tools for enhanced productivity."
@@ -185,7 +185,7 @@ export const messagingTemplates = {
     efficiency: "Streamline operations and reduce manual processes",
     security: "Protect your business with enterprise-grade security measures",
     scalability: "Solutions that grow with your business needs",
-    reliability: "Dependable systems with 24/7 monitoring and support",
+    reliability: "Dependable systems with practical monitoring and support",
     expertise: "Leverage our years of experience in IT solutions"
   }
 };
@@ -225,8 +225,8 @@ export class BrandVoiceValidator {
    */
   static generateCTAAlternatives(context: 'service' | 'contact' | 'portfolio' | 'general'): string[] {
     const contextMap = {
-      service: ['Schedule a Consultation', 'Request Assessment', 'Explore Solutions'],
-      contact: ['Contact Our Experts', 'Get Started Today', 'Schedule a Meeting'],
+      service: ['Request a Business Systems Review', 'Request Assessment', 'Explore Solutions'],
+      contact: ['Contact GroveX', 'Scope the Next Step', 'Schedule a Meeting'],
       portfolio: ['View Case Studies', 'See Our Work', 'Explore Projects'],
       general: ['Learn More', 'Get Started', 'Contact Us']
     };
@@ -278,8 +278,8 @@ export class BrandVoiceValidator {
  */
 export const standardCTAs = {
   primary: {
-    consultation: 'Schedule a Consultation',
-    contact: 'Contact Our Experts',
+    consultation: 'Request a Business Systems Review',
+    contact: 'Contact GroveX',
     assessment: 'Request Assessment',
     quote: 'Request Quote'
   },

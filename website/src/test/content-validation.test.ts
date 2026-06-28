@@ -239,7 +239,7 @@ const checkForPlaceholders = (text: unknown, context: string): string[] => {
       const pages = ['home', 'services', 'about', 'contact']
       const brandKeywords = [
         'grovex',
-        'growth systems',
+        'business systems',
         'professional',
         'custom',
         'reliable'
@@ -423,7 +423,7 @@ const checkForPlaceholders = (text: unknown, context: string): string[] => {
         'request quote',
         'schedule consultation',
         'get in touch',
-        'start a growth conversation',
+        'request a business systems review',
         'explore services'
       ]
       

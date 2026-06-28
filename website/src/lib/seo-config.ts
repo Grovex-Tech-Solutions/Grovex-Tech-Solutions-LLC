@@ -4,16 +4,16 @@ import type { ServicesSeoConfig, ServiceSeoConfig } from "@/types/seo";
 // SEO configuration for all pages
 export const seoConfig: Record<string, PageMetadataConfig> = {
   home: {
-    title: "GroveX | Websites, Systems & Sustainable Growth in Turtle Creek",
-    description: "GroveX helps local businesses build sustainable growth foundations with websites, software, IT support, and practical marketing-ready systems in Turtle Creek and the Mon Valley.",
+    title: "GroveX | Websites, Systems & IT Support in Turtle Creek",
+    description: "GroveX helps local businesses improve websites, software, IT support, and practical workflow systems in Turtle Creek and the Mon Valley.",
     keywords: [
-      "local business growth Turtle Creek",
+      "local business technology Turtle Creek",
       "website design Turtle Creek PA",
       "Google Ads landing page setup",
       "small business systems Mon Valley",
       "software development Turtle Creek",
       "IT support for local business",
-      "growth infrastructure Pennsylvania",
+      "business technology infrastructure Pennsylvania",
       "business technology support"
     ],
     canonical: "https://grovextech.com",
@@ -21,7 +21,7 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
     ogDescription: "Websites, software, IT support, and workflow infrastructure for local businesses that want stronger systems and fewer bottlenecks."
   },
   services: {
-    title: "GroveX Services | Websites, Systems, IT Support & Growth Ops",
+    title: "GroveX Services | Websites, Systems & IT Support",
     description: "Explore GroveX services for websites, software, IT support, operations cleanup, and practical business technology infrastructure designed for local businesses and community-rooted brands.",
     keywords: [
       "website design services Turtle Creek",
@@ -38,21 +38,21 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
     ogDescription: "From websites to internal systems, GroveX helps local operators build a stronger foundation for reliable work."
   },
   "software-development": {
-    title: "Custom Software Development for Sustainable Growth | GroveX",
-    description: "GroveX builds custom software, web apps, APIs, and internal tools that help local businesses reduce friction, scale operations, and support long-term growth.",
+    title: "Custom Software Development for Practical Operations | GroveX",
+    description: "GroveX builds custom software, web apps, APIs, and internal tools that help local businesses reduce friction, improve handoffs, and maintain systems after launch.",
     keywords: [
       "custom software development",
       "web application development",
       "mobile app development",
       "API development",
-      "enterprise software",
+      "business software",
       "full-stack development",
       "React development",
       "Node.js development"
     ],
     canonical: "https://grovextech.com/software-development",
-    ogTitle: "GroveX Software Development | Systems That Scale With You",
-    ogDescription: "Custom software and internal tools designed to support sustainable growth, cleaner operations, and better customer experiences."
+    ogTitle: "GroveX Software Development | Maintainable Business Systems",
+    ogDescription: "Custom software and internal tools designed to support cleaner operations, practical maintenance, and better customer experiences."
   },
   about: {
     title: "About GroveX | Turtle Creek Business Technology Partner",
@@ -69,7 +69,7 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
     ],
     canonical: "https://grovextech.com/about",
     ogTitle: "About GroveX | A Local Business Technology Partner Taking Root",
-    ogDescription: "Learn how GroveX is combining technology, local business support, and long-term growth thinking from 124 Grant Street."
+    ogDescription: "Learn how GroveX is combining technology, local business support, and long-term operations thinking from 124 Grant Street."
   },
   contact: {
     title: "Contact GroveX | Request a Business Systems Review",
@@ -90,10 +90,10 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
   },
   "community-involvement": {
     title: "Community Involvement Turtle Creek PA | Local Partnerships & Events",
-    description: "See how GroveX invests in Turtle Creek through local partnerships, education, shared-space energy, and support for community-rooted business growth.",
+    description: "See how GroveX invests in Turtle Creek through local partnerships, education, shared-space energy, and support for community-rooted business operations.",
     keywords: [
       "community involvement Turtle Creek PA",
-      "local partnerships Mon Valley",
+      "local business support Mon Valley",
       "Memorial Day parade sponsor Turtle Creek",
       "digital readiness guidance PA",
       "community events Turtle Creek",
@@ -103,17 +103,17 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
     ],
     canonical: "https://grovextech.com/community-involvement",
     ogTitle: "Community Involvement | GroveX in Turtle Creek",
-    ogDescription: "Learn how GroveX supports local momentum through partnerships, practical technology guidance, and a stronger shared-space vision at 124 Grant Street."
+    ogDescription: "Learn how GroveX supports local businesses through practical technology guidance and visible local support at 124 Grant Street."
   },
   portfolio: {
-    title: "Our Work | GroveX Growth Systems & Client Results",
+    title: "Our Work | GroveX Business Systems & Public Proof",
     description: "Explore GroveX work across websites, software, IT support, and practical systems that help local businesses look sharper, operate better, and grow with confidence.",
     keywords: [
       "portfolio",
       "case studies",
       "successful projects",
       "client work",
-      "growth systems",
+      "business systems",
       "software projects",
       "IT implementations",
       "marketing-ready websites"
@@ -124,7 +124,7 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
   },
   "it-consulting": {
     title: "IT Consulting & Business Systems Strategy | GroveX",
-    description: "GroveX helps businesses audit infrastructure, clean up operations, strengthen security, and build dependable systems that support sustainable growth.",
+    description: "GroveX helps businesses audit infrastructure, clean up operations, strengthen security, and build dependable systems that support reliable operations.",
     keywords: [
       "IT consulting",
       "infrastructure assessment",
@@ -135,7 +135,7 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "business technology consulting"
     ],
     canonical: "https://grovextech.com/services/it-consulting",
-    ogTitle: "GroveX IT Consulting | Stronger Systems for Growth",
+    ogTitle: "GroveX IT Consulting | Stronger Business Systems",
     ogDescription: "Infrastructure, security, and technology planning for businesses that need dependable operations behind the scenes."
   },
   "saas-products": {
@@ -148,7 +148,7 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
       "subscription software",
       "business automation",
       "productivity tools",
-      "enterprise SaaS"
+      "business software tools"
     ],
     canonical: "https://grovextech.com/services/saas-products",
     ogTitle: "GroveX Software Products | Workflow Tools That Reduce Friction",
@@ -160,7 +160,7 @@ export const seoConfig: Record<string, PageMetadataConfig> = {
     keywords: [
       "business device repair Turtle Creek",
       "office tech support Mon Valley",
-      "computer repair Turtle Creek PA 15145",
+      "business device support Turtle Creek PA 15145",
       "laptop repair Monroeville area",
       "network troubleshooting Pennsylvania",
       "small business tech rescue",

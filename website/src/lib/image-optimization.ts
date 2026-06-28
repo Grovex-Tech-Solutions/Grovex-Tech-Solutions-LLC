@@ -108,24 +108,24 @@ export const IMAGE_ALT_TEXT = {
   'service-icon-consulting.png': 'IT Consulting Services - Infrastructure assessment and cloud migration icon',
   'service-icon-saas.png': 'SaaS Products - Business software tools and workflow products icon',
   'service-icon-repair.png': 'Computer Repair Services - Hardware diagnostics and data recovery icon',
-  'service-icon-1.png': 'Technology services icon representing comprehensive IT solutions',
+  'service-icon-1.png': 'Technology services icon representing practical IT support',
   'it_consult.png': 'Small Business IT Consultation Services - Professional IT solutions for local businesses',
   'simple-web-design.png': 'Business Website Design - Practical web design for local businesses',
   
   // Feature icons
-  'feature-icon-1.png': 'Technology feature icon representing advanced capabilities',
+  'feature-icon-1.png': 'Technology feature icon representing practical capabilities',
   'feature-icon-custom.png': 'Custom Solutions - Tailored business systems for practical operational needs',
-  'feature-icon-experience.png': '10+ Years Experience - Proven track record in technology services',
+  'feature-icon-experience.png': 'Technology Experience - Practical track record in technology services',
   'feature-icon-pricing.png': 'Competitive Pricing - Practical systems support for small businesses',
   'feature-icon-support.png': 'Support Services - Technical support and escalation assistance',
   
   // Portfolio images
   'portfolio-banking.jpg': 'Banking Software Project - Secure financial application development case study',
-  'portfolio-cloud.jpg': 'Cloud Migration Project - Enterprise cloud infrastructure transformation case study',
+  'portfolio-cloud.jpg': 'Cloud Migration Project - Business infrastructure migration case study',
   'portfolio-ecommerce.jpg': 'E-commerce Platform - Custom online retail solution development case study',
   'portfolio-network.jpg': 'Network Infrastructure - IT consulting and network optimization case study',
   'portfolio-repair.jpg': 'Computer Repair Service - Hardware diagnostics and data recovery case study',
-  'portfolio-saas.jpg': 'SaaS Product Development - Innovative software-as-a-service solution case study',
+  'portfolio-saas.jpg': 'Software Product Development - Business software tool case study',
   
   // Favicon variations
   'favicon-circle-16x16.png': 'GroveX favicon - 16x16 circular logo',

@@ -327,7 +327,7 @@ function createFallbackPageContent(pageName: string): PageContent {
     hero: {
       headline: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} Page`,
       subheadline: 'Professional Technology Solutions',
-      description: 'This is placeholder content that needs to be replaced with actual content.',
+      description: 'GroveX builds practical websites, support systems, and workflow tools for local businesses.',
       primaryCTA: {
         text: 'Get Started',
         href: '/contact',
@@ -347,11 +347,11 @@ function createFallbackPageContent(pageName: string): PageContent {
     },
     seo: {
       title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - GroveX`,
-      description: 'Practical growth systems for local business momentum.',
-      keywords: ['growth systems', 'websites', 'business infrastructure'],
+      description: 'Practical business systems for local operations.',
+      keywords: ['business systems', 'websites', 'business infrastructure'],
       openGraph: {
         title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - GroveX`,
-        description: 'Practical growth systems for local business momentum.',
+        description: 'Practical business systems for local operations.',
         images: [{
           url: '/images/og-default.jpg',
           width: 1200,
@@ -365,7 +365,7 @@ function createFallbackPageContent(pageName: string): PageContent {
       twitter: {
         card: 'summary_large_image',
         title: `${pageName.charAt(0).toUpperCase() + pageName.slice(1)} - GroveX`,
-        description: 'Practical growth systems for local business momentum.',
+        description: 'Practical business systems for local operations.',
         images: ['/company_logo.png'],
       },
     },
@@ -375,7 +375,7 @@ function createFallbackPageContent(pageName: string): PageContent {
 function createFallbackBusinessInfo(): BusinessInfo {
   return {
     name: 'GroveX',
-    description: 'Growth-minded websites, systems, and local business support',
+    description: 'Practical websites, systems, and local business support',
     phone: '(412) 206-9453',
     email: 'info@grovextech.com',
     address: {
@@ -398,9 +398,9 @@ function createFallbackBusinessInfo(): BusinessInfo {
     specialties: ['Software Development', 'IT Consulting', 'SaaS Products', 'Computer Repair'],
     foundedYear: 2014,
     employeeCount: '2-10',
-    tagline: 'Growth Infrastructure That Takes Root',
-    mission: 'To build reliable systems that help local businesses grow with confidence.',
-    values: ['Quality', 'Reliability', 'Innovation', 'Customer Service'],
+    tagline: 'Practical Business Technology, Locally Accountable',
+    mission: 'To build reliable systems that help local businesses operate with confidence.',
+    values: ['Quality', 'Reliability', 'Clarity', 'Customer Service'],
   };
 }
 
@@ -413,7 +413,7 @@ function createFallbackServices(): ServiceContent[] {
       shortDescription: 'Custom software solutions',
       icon: 'FaCode',
       features: ['Custom Web Applications', 'Mobile App Development', 'API Development'],
-      benefits: ['Increased Efficiency', 'Scalable Solutions', 'Expert Support'],
+      benefits: ['Increased Efficiency', 'Maintainable Systems', 'Practical Support'],
       pricing: {
         customPricing: true,
       },
@@ -447,7 +447,7 @@ function createDefaultNavigation() {
 
 function createDefaultFooter() {
   return {
-    description: 'GroveX builds websites, systems, and practical growth infrastructure.',
+    description: 'GroveX builds websites, systems, and practical business technology infrastructure.',
     sections: [
       {
         title: 'Services',
@@ -467,9 +467,9 @@ function createDefaultFooter() {
 function createDefaultGlobalSEO() {
   return {
     siteName: 'GroveX',
-    defaultTitle: 'GroveX - Sustainable Growth Systems for Local Business',
-    defaultDescription: 'Websites, software development, IT support, and practical growth infrastructure for local businesses.',
-    defaultKeywords: ['growth systems', 'software development', 'IT consulting', 'web design', 'computer repair'],
+    defaultTitle: 'GroveX - Practical Business Technology for Local Business',
+    defaultDescription: 'Websites, software development, IT support, and practical workflow infrastructure for local businesses.',
+    defaultKeywords: ['business systems', 'software development', 'IT consulting', 'web design', 'computer repair'],
     defaultImage: '/images/og-default.jpg',
   };
 }

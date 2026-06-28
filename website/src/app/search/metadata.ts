@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 
 export const searchMetadata: Metadata = {
-  title: "Search Results - GroveX Services & Growth Systems",
-  description: "Search results for GroveX services, projects, and growth systems. Find the website, software, and support help your business needs.",
-  keywords: "search, GroveX, growth systems, websites, software, IT support, business solutions",
+  title: "Search Results - GroveX Services & Business Systems",
+  description: "Search results for GroveX services, projects, and business systems. Find the website, software, and support help your business needs.",
+  keywords: "search, GroveX, business systems, websites, software, IT support, business solutions",
   alternates: {
     canonical: "https://grovextech.com/search",
   },
   openGraph: {
     title: "Search Results - GroveX",
-    description: "Search results for growth systems, projects, and services.",
+    description: "Search results for business systems, projects, and services.",
     url: "https://grovextech.com/search",
     siteName: "GroveX",
     images: [

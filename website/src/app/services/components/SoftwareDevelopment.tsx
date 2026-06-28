@@ -57,7 +57,7 @@ export default function SoftwareDevelopment() {
                 </div>
                 <div className="flex justify-between items-start">
                   <div>
-                    <p className="font-medium text-foreground">Advanced Business Website - $1,299+</p>
+                    <p className="font-medium text-foreground">Custom Business Website - $1,299+</p>
                     <p className="text-sm text-foreground-secondary">Expanded page set, e-commerce or booking support, custom features, 12 months support</p>
                   </div>
                 </div>

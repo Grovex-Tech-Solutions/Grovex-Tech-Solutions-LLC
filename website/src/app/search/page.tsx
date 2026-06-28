@@ -37,7 +37,7 @@ function SearchContent() {
               Site Search Coming Soon
             </h2>
             <p className="text-foreground-secondary max-w-md">
-              We&apos;re working on building a comprehensive search feature. In the meantime, you can explore our services and credentials below.
+              We&apos;re working on improving site search. In the meantime, you can explore services and credentials below.
             </p>
           </div>
         </div>

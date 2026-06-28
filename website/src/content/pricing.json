@@ -17,16 +17,16 @@
         "hourlyRate": 149,
         "description": "Priority emergency response for critical business systems",
         "minimumCharge": 149,
-        "notes": "Same-day response guaranteed. Charged for the speed and business continuity, not just the hours."
+        "notes": "Same-day response target when scheduling allows. Priced for urgency, continuity risk, and the work required."
       }
     },
     "tripCharges": {
       "localHomeVisit": {
-        "fee": 50,
+        "fee": 0,
         "seniorFee": 25,
         "description": "Home visit fee for Turtle Creek and surrounding areas",
         "coverage": "Turtle Creek, PA 15145 and surrounding Mon Valley",
-        "notes": "Seniors 65+ pay reduced rate of $25"
+        "notes": "Initial local fit check is free; paid work is scoped before service begins"
       },
       "extendedHomeVisit": {
         "fee": 50,
@@ -59,7 +59,7 @@
       "managedCarePlus": {
         "monthlyFee": 139,
         "name": "Business Protection Plan",
-        "description": "Comprehensive protection with updates",
+        "description": "Managed protection with updates",
         "includes": [
           "All Essentials features",
           "Priority help desk support (response within 4 hours)",
@@ -73,16 +73,16 @@
       "managedCarePremium": {
         "monthlyFee": 149,
         "name": "Peace of Mind - Complete Care",
-        "description": "Full-service IT partnership with on-site support",
+        "description": "Managed IT support with on-site review",
         "includes": [
           "All Business Protection features",
           "Priority help desk support (response within 2 hours)",
           "One on-site visit per month included",
-          "Advanced cybersecurity protection suite",
+          "Security protection suite",
           "Quarterly technology planning consultation",
           "Network monitoring and optimization",
           "15% discount on additional services",
-          "30-day satisfaction guarantee"
+          "30-day workmanship review"
         ],
         "idealFor": "Growing businesses with 5-15 computers",
         "notes": "Best value - only $10 more than Business Protection for significantly more service",
@@ -90,16 +90,16 @@
       },
       "managedCareEnterprise": {
         "monthlyFee": 299,
-        "name": "Advanced Support Partnership",
-        "description": "Dedicated IT department for established businesses",
+        "name": "Managed Support Plan",
+        "description": "Managed support coverage for established small businesses",
         "includes": [
           "All Complete Care features",
-          "Priority help desk support (response within 1 hour)",
-          "Unlimited on-site visits",
+          "Priority help desk support with urgent-case escalation",
+          "Scheduled on-site visits as needed",
           "Emergency escalation path for critical outages",
-          "Comprehensive cybersecurity suite with threat monitoring",
-          "Monthly technology strategy sessions",
-          "Proactive system optimization",
+          "Security suite with monitoring options",
+          "Monthly technology planning check-in",
+          "Planned system maintenance and cleanup",
           "Named point of contact",
           "20% discount on additional services"
         ],
@@ -111,7 +111,7 @@
         "name": "Senior Tech Safety Net",
         "description": "Peace of mind technology support for seniors and their families",
         "includes": [
-          "Unlimited phone support for tech questions",
+          "Phone support for scheduled tech questions",
           "Scam and fraud protection training",
           "Monthly device checkup (remote)",
           "Help with online safety and privacy",
@@ -129,7 +129,7 @@
           "price": 0,
           "description": "Diagnostic Assessment",
           "includes": [
-            "Comprehensive system health analysis",
+            "System health analysis",
             "Written report with findings",
             "Honest recommendation (repair vs. replace)",
             "Upfront pricing before any work begins"
@@ -185,7 +185,7 @@
           "price": 149,
           "description": "Business Continuity Emergency Service",
           "includes": [
-            "Same-day response guaranteed",
+            "Same-day response target",
             "Priority over all scheduled work",
             "Direct line to technician",
             "On-site within 2 hours (local area)"
@@ -200,7 +200,7 @@
           "name": "Starter Website",
           "description": "Professional web presence for local businesses",
           "includes": [
-            "Modern, mobile-responsive design",
+            "Mobile-responsive design",
             "Up to 5 pages",
             "Contact form integration",
             "Google My Business setup",
@@ -212,12 +212,12 @@
         "professionalWebsite": {
           "price": 899,
           "name": "Professional Website",
-          "description": "Enhanced website with advanced features",
+          "description": "Enhanced website with added features",
           "includes": [
             "Custom design tailored to your brand",
             "Up to 10 pages",
             "CMS for easy content updates",
-            "Advanced SEO optimization",
+            "Local SEO setup and refinement",
             "Social media integration",
             "Analytics dashboard",
             "6 months of support"
@@ -228,19 +228,19 @@
         "enterpriseWebsite": {
           "price": 1299,
           "priceRange": "1299-2499",
-          "name": "Enterprise Website",
+          "name": "Custom Website Build",
           "description": "Full-featured business website with e-commerce capability",
           "includes": [
             "Fully custom design and branding",
-            "Unlimited pages",
+            "Page count scoped during project planning",
             "E-commerce integration",
             "Booking/scheduling system",
             "Custom functionality development",
-            "Advanced analytics and reporting",
+            "Analytics and reporting setup",
             "Training and documentation",
-            "12 months of priority support"
+            "12 months of support coverage for agreed site issues"
           ],
-          "notes": "For businesses needing advanced features, online sales, or custom functionality"
+          "notes": "For businesses needing online sales, integrations, or custom functionality"
         },
         "smallOfficeSetup": {
           "priceRange": "299-599",
@@ -283,7 +283,7 @@
         "Free consultation and honest assessment - we find root causes, not just symptoms",
         "Transparent, upfront pricing with no hidden fees",
         "You approve the price before we start any work",
-        "30-day satisfaction guarantee on all services",
+        "30-day workmanship review on all services",
         "Senior and community-friendly rates for those who need it most"
       ],
       "differentiation": [
@@ -294,7 +294,7 @@
       "paymentTerms": {
         "residential": "Payment due upon completion. Cash, check, or major credit cards accepted.",
         "business": "Net 15 terms for established business clients. Monthly retainer clients billed automatically.",
-        "warranty": "All work comes with a 30-day satisfaction guarantee"
+        "warranty": "All work comes with a 30-day workmanship review"
       }
     }
   }

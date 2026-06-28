@@ -10,7 +10,7 @@ export const siteConfig = {
   ogImage: "/company_logo.png",
   creator: "Grovex Technologies & Software Solutions LLC",
   keywords: [
-    "local business growth Turtle Creek",
+    "local business technology Turtle Creek",
     "website design Mon Valley",
     "software development Pennsylvania",
     "IT support Mon Valley",
@@ -27,7 +27,7 @@ export const siteConfig = {
 export const businessInfo = {
   name: "Grovex Technologies & Software Solutions LLC",
   description:
-    "GroveX delivers trustworthy technology and business technology infrastructure for Turtle Creek and nearby communities, covering websites, digital systems, modern web experiences, and dependable IT support with a local focus.",
+    "GroveX delivers practical technology support for Turtle Creek and nearby communities, covering websites, digital systems, maintainable web experiences, and dependable IT support with a local focus.",
   phone: "(412) 206-9453",
   email: "info@grovextech.com",
   address: {
@@ -73,7 +73,7 @@ export interface PageMetadataConfig {
 }
 
 /**
- * Generate comprehensive metadata for a page
+ * Generate page metadata for a page
  */
 export function generatePageMetadata(config: PageMetadataConfig): Metadata {
   const {
@@ -150,11 +150,11 @@ export function generateServiceMetadata(
   
   return generatePageMetadata({
     title: `${serviceName} Services - Professional ${serviceName} Solutions`,
-    description: `Expert ${serviceName.toLowerCase()} services from GroveX. ${serviceDescription}`,
+    description: `Practical ${serviceName.toLowerCase()} services from GroveX. ${serviceDescription}`,
     keywords: [serviceName.toLowerCase(), ...serviceKeywords],
     canonical: `${siteConfig.url}/services/${serviceKey}`,
     ogTitle: `${serviceName} Services - ${siteConfig.name}`,
-    ogDescription: `Professional ${serviceName.toLowerCase()} solutions tailored to your business needs.`,
+    ogDescription: `Practical ${serviceName.toLowerCase()} support tailored to your business needs.`,
     ogImage: serviceImage
   });
 }
@@ -204,7 +204,7 @@ export function generatePortfolioMetadata(
   
   return generatePageMetadata({
     title: `${projectName} - Portfolio Case Study`,
-    description: `${projectDescription} - A GroveX project showing how stronger systems support sustainable growth.`,
+    description: `${projectDescription} - A GroveX project showing how stronger systems support practical operations.`,
     keywords: ["portfolio", "case study", "project", ...technologies],
     canonical: `${siteConfig.url}/portfolio/${projectKey}`,
     ogTitle: `${projectName} - GroveX Portfolio`,

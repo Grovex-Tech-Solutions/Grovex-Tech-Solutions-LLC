@@ -37,7 +37,7 @@
   {
     "id": "small-business-it",
     "title": "Small Business IT Packages",
-    "description": "Affordable IT solutions for local businesses including website packages, office setup, and managed care plans with transparent pricing.",
+    "description": "Practical IT solutions for local businesses including website packages, office setup, and managed care plans with transparent pricing.",
     "shortDescription": "IT support designed for small local businesses",
     "icon": "FaLaptop",
     "features": [
@@ -105,7 +105,7 @@
   {
     "id": "web-development",
     "title": "Simple Website Design",
-    "description": "Professional, affordable websites for local businesses and community organizations. WordPress, SEO, and ongoing support included.",
+    "description": "Professional, practical websites for local businesses and community organizations. WordPress, SEO, and ongoing support included.",
     "shortDescription": "Simple, effective websites for local businesses",
     "icon": "FaCode",
     "features": [
@@ -120,7 +120,7 @@
       "Ongoing Support Options"
     ],
     "benefits": [
-      "Affordable for small businesses",
+      "Scoped for small businesses",
       "You can easily update content",
       "Appears in local searches",
       "Professional look & feel",

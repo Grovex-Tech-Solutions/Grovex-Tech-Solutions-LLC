@@ -117,7 +117,7 @@ describe('Performance Optimization for Local Users', () => {
     it('provides touch-friendly CTAs in the header navigation', () => {
       render(<Header />);
 
-      const contactLink = screen.getByRole('link', { name: 'Contact' });
+      const contactLink = screen.getByRole('link', { name: 'Book a Consult' });
       expect(contactLink.className).toContain('min-h-[48px]');
 
       const mobileCallLink = screen.getByRole('link', { name: /contact grovex/i });
@@ -165,7 +165,7 @@ describe('Performance Optimization for Local Users', () => {
       render(<Header />);
 
       const logo = screen.getByRole('img', {
-        name: /grovex - comprehensive growth systems company logo/i,
+        name: /grovex company logo/i,
       });
       expect(logo).toHaveAttribute('src', expect.stringContaining('/company_logo.avif'));
       expect(logo).toHaveAttribute('loading', 'eager');
@@ -201,7 +201,7 @@ describe('Performance Optimization for Local Users', () => {
         : metadata.keywords
           ? [metadata.keywords]
           : [];
-      expect(keywords).toEqual(expect.arrayContaining(['Mon Valley', 'computer repair Turtle Creek PA']));
+      expect(keywords).toEqual(expect.arrayContaining(['Mon Valley', 'small business systems']));
     });
 
     it('maintains consistent contact details in reusable business metadata', () => {
@@ -214,10 +214,10 @@ describe('Performance Optimization for Local Users', () => {
       render(<EnhancedHero />);
 
       expect(
-        screen.getByRole('heading', { name: /your hometown tech partner in turtle creek/i }),
+        screen.getByRole('heading', { name: /reliable websites, systems, and it support for local business/i }),
       ).toBeVisible();
       expect(screen.getByText(/124 Grant Street, Turtle Creek, PA 15145/i)).toBeVisible();
-      expect(screen.getByRole('link', { name: /contact our team for a free consultation/i })).toHaveAttribute(
+      expect(screen.getByRole('link', { name: /request a business systems review/i })).toHaveAttribute(
         'href',
         '/contact',
       );

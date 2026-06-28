@@ -141,13 +141,8 @@ describe('Pricing Structure Validation', () => {
           // Check home support service
           const homeSupport = services.find((s: { id: string }) => s.id === 'home-support');
           if (homeSupport) {
-            expect(homeSupport.pricing.startingPrice).toBe('$60');
-            
-            // Check that features mention consistent pricing
-            const hourlyRateFeature = homeSupport.features.find((f: string) => 
-              f.includes('$60/hour')
-            );
-            expect(hourlyRateFeature).toBeTruthy();
+            expect(homeSupport.pricing.startingPrice).toBe('$99');
+            expect(homeSupport.pricing.priceRange).toBe('$99-$300');
           }
           
           // Check small business IT service

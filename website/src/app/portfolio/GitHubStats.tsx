@@ -46,7 +46,7 @@ export default function GitHubStats({ username }: GitHubStatsProps) {
                 {username}
               </h3>
               <p className="text-foreground-secondary text-sm mb-4">
-                Building innovative solutions through open source collaboration. Check out our repositories, contribute to our projects, and join our developer community.
+                Building practical software and systems work in public where useful. Check out the repositories, review the code, and follow current GroveX projects.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-100 dark:bg-gray-700 text-blue-800 dark:text-blue-300 rounded-full text-xs font-medium">

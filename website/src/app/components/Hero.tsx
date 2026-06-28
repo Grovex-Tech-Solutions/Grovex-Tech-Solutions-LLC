@@ -31,7 +31,7 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight animate-slide-up">
-            Your Hometown Tech Partner in{" "}
+            Practical Websites, Systems, and Support in{" "}
             <span className="bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
               Turtle Creek
             </span>
@@ -39,16 +39,16 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            We build practical digital foundations for local businesses that want to look sharper, run cleaner, and grow with more confidence.
+            We help local businesses improve websites, support systems, and practical workflows without overbuilding or overpromising.
           </p>
 
           {/* Service Pills */}
           <div className="flex flex-wrap justify-center gap-3 mb-12 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             {[
-              "Home & Personal Tech Support",
+              "Selective Device Support",
               "Small Business IT Packages", 
-              "Computer Repair & Setup",
-              "Community Education"
+              "Workflow & Systems Cleanup",
+              "Readiness Guidance"
             ].map((service, index) => (
               <span 
                 key={index}
@@ -80,7 +80,7 @@ export default function Hero() {
                 </svg>
               }
             >
-              Contact Our Team for a Free Consultation
+              Request a Business Systems Review
             </SecondaryButton>
             <SecondaryButton
               href="/contact"
@@ -91,7 +91,7 @@ export default function Hero() {
                 </svg>
               }
             >
-              Book Your Home Visit Today
+              Ask About Practical Support
             </SecondaryButton>
           </div>
 

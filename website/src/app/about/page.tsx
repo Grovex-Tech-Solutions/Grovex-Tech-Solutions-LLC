@@ -364,10 +364,10 @@ export default function AboutPage() {
               </div>
               
               <div>
-                <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">Technical Expertise Made Simple</h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">Technical Help Made Practical</h3>
                 <p className="text-sm sm:text-base text-foreground-secondary mb-4 leading-relaxed">
                   With a degree in Cybersecurity Analytics & Operations from Penn State Greater Allegheny and experience as a Help Desk Technician, 
-                  I bring professional-level expertise to everyday problems while growing GroveX into a full-time local technology partner.
+                  I bring practical technical experience to everyday problems while growing GroveX into a full-time local technology partner.
                 </p>
                 <div className="bg-background rounded-xl p-4">
                   <h4 className="font-semibold mb-2 text-primary">What This Means for You:</h4>
@@ -395,7 +395,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-lg sm:text-xl font-bold mb-3 text-primary">Transparency</h3>
                 <p className="text-sm sm:text-base text-foreground-secondary leading-relaxed">
-                  Clear communication, honest timelines, and upfront pricing ensure no surprises in our partnerships.
+                  Clear communication, honest timelines, and upfront pricing ensure no surprises in our working relationship.
                 </p>
               </div>
               <div>

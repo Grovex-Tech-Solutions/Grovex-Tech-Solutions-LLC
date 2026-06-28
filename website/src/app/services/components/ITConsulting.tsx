@@ -79,10 +79,10 @@ export default function ITConsulting() {
                 </div>
                 <div className="border-l-2 border-primary pl-4 bg-primary/10 -ml-px py-2 rounded-r">
                   <p className="font-medium text-primary">Complete Care - $149/month <span className="text-xs bg-primary text-white px-2 py-0.5 rounded ml-2">Best Value</span></p>
-                  <p className="text-sm text-foreground-secondary">Everything in Business Protection plus a monthly on-site visit, advanced cybersecurity, and quarterly systems/planning reviews</p>
+                  <p className="text-sm text-foreground-secondary">Everything in Business Protection plus a monthly on-site visit, security hardening, and quarterly systems/planning reviews</p>
                 </div>
                 <div className="border-l-2 border-border pl-4">
-                  <p className="font-medium text-foreground">Advanced Support Partnership - $299/month</p>
+                  <p className="font-medium text-foreground">Managed Support Plan - $299/month</p>
                   <p className="text-sm text-foreground-secondary">Expanded on-site support, emergency escalation, and a named point of contact</p>
                 </div>
               </div>

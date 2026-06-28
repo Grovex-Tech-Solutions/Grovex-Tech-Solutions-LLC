@@ -11,7 +11,7 @@ export default function ContactPage() {
             "@context": "https://schema.org",
             "@type": "ContactPage",
             name: "Contact GroveX",
-            description: "Contact GroveX about websites, software, support systems, and sustainable growth foundations for local business.",
+            description: "Contact GroveX about websites, software, support systems, and practical technology foundations for local business.",
             url: "https://grovextech.com/contact",
             breadcrumb: {
               "@type": "BreadcrumbList",

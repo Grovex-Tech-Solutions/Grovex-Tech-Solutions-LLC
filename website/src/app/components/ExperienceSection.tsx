@@ -21,8 +21,8 @@ export default function ExperienceSection() {
       skills: ["Troubleshooting", "User Training", "IT Support", "Plain-English Help"]
     },
     {
-      title: "Modern Web & Growth Systems",
-      description: "Websites, landing pages, and custom tools are built with performance, accessibility, conversion clarity, and future Google Ads readiness in mind.",
+      title: "Modern Web & Business Systems",
+      description: "Websites, landing pages, and custom tools are built with performance, accessibility, conversion clarity, and maintainability in mind.",
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -105,7 +105,7 @@ export default function ExperienceSection() {
               <span>Learn More About GroveX</span>
             </a>
             <a href="/contact" className="inline-flex items-center px-6 py-3 bg-transparent border-2 border-primary text-primary font-semibold rounded-xl hover:bg-primary hover:text-white hover:shadow-glow hover:scale-105 transition-all duration-300 min-h-[48px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
-              <span>Start a Conversation</span>
+              <span>Request a Business Systems Review</span>
             </a>
           </div>
         </div>

@@ -64,7 +64,7 @@ export function generatePortfolioPageMetadata(
 
   return generatePageMetadata({
     title: `${title} - Portfolio Case Study`,
-    description: `${description} ${client ? `Project for ${client}` : ""} ${year ? `(${year})` : ""} - A GroveX project showing how stronger systems support sustainable growth.`,
+    description: `${description} ${client ? `Project for ${client}` : ""} ${year ? `(${year})` : ""} - A GroveX project showing how stronger systems support practical operations.`,
     keywords: ["portfolio", "case study", "project", ...technologies],
     canonical: `${siteConfig.url}/portfolio/${projectId}`,
     ogTitle: `${title} - GroveX Portfolio`,
@@ -87,11 +87,11 @@ export function generateBlogPageMetadata(
   if (!slug || !articleData) {
     return generatePageMetadata({
       title: "Tech Insights & Blog - GroveX",
-      description: "Stay updated with GroveX insights on websites, software, IT infrastructure, sustainable growth, and practical systems for local businesses.",
-      keywords: ["tech blog", "growth systems", "software development", "IT consulting", "tutorials"],
+      description: "Stay updated with GroveX insights on websites, software, IT infrastructure, and practical systems for local businesses.",
+      keywords: ["tech blog", "business systems", "software development", "IT consulting", "tutorials"],
       canonical: `${siteConfig.url}/blog`,
       ogTitle: "Tech Blog - GroveX",
-      ogDescription: "Expert insights on technology, operations, and sustainable growth for local business."
+      ogDescription: "Practical notes on technology, operations, and maintainable systems for local business."
     });
   }
 
@@ -125,13 +125,13 @@ export function generateSearchPageMetadata(query?: string): Metadata {
     : "Search - GroveX";
 
   const description = query
-    ? `Search results for "${query}" on GroveX. Find information about our services, portfolio, and growth systems.`
-    : "Search GroveX for information about our services, portfolio, case studies, and growth systems.";
+    ? `Search results for "${query}" on GroveX. Find information about our services, portfolio, and business systems.`
+    : "Search GroveX for information about our services, portfolio, case studies, and business systems.";
 
   return generatePageMetadata({
     title,
     description,
-    keywords: ["search", "find", "growth systems"],
+    keywords: ["search", "find", "business systems"],
     canonical: `${siteConfig.url}/search${query ? `?q=${encodeURIComponent(query)}` : ""}`,
     noIndex: true
   });
@@ -177,7 +177,7 @@ export function generateMetadataWithBreadcrumbs(
 
 export function generateLocalSeoMetadata(baseMetadata: Metadata): Metadata {
   const localKeywords = [
-    "local business growth Turtle Creek",
+    "local business technology Turtle Creek",
     "website design Turtle Creek Pennsylvania",
     "Mon Valley business systems",
     "small business IT Turtle Creek PA",
@@ -189,7 +189,7 @@ export function generateLocalSeoMetadata(baseMetadata: Metadata): Metadata {
     "Pittsburgh suburb web design",
     "Western Pennsylvania software development",
     "local business technology partner 15145",
-    "affordable IT support Turtle Creek"
+    "practical IT support Turtle Creek"
   ];
 
   const enhancedDescription = `${baseMetadata.description} Serving Turtle Creek PA 15145, Monroeville, Wilmerding, and Mon Valley communities with websites, business systems, and practical support.`;

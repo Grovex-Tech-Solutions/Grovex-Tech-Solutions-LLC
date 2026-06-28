@@ -273,13 +273,6 @@ export function generateLocalBusinessSchema(): LocalBusinessSchema & {
       latitude: 40.4058,
       longitude: -79.8214
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: 4.8,
-      reviewCount: 25,
-      bestRating: 5,
-      worstRating: 1
-    },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "GroveX Services",
@@ -288,7 +281,7 @@ export function generateLocalBusinessSchema(): LocalBusinessSchema & {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Growth-Ready Tech Support",
+            name: "Practical Business Tech Support",
             description: "Practical support for websites, devices, infrastructure, and day-to-day systems that keep local businesses moving."
           }
         },
@@ -297,7 +290,7 @@ export function generateLocalBusinessSchema(): LocalBusinessSchema & {
           itemOffered: {
             "@type": "Service",
             name: "Website Design & Landing Pages",
-            description: "High-trust websites and landing pages designed to convert local attention into real conversations and future ad-ready growth."
+            description: "High-trust websites and landing pages designed to convert local attention into real conversations and future campaigns."
           }
         },
         {
@@ -408,7 +401,7 @@ export function generateServiceSchema(
 export function generateSoftwareDevelopmentSchema(): ServiceSchema {
   return generateServiceSchema(
     "Custom Software Development",
-    "Professional custom software development services including web applications, mobile apps, APIs, and enterprise software solutions.",
+    "Custom software development services including web applications, APIs, internal tools, and business software support.",
     "Software Development",
     [
       {
@@ -419,17 +412,17 @@ export function generateSoftwareDevelopmentSchema(): ServiceSchema {
       {
         "@type": "Offer", 
         name: "Mobile App Development",
-        description: "Cross-platform mobile applications for iOS and Android using React Native and Flutter"
+        description: "Mobile-friendly workflows and application planning when the business case supports it"
       },
       {
         "@type": "Offer",
         name: "API Development",
-        description: "RESTful and GraphQL APIs for seamless system integration and data exchange"
+        description: "APIs and integrations for practical system handoffs and data exchange"
       },
       {
         "@type": "Offer",
-        name: "Enterprise Software",
-        description: "Scalable enterprise software solutions tailored to business requirements"
+        name: "Business Software",
+        description: "Maintainable business software tailored to current operational requirements"
       }
     ]
   );
@@ -441,18 +434,18 @@ export function generateSoftwareDevelopmentSchema(): ServiceSchema {
 export function generateITConsultingSchema(): ServiceSchema {
   return generateServiceSchema(
     "IT Consulting Services",
-    "Expert IT consulting services including infrastructure assessment, operational cleanup, cybersecurity consulting, and technology strategy planning.",
+    "IT consulting services including infrastructure assessment, operational cleanup, cybersecurity basics, and technology planning.",
     "IT Consulting",
     [
       {
         "@type": "Offer",
         name: "Infrastructure Assessment",
-        description: "Comprehensive evaluation of your current IT infrastructure and recommendations for improvement"
+        description: "Practical evaluation of current IT infrastructure and recommendations for improvement"
       },
       {
         "@type": "Offer",
         name: "Cloud Migration",
-        description: "Strategic cloud migration planning and implementation for AWS, Azure, and Google Cloud"
+        description: "Cloud migration planning and implementation when it fits the business need"
       },
       {
         "@type": "Offer",
@@ -469,7 +462,7 @@ export function generateITConsultingSchema(): ServiceSchema {
 export function generateSaaSProductsSchema(): ServiceSchema {
   return generateServiceSchema(
     "SaaS Products",
-    "Software products and automations designed to streamline operations, improve visibility, and support repeatable business growth.",
+    "Software products and automations designed to streamline operations, improve visibility, and support repeatable business operations.",
     "SaaS Products",
     [
       {
@@ -497,7 +490,7 @@ export function generateSaaSProductsSchema(): ServiceSchema {
 export function generateComputerRepairSchema(): ServiceSchema {
   return generateServiceSchema(
     "Computer Repair Services",
-    "Professional computer repair services including hardware diagnostics, software troubleshooting, data recovery, and system optimization.",
+    "Computer repair support including hardware diagnostics, software troubleshooting, data recovery triage, and system maintenance.",
     "Computer Repair",
     [
       {
@@ -513,7 +506,7 @@ export function generateComputerRepairSchema(): ServiceSchema {
       {
         "@type": "Offer",
         name: "Data Recovery",
-        description: "Professional data recovery services for failed hard drives and corrupted files"
+        description: "Data recovery triage for failed drives and corrupted files"
       },
       {
         "@type": "Offer",
@@ -568,7 +561,7 @@ export function generatePageStructuredData(
     case "home":
       schemas.push(generateLocalBusinessSchema());
       schemas.push(generateWebPageSchema(
-        "GroveX - Growth Infrastructure That Takes Root",
+        "GroveX - Practical Business Technology",
         siteConfig.description,
         siteConfig.url,
         [{ name: "Home", url: siteConfig.url }]
@@ -579,7 +572,7 @@ export function generatePageStructuredData(
       schemas.push(...generateAllServiceSchemas());
       schemas.push(generateWebPageSchema(
         "Our Technology Services",
-        "Websites, software, support systems, and practical growth infrastructure for local businesses.",
+        "Websites, software, support systems, and practical business technology infrastructure for local businesses.",
         `${siteConfig.url}/services`,
         [
           { name: "Home", url: siteConfig.url },

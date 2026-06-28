@@ -27,9 +27,9 @@ export const brandVoice: BrandVoiceGuidelines = {
   tone: [
     'professional',
     'approachable', 
-    'expert',
-    'solution-oriented',
-    'trustworthy'
+    'plainspoken',
+    'problem-focused',
+    'accountable'
   ],
   
   language: {
@@ -54,9 +54,9 @@ export const brandVoice: BrandVoiceGuidelines = {
       'evidence-based recommendations',
       'tailored solutions',
       'business-grade',
-      'scalable systems',
+      'maintainable systems',
       'reliable infrastructure',
-      'expert consultation'
+      'practical consultation'
     ]
   },
 
@@ -127,7 +127,7 @@ export class BrandVoiceHelper {
       'simple': 'efficient',
       'basic': 'essential',
       'just': '',
-      'trust us': 'our proven track record demonstrates',
+      'trust us': 'available evidence shows',
       'believe us': 'our experience shows'
     };
 
@@ -170,23 +170,23 @@ export class BrandVoiceHelper {
  */
 export const messagingTemplates = {
   valueProposition: {
-    primary: "Professional IT services that drive business efficiency, security, and growth",
-    secondary: "Expert growth systems tailored to your business needs"
+    primary: "Practical technology services that improve business efficiency, reliability, and clarity",
+    secondary: "Practical business systems tailored to your operational needs"
   },
   
   serviceIntros: {
     development: "Improve business operations with custom software solutions designed for maintainability and efficiency.",
-    consulting: "Strategic IT guidance that aligns technology investments with your business objectives.",
-    support: "Comprehensive IT infrastructure management ensuring optimal performance and security.",
-    saas: "Seamless integration and optimization of business software tools for enhanced productivity."
+    consulting: "Practical IT guidance that connects technology choices to current business needs.",
+    support: "Practical IT infrastructure support focused on reliability, maintenance, and security basics.",
+    saas: "Useful integration and cleanup of business software tools for better day-to-day productivity."
   },
 
   benefits: {
     efficiency: "Streamline operations and reduce manual processes",
-    security: "Protect your business with enterprise-grade security measures",
-    scalability: "Solutions that grow with your business needs",
+    security: "Protect your business with practical security controls",
+    scalability: "Solutions designed around current business needs",
     reliability: "Dependable systems with practical monitoring and support",
-    expertise: "Leverage our years of experience in IT solutions"
+    expertise: "Use direct technical experience to solve practical business problems"
   }
 };
 /**

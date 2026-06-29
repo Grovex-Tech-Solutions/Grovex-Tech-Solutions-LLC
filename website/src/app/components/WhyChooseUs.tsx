@@ -1,98 +1,80 @@
-import { FaBullseye, FaLaptopCode, FaTools, FaDollarSign } from "../components/icons";
+const operatingPrinciples = [
+  {
+    marker: "01",
+    title: "Start with the bottleneck",
+    description:
+      "We identify whether the real issue is the website, support path, workflow, device layer, or business process before prescribing a fix.",
+  },
+  {
+    marker: "02",
+    title: "Design for handoff",
+    description:
+      "Pages, systems, and documentation should be understandable by the owner and maintainable after the initial build is complete.",
+  },
+  {
+    marker: "03",
+    title: "Make proof visible",
+    description:
+      "Portfolio work and technical experiments sit one layer deeper, giving serious buyers evidence without overwhelming the first impression.",
+  },
+  {
+    marker: "04",
+    title: "Keep it operational",
+    description:
+      "The work is judged by whether it reduces friction, improves communication, and helps the business run with fewer recurring issues.",
+  },
+];
+
+const metrics = [
+  { value: "Local", label: "Turtle Creek presence" },
+  { value: "Static", label: "Fast deployable pages" },
+  { value: "Clear", label: "Plain-English systems" },
+  { value: "Built", label: "Implementation over theater" },
+];
 
 export default function WhyChooseUs() {
-  const approach = [
-    { value: "Grounded", label: "Built for the Real World", icon: "🌱" },
-    { value: "Clear", label: "Plain-English Guidance", icon: "🧭" },
-    { value: "Local", label: "Community Rooted", icon: "🏘️" },
-    { value: "Reliable", label: "Operationally Useful Systems", icon: "📈" }
-  ];
-
-  const features = [
-    {
-      title: "Operations Before Hype",
-      description: "We focus on the website, systems, devices, and workflows that need to be stable before a business spends more money on marketing or new software.",
-      icon: <FaBullseye className="w-8 h-8 text-primary" suppressHydrationWarning={true} />
-    },
-    {
-      title: "Practical Strategy",
-      description: "You get honest recommendations shaped around your budget, your actual bottlenecks, and what will move the business forward next.",
-      icon: <FaLaptopCode className="w-8 h-8 text-primary" suppressHydrationWarning={true} />
-    },
-    {
-      title: "Execution Across the Stack",
-      description: "From customer-facing websites to behind-the-scenes tech cleanup, we handle the systems work that supports reliable growth.",
-      icon: <FaTools className="w-8 h-8 text-primary" suppressHydrationWarning={true} />
-    },
-    {
-      title: "Real Local Accountability",
-      description: "GroveX is based in Turtle Creek and works with nearby businesses that need direct, accountable technical help rather than a remote handoff.",
-      icon: <FaDollarSign className="w-8 h-8 text-primary" suppressHydrationWarning={true} />
-    }
-  ];
-
   return (
-    <section className="section-padding bg-gradient-to-b from-background-secondary to-background">
-      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
-        <div className="text-center mb-16 sm:mb-20">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-secondary/10 border border-secondary/20 text-secondary text-sm font-medium mb-6 animate-fade-in">
-            <span className="w-2 h-2 bg-secondary rounded-full mr-2"></span>
-            Our Approach
+    <section className="relative overflow-hidden bg-slate-50 py-16 sm:py-20 lg:py-24" aria-labelledby="approach-heading">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_18%,rgba(20,184,166,0.12),transparent_28%),radial-gradient(circle_at_88%_35%,rgba(59,130,246,0.10),transparent_30%)]" aria-hidden="true" />
+      <div className="container relative mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
+          <div className="lg:sticky lg:top-28">
+            <div className="mb-5 inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-700 shadow-soft">
+              Operating principles
+            </div>
+            <h2 id="approach-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-6xl">
+              Serious design is the visible edge of serious operations.
+            </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
+              GroveX should feel crafted and technical, but the purpose is practical: help a business owner understand the next move and trust that the implementation will hold up.
+            </p>
+
+            <div className="mt-8 grid grid-cols-2 gap-3">
+              {metrics.map((metric) => (
+                <div key={metric.label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-soft">
+                  <div className="text-2xl font-black tracking-[-0.04em] text-slate-950">{metric.value}</div>
+                  <div className="mt-1 text-sm font-semibold text-slate-500">{metric.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up text-foreground">
-            Why GroveX Fits Practical B2B Work
-          </h2>
-
-          <p className="text-lg sm:text-xl md:text-2xl text-foreground-secondary max-w-4xl mx-auto leading-relaxed animate-slide-up animation-delay-200 font-medium">
-            We help local businesses make practical technology decisions, improve customer-facing assets, and reduce operational friction without inflated sales language.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16 sm:mb-24">
-          {approach.map((item, index) => (
-            <div
-              key={index}
-              className={`group relative bg-background dark:bg-background-secondary rounded-2xl shadow-soft hover:shadow-large transition-all duration-500 border border-border/50 hover:border-primary/20 p-6 sm:p-8 text-center animate-slide-up animation-delay-${400 + index * 100}`}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl opacity-0 group-hover:opacity-10 blur transition-opacity duration-500"></div>
-
-              <div className="relative">
-                <div className="text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
-                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-2 group-hover:text-primary-hover transition-colors duration-300">
-                  {item.value}
-                </div>
-                <div className="text-sm sm:text-base lg:text-lg text-foreground-secondary font-medium">{item.label}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-10">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`group relative bg-background dark:bg-background-secondary rounded-2xl shadow-soft hover:shadow-large transition-all duration-500 border border-border/50 hover:border-primary/20 p-6 sm:p-8 animate-slide-up animation-delay-${800 + index * 100}`}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-secondary rounded-2xl opacity-0 group-hover:opacity-10 blur transition-opacity duration-500"></div>
-
-              <div className="relative">
-                <div className="mb-6 flex justify-center sm:justify-start">
-                  <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-4 rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                    {feature.icon}
+          <div className="grid gap-4">
+            {operatingPrinciples.map((principle) => (
+              <article key={principle.marker} className="group relative overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-large sm:p-8">
+                <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-teal-300 via-blue-400 to-slate-300 opacity-70" aria-hidden="true" />
+                <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl border border-teal-200 bg-teal-50 font-mono text-sm font-black tracking-[0.2em] text-teal-800 transition group-hover:bg-teal-300 group-hover:text-slate-950">
+                    {principle.marker}
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-black tracking-[-0.035em] text-slate-950">{principle.title}</h3>
+                    <p className="mt-3 text-base leading-7 text-slate-600">{principle.description}</p>
                   </div>
                 </div>
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 text-center sm:text-left leading-tight group-hover:text-primary transition-colors duration-300">
-                  {feature.title}
-                </h3>
-                <p className="text-sm sm:text-base lg:text-lg text-foreground-secondary leading-relaxed text-center sm:text-left">
-                  {feature.description}
-                </p>
-              </div>
-            </div>
-          ))}
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

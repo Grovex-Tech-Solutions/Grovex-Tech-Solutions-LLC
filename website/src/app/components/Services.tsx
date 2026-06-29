@@ -7,29 +7,33 @@ import { PrimaryButton } from "@/components/ui";
 const services = [
   {
     id: "web-development",
+    eyebrow: "01 / Web presence",
     title: "Websites & Landing Pages",
-    description: "Credible business websites and landing pages that explain the offer clearly, support local search, and make it easier for qualified customers to reach you.",
+    description: "Credible service pages, local-search foundations, and conversion paths that explain the offer before asking visitors to call.",
     icon: WebsiteDesignIcon,
     link: "/services#web-development",
   },
   {
     id: "small-business-it",
+    eyebrow: "02 / Reliability",
     title: "Business Systems & IT Support",
-    description: "Dependable support for infrastructure, devices, networks, and day-to-day operations so your team can run without unnecessary friction.",
+    description: "Device, network, support, and operations help for businesses that need fewer recurring technical interruptions.",
     icon: SmallBusinessIcon,
     link: "/services#small-business-it",
   },
   {
     id: "home-support",
-    title: "Custom Software & Workflow Cleanup",
-    description: "Internal tools, automations, and process improvements that reduce repeat work and create a stronger operational base for growth.",
+    eyebrow: "03 / Workflow",
+    title: "Custom Software & Cleanup",
+    description: "Internal tools, automations, and process improvements that reduce repeated manual work and make handoffs clearer.",
     icon: HomeTechSupportIcon,
     link: "/services#home-support",
   },
   {
     id: "community-education",
-    title: "Strategy, Training & Readiness",
-    description: "Practical guidance for owners who need clearer service pages, stronger local search basics, and a realistic technology plan before adding more tools or ad spend.",
+    eyebrow: "04 / Readiness",
+    title: "Strategy, Training & Planning",
+    description: "Practical recommendations before you spend more on ads, tools, or platforms that may not match the bottleneck.",
     icon: CommunityEducationIcon,
     link: "/services#community-education",
   },
@@ -37,95 +41,65 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="section-padding bg-gradient-to-b from-background to-background-secondary" aria-labelledby="services-heading">
-      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
-        <header className="text-center mb-16 sm:mb-20 lg:mb-24">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-in">
-            <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-            B2B Technology Foundation
+    <section className="bg-slate-950 py-16 text-white sm:py-20 lg:py-24" aria-labelledby="services-heading">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6">
+        <header className="mb-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+          <div>
+            <div className="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-100">
+              Core services
+            </div>
+            <h2 id="services-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-white sm:text-4xl lg:text-6xl">
+              Practical technical work, organized around the business problem.
+            </h2>
           </div>
-
-          <h2 id="services-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up text-foreground">
-            Business Websites, Systems, and Support
-          </h2>
-
-          <p className="text-lg sm:text-xl md:text-2xl text-foreground-secondary max-w-4xl mx-auto leading-relaxed animate-slide-up animation-delay-200 font-medium">
-            GroveX helps small-business owners strengthen the operational basics: credible websites, reliable devices and networks, cleaner workflows, and support that reduces downtime.
+          <p className="max-w-3xl text-lg leading-8 text-slate-300 lg:ml-auto">
+            The redesign treats GroveX as a serious technical studio: fewer generic promises, more explicit paths from customer-facing clarity to behind-the-scenes reliability.
           </p>
-
-          <div className="flex justify-center mt-8 animate-fade-in animation-delay-400">
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full"></div>
-          </div>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 max-w-6xl mx-auto" role="list" aria-label="Our business services">
-          {services.map((service, index) => (
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4" role="list" aria-label="GroveX business services">
+          {services.map((service) => (
             <article
               key={service.id}
               role="listitem"
-              className={`animate-slide-up animation-delay-${600 + index * 100} group`}
+              className="group relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.045] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-teal-200/50 hover:bg-white/[0.07]"
               aria-labelledby={`service-title-${service.id}`}
               aria-describedby={`service-desc-${service.id}`}
             >
-              <div className="bg-background border-2 border-border rounded-2xl p-6 shadow-soft hover:shadow-large hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
-                <div
-                  className="bg-gradient-to-br from-primary to-primary-dark rounded-xl p-4 mb-4 w-fit group-hover:scale-110 transition-transform duration-300"
-                  aria-hidden="true"
-                >
-                  <service.icon className="h-8 w-8 text-white" />
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-teal-200/50 to-transparent opacity-0 transition group-hover:opacity-100" aria-hidden="true" />
+              <div className="mb-8 flex items-center justify-between gap-4">
+                <div className="rounded-2xl border border-teal-200/20 bg-teal-300/10 p-4 text-teal-100 transition group-hover:bg-teal-300 group-hover:text-slate-950" aria-hidden="true">
+                  <service.icon className="h-7 w-7" />
                 </div>
-
-                <div className="flex-grow">
-                  <h3
-                    id={`service-title-${service.id}`}
-                    className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300"
-                  >
-                    {service.title}
-                  </h3>
-
-                  <p
-                    id={`service-desc-${service.id}`}
-                    className="text-foreground-secondary mb-4 leading-relaxed"
-                  >
-                    {service.description}
-                  </p>
-                </div>
-
-                <a
-                  href={service.link}
-                  className="inline-flex items-center text-primary font-semibold hover:text-primary-hover focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md py-2 mt-auto group-hover:translate-x-1 transition-all duration-300 min-h-[44px]"
-                  aria-label={`Learn more about ${service.title}`}
-                >
-                  Learn More
-                  <svg
-                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </a>
+                <div className="font-mono text-xs font-black uppercase tracking-[0.22em] text-slate-500">{service.eyebrow}</div>
               </div>
+
+              <h3 id={`service-title-${service.id}`} className="text-2xl font-black tracking-[-0.035em] text-white transition group-hover:text-teal-100">
+                {service.title}
+              </h3>
+              <p id={`service-desc-${service.id}`} className="mt-4 min-h-28 text-base leading-7 text-slate-300">
+                {service.description}
+              </p>
+
+              <a
+                href={service.link}
+                className="mt-7 inline-flex min-h-[44px] items-center rounded-xl border border-white/10 px-4 py-2 text-sm font-bold text-teal-100 transition hover:border-teal-200/60 hover:bg-teal-300 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-teal-200 focus:ring-offset-2 focus:ring-offset-slate-950"
+                aria-label={`Learn more about ${service.title}`}
+              >
+                Open service path
+                <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
             </article>
           ))}
         </div>
 
-        <div className="text-center mt-16 sm:mt-20 animate-fade-in animation-delay-1200">
-          <p className="text-foreground-secondary mb-6 text-lg max-w-3xl mx-auto">
-            If your business needs a stronger website, cleaner operations, or more dependable technology, this is the place to start.
+        <div className="mt-12 rounded-[1.5rem] border border-teal-200/15 bg-gradient-to-r from-teal-300/10 via-white/[0.04] to-blue-400/10 p-6 text-center sm:p-8">
+          <p className="mx-auto mb-6 max-w-3xl text-lg leading-8 text-slate-200">
+            Start with the bottleneck. GroveX can map whether the right next move is a stronger page, a support fix, a workflow tool, or a cleaner operating process.
           </p>
-          <PrimaryButton
-            href="/contact"
-            icon={
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            }
-          >
-            Request a Business Systems Review
-          </PrimaryButton>
+          <PrimaryButton href="/contact">Request a Business Systems Review</PrimaryButton>
         </div>
       </div>
     </section>

@@ -1,76 +1,73 @@
 import Link from "next/link";
+import { PixelArtImage } from "@/components/PixelArtAsset";
+
+const proofPoints = [
+  "Local conversion pages",
+  "Operational cleanup",
+  "Custom systems",
+];
 
 export default function EnhancedHero() {
-  const slides = [
-    {
-      title: "Reliable Websites, Systems, and IT Support for Local Business",
-      subtitle:
-        "GroveX helps small businesses improve the practical pieces that make work run better: websites, support systems, workflow cleanup, and business technology that owners can actually maintain.",
-      ctaPrimary: "Request a Business Systems Review",
-      ctaSecondary: "Explore Services",
-      ctaPrimaryLink: "/contact",
-      ctaSecondaryLink: "/services",
-      bgColor: "from-teal-600 to-emerald-700"
-    },
-    {
-      title: "Websites, Support, and Operations That Hold Up",
-      subtitle:
-        "From customer-facing websites to behind-the-scenes operations, GroveX builds practical infrastructure for owner-led businesses that need clearer communication and fewer technical bottlenecks.",
-      ctaPrimary: "See What We Do",
-      ctaSecondary: "Book a Consultation",
-      ctaPrimaryLink: "/services",
-      ctaSecondaryLink: "/contact",
-      bgColor: "from-emerald-600 to-teal-700"
-    },
-    {
-      title: "A Local Business Technology Partner at 124 Grant Street",
-      subtitle:
-        "GroveX is building from a real local address with a practical focus: dependable technical help, clear business websites, and systems that support day-to-day operations.",
-      ctaPrimary: "Learn Our Story",
-      ctaSecondary: "Get in Touch",
-      ctaPrimaryLink: "/about",
-      ctaSecondaryLink: "/contact",
-      bgColor: "from-teal-700 to-green-700"
-    }
-  ];
-
-  const currentSlide = 0;
-
   return (
-    <section className="relative overflow-hidden" role="banner" aria-label="Hero section">
-      <div className={`absolute inset-0 bg-gradient-to-r ${slides[currentSlide].bgColor} transition-all duration-1000 ease-in-out`} aria-hidden="true"></div>
+    <section className="relative isolate overflow-hidden bg-slate-950 text-white" role="banner" aria-label="GroveX homepage hero">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_18%,rgba(20,184,166,0.30),transparent_28%),radial-gradient(circle_at_80%_12%,rgba(59,130,246,0.22),transparent_30%),linear-gradient(135deg,#020617_0%,#0f172a_48%,#042f2e_100%)]" aria-hidden="true" />
+      <div className="absolute inset-0 opacity-[0.14] [background-image:linear-gradient(rgba(255,255,255,0.10)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.10)_1px,transparent_1px)] [background-size:44px_44px]" aria-hidden="true" />
+      <div className="absolute left-1/2 top-0 h-px w-[80vw] -translate-x-1/2 bg-gradient-to-r from-transparent via-teal-200/70 to-transparent" aria-hidden="true" />
 
-      <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-white/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      </div>
+      <div className="container relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:py-28">
+        <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
+          <div>
+            <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-teal-200/20 bg-white/[0.06] px-4 py-2 text-sm font-semibold text-teal-50 shadow-2xl backdrop-blur-md">
+              <span className="h-2 w-2 rounded-full bg-teal-300 shadow-[0_0_22px_rgba(94,234,212,0.9)]" aria-hidden="true" />
+              Turtle Creek technical studio for websites, systems, and support
+            </div>
 
-      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-28 relative z-10 max-w-7xl">
-        <div className="text-center">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/40 text-white/95 text-sm font-medium mb-6 animate-fade-in">
-            <span className="mr-2">📍</span>
-            124 Grant Street, Turtle Creek, PA 15145
+            <h1 className="max-w-5xl text-4xl font-black leading-[0.95] tracking-[-0.055em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
+              Clean technical infrastructure for businesses that need the web to work.
+            </h1>
+
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
+              GroveX builds practical websites, service funnels, IT support paths, and custom systems for owner-led businesses that need clarity, reliability, and fewer operational bottlenecks.
+            </p>
+
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row" role="group" aria-label="Primary GroveX actions">
+              <Link
+                href="/contact"
+                className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-teal-300 px-7 py-3 text-base font-black text-slate-950 shadow-[0_18px_60px_rgba(45,212,191,0.28)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-teal-200 focus:ring-offset-2 focus:ring-offset-slate-950"
+              >
+                Request a Systems Review
+              </Link>
+              <Link
+                href="/services"
+                className="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-white/20 bg-white/[0.06] px-7 py-3 text-base font-bold text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:border-teal-200/60 hover:bg-white/[0.12] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950"
+              >
+                View Services
+              </Link>
+            </div>
+
+            <dl className="mt-10 grid max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3">
+              {proofPoints.map((point, index) => (
+                <div key={point} className="rounded-2xl border border-white/10 bg-white/[0.055] p-4 backdrop-blur-sm">
+                  <dt className="font-mono text-xs font-black tracking-[0.24em] text-teal-200">0{index + 1}</dt>
+                  <dd className="mt-2 text-sm font-semibold leading-5 text-slate-100">{point}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 transition-all duration-700 ease-in-out leading-tight px-2">
-            {slides[currentSlide].title}
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white mb-6 sm:mb-8 md:mb-10 max-w-4xl mx-auto transition-all duration-700 ease-in-out leading-relaxed px-4 font-medium">
-            {slides[currentSlide].subtitle}
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4 max-w-2xl mx-auto" role="group" aria-label="Call to action buttons">
-            <Link
-              href={slides[currentSlide].ctaPrimaryLink}
-              className="bg-white text-primary font-semibold py-3 sm:py-3 px-6 sm:px-8 rounded-xl hover:bg-gray-100 transition-all duration-300 shadow-lg transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary text-center min-h-[48px] flex items-center justify-center text-base sm:text-lg font-medium"
-            >
-              {slides[currentSlide].ctaPrimary}
-            </Link>
-            <Link
-              href={slides[currentSlide].ctaSecondaryLink}
-              className="bg-white/10 backdrop-blur-sm border-2 border-white text-white font-semibold py-3 sm:py-3 px-6 sm:px-8 rounded-xl hover:bg-white hover:text-primary hover:border-primary transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary text-center min-h-[48px] flex items-center justify-center text-base sm:text-lg font-medium"
-            >
-              {slides[currentSlide].ctaSecondary}
-            </Link>
+          <div className="relative mx-auto w-full max-w-xl lg:max-w-none" aria-label="GroveX visual systems map">
+            <div className="absolute -inset-6 rounded-[2.25rem] bg-gradient-to-br from-teal-300/20 via-blue-400/10 to-transparent blur-2xl" aria-hidden="true" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-slate-950/80 p-4 shadow-2xl backdrop-blur-xl">
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-teal-200/70 to-transparent" aria-hidden="true" />
+              <div className="rounded-[1.55rem] border border-white/10 bg-slate-900/75 p-3">
+                <PixelArtImage asset="heroSystemsMap" className="h-auto w-full rounded-[1.25rem]" />
+              </div>
+              <div className="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/10 bg-slate-950/72 p-4 text-left shadow-xl backdrop-blur-md">
+                <div className="font-mono text-xs font-black uppercase tracking-[0.26em] text-teal-100">Website scope</div>
+                <div className="mt-1 text-xl font-black tracking-[-0.03em] text-white">Marketing clarity up front. Systems proof one layer deeper.</div>
+                <p className="mt-2 text-sm leading-6 text-slate-300">Designed to feel technical and crafted without burying local-business buyers in internal lore.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

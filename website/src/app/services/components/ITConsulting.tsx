@@ -91,7 +91,7 @@ export default function ITConsulting() {
 
           <div className="mt-6 p-4 bg-primary/10 rounded-lg">
             <p className="text-sm font-medium text-primary">
-              💡 All packages include transparent pricing with no hidden fees. The goal is to strengthen the customer path and operations layer before adding more tools or spend.
+              <span className="font-bold uppercase tracking-[0.12em]">Note:</span> All packages include transparent pricing with no hidden fees. The goal is to strengthen the customer path and operations layer before adding more tools or spend.
             </p>
           </div>
 

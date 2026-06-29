@@ -1,106 +1,94 @@
 import Link from "next/link";
+import { PixelArtImage, type PixelArtAssetKey } from "@/components/PixelArtAsset";
 
-const serviceCapabilities = [
+type Capability = {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  art: PixelArtAssetKey;
+  href: string;
+  cta: string;
+};
+
+const capabilities: Capability[] = [
   {
-    id: "growth-foundation",
-    title: "Web & Operations Foundations",
-    description: "Websites, landing pages, service-page cleanup, and infrastructure that helps local businesses explain what they do and capture qualified inquiries.",
-    category: "Strategy",
-    icon: "🌱",
-    href: "/services"
+    id: "web-foundation",
+    title: "Web & Service Foundations",
+    description: "Sharper public pages, landing flows, local trust signals, and contact paths for businesses that need the website to do useful work.",
+    category: "Marketing system",
+    art: "webFoundation",
+    href: "/services",
+    cta: "Open service path",
   },
   {
-    id: "operations-support",
-    title: "Operations, IT & Repair Support",
-    description: "Support for devices, networks, workflows, and critical repair/troubleshooting needs so the business runs cleaner behind the scenes.",
-    category: "Operations",
-    icon: "🛠️",
-    href: "/services"
+    id: "operations-grid",
+    title: "Operations & IT Support",
+    description: "Support for devices, networks, repairs, setup, documentation, and the operational issues that keep recurring behind the scenes.",
+    category: "Reliability layer",
+    art: "operationsGrid",
+    href: "/services",
+    cta: "View support work",
   },
   {
     id: "custom-systems",
-    title: "Custom Systems",
-    description: "Software, automations, and internal tools that cut friction, reduce repeat work, and support better decision-making.",
-    category: "Build",
-    icon: "⚙️",
-    href: "/services"
+    title: "Custom Workflow Systems",
+    description: "Internal tools, automation, dashboards, and small software systems that remove manual drag from owner-led operations.",
+    category: "Build layer",
+    art: "customSystems",
+    href: "/software-development",
+    cta: "Explore builds",
   },
   {
     id: "finance-feedback-engine",
     title: "Finance Feedback Engine",
-    description: "A live public technical showcase for auditable trading-system feedback loops, experiment gates, and a workflow-gated paper-mode evidence feed.",
-    category: "Systems Proof",
-    icon: "📈",
-    href: "/portfolio/finance-feedback-engine"
+    description: "A public technical proof surface for auditable feedback loops, experiment gates, and ReflexNet/Dreamscope decision visuals.",
+    category: "Proof lab",
+    art: "reflexnetDreamscope",
+    href: "/portfolio/finance-feedback-engine",
+    cta: "View proof",
   },
 ];
 
 export default function PortfolioSection() {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-b from-background to-background-secondary" aria-labelledby="capabilities-heading">
-      <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
-        <div className="text-center mb-12 sm:mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-in">
-            <span className="w-2 h-2 bg-primary rounded-full mr-2"></span>
-            What We Build
+    <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="capabilities-heading">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent" aria-hidden="true" />
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="mb-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
+          <div>
+            <div className="mb-5 inline-flex rounded-full border border-teal-200 bg-teal-50 px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-800">
+              Website routes
+            </div>
+            <h2 id="capabilities-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-6xl">
+              Four lanes, one coherent GroveX system.
+            </h2>
           </div>
-
-          <h2 id="capabilities-heading" className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-slide-up text-foreground">
-            Business Technology Infrastructure for Local Operators
-          </h2>
-
-          <p className="text-lg sm:text-xl text-foreground-secondary max-w-3xl mx-auto leading-relaxed animate-slide-up animation-delay-200">
-            GroveX brings together websites, support, and systems work so local businesses can operate from a stronger, more dependable base.
+          <p className="max-w-3xl text-lg leading-8 text-slate-600 lg:ml-auto">
+            The redesigned homepage connects the local-business offer to deeper technical proof without making the first impression feel like an internal lab demo.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 max-w-7xl mx-auto">
-          {serviceCapabilities.map((service, index) => (
-            <article
-              key={service.id}
-              className={`bg-background dark:bg-background-secondary rounded-2xl overflow-hidden shadow-soft hover:shadow-large border border-border/50 dark:border-border hover:border-primary/20 dark:hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 animate-slide-up animation-delay-${400 + index * 100}`}
-              role="article"
-              aria-labelledby={`service-${service.id}-title`}
-            >
-              {service.id === "finance-feedback-engine" ? (
-                <div className="relative h-48 overflow-hidden bg-slate-950 text-white">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(34,211,238,0.35),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(168,85,247,0.3),transparent_32%),radial-gradient(circle_at_55%_90%,rgba(16,185,129,0.25),transparent_35%)]" />
-                  <svg aria-hidden="true" viewBox="0 0 420 210" className="absolute inset-0 h-full w-full opacity-90">
-                    <defs>
-                      <linearGradient id="homeFfeLine" x1="0" x2="1" y1="0" y2="0">
-                        <stop offset="0%" stopColor="#22d3ee" />
-                        <stop offset="55%" stopColor="#a78bfa" />
-                        <stop offset="100%" stopColor="#34d399" />
-                      </linearGradient>
-                    </defs>
-                    <path d="M38 154 C96 76 142 126 188 78 S285 68 342 116 382 92 396 44" fill="none" stroke="url(#homeFfeLine)" strokeLinecap="round" strokeWidth="8" />
-                    {[38, 126, 188, 272, 342, 396].map((x, i) => {
-                      const y = [154, 104, 78, 76, 116, 44][i];
-                      return <circle key={x} cx={x} cy={y} r="8" fill="#020617" stroke="#67e8f9" strokeWidth="3" />;
-                    })}
-                  </svg>
-                  <div className="absolute bottom-4 left-4 right-4 rounded-2xl border border-white/10 bg-white/10 p-3 backdrop-blur">
-                    <div className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-100">Systems proof</div>
-                    <div className="mt-1 text-lg font-black">Feedback loops with evidence gates</div>
-                  </div>
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {capabilities.map((item, index) => (
+            <article key={item.id} className="group relative flex min-h-full flex-col overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-50 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-large" aria-labelledby={`capability-${item.id}-title`}>
+              <div className="relative h-52 overflow-hidden bg-slate-950">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(94,234,212,0.22),transparent_32%),radial-gradient(circle_at_78%_12%,rgba(96,165,250,0.20),transparent_30%),radial-gradient(circle_at_58%_92%,rgba(20,184,166,0.16),transparent_35%)]" />
+                <PixelArtImage asset={item.art} className="absolute inset-0 h-full w-full object-contain p-5 transition duration-500 group-hover:scale-[1.04]" />
+                <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-slate-950/65 px-3 py-1 font-mono text-xs font-black tracking-[0.2em] text-teal-100 backdrop-blur">
+                  0{index + 1}
                 </div>
-              ) : (
-                <div className="h-48 bg-gradient-to-r from-primary to-secondary flex items-center justify-center text-white text-6xl">
-                  {service.icon}
-                </div>
-              )}
+              </div>
 
-              <div className="p-6 sm:p-8">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 id={`service-${service.id}-title`} className="text-xl font-bold text-foreground">{service.title}</h3>
-                  <span className="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-0.5 rounded-full">{service.category}</span>
-                </div>
-
-                <p className="text-foreground-secondary mb-4">{service.description}</p>
-
-                <Link href={service.href} className="inline-flex items-center text-primary font-medium hover:underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md py-1 text-sm">
-                  {service.id === "finance-feedback-engine" ? "View Showcase" : "Learn More"}
-                  <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex flex-1 flex-col p-6">
+                <div className="font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-700">{item.category}</div>
+                <h3 id={`capability-${item.id}-title`} className="mt-3 text-2xl font-black tracking-[-0.035em] text-slate-950">
+                  {item.title}
+                </h3>
+                <p className="mt-4 flex-1 text-base leading-7 text-slate-600">{item.description}</p>
+                <Link href={item.href} className="mt-6 inline-flex min-h-[44px] items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-black text-slate-950 transition hover:border-teal-300 hover:bg-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2">
+                  {item.cta}
+                  <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </Link>
@@ -109,13 +97,9 @@ export default function PortfolioSection() {
           ))}
         </div>
 
-        <div className="text-center mt-12 sm:mt-16">
-          <Link
-            href="/services"
-            className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-xl hover:bg-primary-hover hover:shadow-glow hover:scale-105 transition-all duration-300 min-h-[48px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-            aria-label="View all available services"
-          >
-            <span>View All Services</span>
+        <div className="mt-10 flex justify-center">
+          <Link href="/pixel_art" className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-slate-950 px-6 py-3 text-sm font-black text-white shadow-large transition hover:-translate-y-0.5 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2">
+            View the visual asset system
           </Link>
         </div>
       </div>

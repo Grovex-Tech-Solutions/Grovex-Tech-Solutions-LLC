@@ -1,5 +1,6 @@
 import EnhancedHero from "@/app/components/EnhancedHero";
 import Services from "@/app/components/Services";
+import OperatingSystemSection from "@/app/components/OperatingSystemSection";
 import WhyChooseUs from "@/app/components/WhyChooseUs";
 import ExperienceSection from "@/app/components/ExperienceSection";
 import CallToAction from "@/app/components/CallToAction";
@@ -13,6 +14,7 @@ export default function Home() {
     <>
       <StructuredData data={generatePageStructuredData("home")} />
       <EnhancedHero />
+      <OperatingSystemSection />
       <Services />
       <WhyChooseUs />
       <PortfolioSection />

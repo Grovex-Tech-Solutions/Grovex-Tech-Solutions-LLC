@@ -37,17 +37,17 @@ export default function CommunityInvolvementPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8">
               <div className="text-center">
-                <div className="bg-primary rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-white text-2xl">🤝</div>
+                <div className="bg-primary rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-white text-sm font-black tracking-[0.18em]">LR</div>
                 <h3 className="text-lg font-bold mb-2 text-foreground">Local Relationships</h3>
                 <p className="text-sm text-foreground-secondary">Working directly with nearby businesses and organizations when there is a practical technology need to solve.</p>
               </div>
               <div className="text-center">
-                <div className="bg-primary rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-white text-2xl">🏬</div>
+                <div className="bg-primary rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-white text-sm font-black tracking-[0.18em]">LP</div>
                 <h3 className="text-lg font-bold mb-2 text-foreground">Visible Local Presence</h3>
                 <p className="text-sm text-foreground-secondary">Maintaining a clear local presence at 124 Grant Street so business owners know where to find accountable help.</p>
               </div>
               <div className="text-center">
-                <div className="bg-primary rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-white text-2xl">🎓</div>
+                <div className="bg-primary rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center text-white text-sm font-black tracking-[0.18em]">PE</div>
                 <h3 className="text-lg font-bold mb-2 text-foreground">Practical Education</h3>
                 <p className="text-sm text-foreground-secondary">Sharing knowledge that helps residents and local operators feel more capable with the tools they depend on.</p>
               </div>

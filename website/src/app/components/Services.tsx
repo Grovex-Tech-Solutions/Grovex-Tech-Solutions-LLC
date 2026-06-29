@@ -7,33 +7,33 @@ import { PrimaryButton } from "@/components/ui";
 const services = [
   {
     id: "web-development",
-    eyebrow: "01 / Web presence",
+    eyebrow: "01 / Websites",
     title: "Websites & Landing Pages",
-    description: "Credible service pages, local-search foundations, and conversion paths that explain the offer before asking visitors to call.",
+    description: "Credible business websites and landing pages that explain the offer clearly, support local search, and make it easier for qualified customers to reach you.",
     icon: WebsiteDesignIcon,
     link: "/services#web-development",
   },
   {
     id: "small-business-it",
-    eyebrow: "02 / Reliability",
+    eyebrow: "02 / IT support",
     title: "Business Systems & IT Support",
-    description: "Device, network, support, and operations help for businesses that need fewer recurring technical interruptions.",
+    description: "Dependable support for infrastructure, devices, networks, email, printers, and day-to-day technology so your team can run without unnecessary friction.",
     icon: SmallBusinessIcon,
     link: "/services#small-business-it",
   },
   {
     id: "home-support",
-    eyebrow: "03 / Workflow",
-    title: "Custom Software & Cleanup",
-    description: "Internal tools, automations, and process improvements that reduce repeated manual work and make handoffs clearer.",
+    eyebrow: "03 / Software",
+    title: "Custom Software & Workflow Cleanup",
+    description: "Internal tools, automations, dashboards, and process improvements that reduce repeat work and create a stronger operational base for growth.",
     icon: HomeTechSupportIcon,
     link: "/services#home-support",
   },
   {
     id: "community-education",
     eyebrow: "04 / Readiness",
-    title: "Strategy, Training & Planning",
-    description: "Practical recommendations before you spend more on ads, tools, or platforms that may not match the bottleneck.",
+    title: "Strategy, Training & Readiness",
+    description: "Practical guidance for owners who need clearer service pages, stronger local search basics, and a realistic technology plan before adding more tools or ad spend.",
     icon: CommunityEducationIcon,
     link: "/services#community-education",
   },
@@ -46,14 +46,14 @@ export default function Services() {
         <header className="mb-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <div className="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-100">
-              Core services
+              B2B technology foundation
             </div>
             <h2 id="services-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-white sm:text-4xl lg:text-6xl">
-              Practical technical work, organized around the business problem.
+              Business websites, systems, and support.
             </h2>
           </div>
           <p className="max-w-3xl text-lg leading-8 text-slate-300 lg:ml-auto">
-            The redesign treats GroveX as a serious technical studio: fewer generic promises, more explicit paths from customer-facing clarity to behind-the-scenes reliability.
+            GroveX helps small-business owners strengthen the operational basics: credible websites, reliable devices and networks, cleaner workflows, and support that reduces downtime.
           </p>
         </header>
 
@@ -77,7 +77,7 @@ export default function Services() {
               <h3 id={`service-title-${service.id}`} className="text-2xl font-black tracking-[-0.035em] text-white transition group-hover:text-teal-100">
                 {service.title}
               </h3>
-              <p id={`service-desc-${service.id}`} className="mt-4 min-h-28 text-base leading-7 text-slate-300">
+              <p id={`service-desc-${service.id}`} className="mt-4 min-h-32 text-base leading-7 text-slate-300">
                 {service.description}
               </p>
 
@@ -86,7 +86,7 @@ export default function Services() {
                 className="mt-7 inline-flex min-h-[44px] items-center rounded-xl border border-white/10 px-4 py-2 text-sm font-bold text-teal-100 transition hover:border-teal-200/60 hover:bg-teal-300 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-teal-200 focus:ring-offset-2 focus:ring-offset-slate-950"
                 aria-label={`Learn more about ${service.title}`}
               >
-                Open service path
+                Learn more
                 <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
@@ -97,7 +97,7 @@ export default function Services() {
 
         <div className="mt-12 rounded-[1.5rem] border border-teal-200/15 bg-gradient-to-r from-teal-300/10 via-white/[0.04] to-blue-400/10 p-6 text-center sm:p-8">
           <p className="mx-auto mb-6 max-w-3xl text-lg leading-8 text-slate-200">
-            Start with the bottleneck. GroveX can map whether the right next move is a stronger page, a support fix, a workflow tool, or a cleaner operating process.
+            If your business needs a stronger website, cleaner operations, or more dependable technology, this is the place to start.
           </p>
           <PrimaryButton href="/contact">Request a Business Systems Review</PrimaryButton>
         </div>

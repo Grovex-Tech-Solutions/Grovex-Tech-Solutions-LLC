@@ -14,36 +14,36 @@ type Capability = {
 const capabilities: Capability[] = [
   {
     id: "web-foundation",
-    title: "Web & Service Foundations",
-    description: "Sharper public pages, landing flows, local trust signals, and contact paths for businesses that need the website to do useful work.",
-    category: "Marketing system",
+    title: "Web & Operations Foundations",
+    description: "Websites, landing pages, service-page cleanup, and infrastructure that helps local businesses explain what they do and capture qualified inquiries.",
+    category: "Strategy",
     art: "webFoundation",
     href: "/services",
-    cta: "Open service path",
+    cta: "View website work",
   },
   {
     id: "operations-grid",
-    title: "Operations & IT Support",
-    description: "Support for devices, networks, repairs, setup, documentation, and the operational issues that keep recurring behind the scenes.",
-    category: "Reliability layer",
+    title: "Operations, IT & Repair Support",
+    description: "Support for devices, networks, workflows, and critical troubleshooting needs so the business runs cleaner behind the scenes.",
+    category: "Operations",
     art: "operationsGrid",
     href: "/services",
     cta: "View support work",
   },
   {
     id: "custom-systems",
-    title: "Custom Workflow Systems",
-    description: "Internal tools, automation, dashboards, and small software systems that remove manual drag from owner-led operations.",
-    category: "Build layer",
+    title: "Custom Systems",
+    description: "Software, automations, dashboards, and internal tools that cut friction, reduce repeat work, and support better decision-making.",
+    category: "Build",
     art: "customSystems",
     href: "/software-development",
-    cta: "Explore builds",
+    cta: "Explore systems",
   },
   {
     id: "finance-feedback-engine",
     title: "Finance Feedback Engine",
-    description: "A public technical proof surface for auditable feedback loops, experiment gates, and ReflexNet/Dreamscope decision visuals.",
-    category: "Proof lab",
+    description: "A public technical showcase for auditable trading-system feedback loops, experiment gates, and workflow-gated paper-mode evidence.",
+    category: "Systems proof",
     art: "reflexnetDreamscope",
     href: "/portfolio/finance-feedback-engine",
     cta: "View proof",
@@ -58,14 +58,14 @@ export default function PortfolioSection() {
         <div className="mb-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
           <div>
             <div className="mb-5 inline-flex rounded-full border border-teal-200 bg-teal-50 px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-800">
-              Website routes
+              What GroveX builds
             </div>
             <h2 id="capabilities-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-6xl">
-              Four lanes, one coherent GroveX system.
+              Business technology infrastructure for local operators.
             </h2>
           </div>
           <p className="max-w-3xl text-lg leading-8 text-slate-600 lg:ml-auto">
-            The redesigned homepage connects the local-business offer to deeper technical proof without making the first impression feel like an internal lab demo.
+            GroveX brings together websites, support, and systems work so local businesses can operate from a stronger, more dependable base.
           </p>
         </div>
 
@@ -97,9 +97,12 @@ export default function PortfolioSection() {
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center">
-          <Link href="/pixel_art" className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-slate-950 px-6 py-3 text-sm font-black text-white shadow-large transition hover:-translate-y-0.5 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2">
-            View the visual asset system
+        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <Link href="/services" className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-slate-950 px-6 py-3 text-sm font-black text-white shadow-large transition hover:-translate-y-0.5 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2">
+            View all services
+          </Link>
+          <Link href="/pixel_art" className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-black text-slate-950 transition hover:-translate-y-0.5 hover:border-teal-300 hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2">
+            View visual asset system
           </Link>
         </div>
       </div>

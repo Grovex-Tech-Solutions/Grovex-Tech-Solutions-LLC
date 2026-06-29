@@ -1,35 +1,35 @@
 const operatingPrinciples = [
   {
     marker: "01",
-    title: "Start with the bottleneck",
+    title: "Operations before hype",
     description:
-      "We identify whether the real issue is the website, support path, workflow, device layer, or business process before prescribing a fix.",
+      "GroveX focuses on the website, systems, devices, and workflows that need to be stable before a business spends more money on marketing, software, or new platforms.",
   },
   {
     marker: "02",
-    title: "Design for handoff",
+    title: "Practical strategy for the actual bottleneck",
     description:
-      "Pages, systems, and documentation should be understandable by the owner and maintainable after the initial build is complete.",
+      "Recommendations are shaped around the owner’s budget, the current bottleneck, and the next move that will make the business clearer or easier to run.",
   },
   {
     marker: "03",
-    title: "Make proof visible",
+    title: "Execution across the stack",
     description:
-      "Portfolio work and technical experiments sit one layer deeper, giving serious buyers evidence without overwhelming the first impression.",
+      "From customer-facing websites to behind-the-scenes tech cleanup, GroveX handles the systems work that supports reliable local-business growth.",
   },
   {
     marker: "04",
-    title: "Keep it operational",
+    title: "Real local accountability",
     description:
-      "The work is judged by whether it reduces friction, improves communication, and helps the business run with fewer recurring issues.",
+      "GroveX is based in Turtle Creek and works with nearby businesses that need direct, accountable technical help rather than a remote handoff.",
   },
 ];
 
 const metrics = [
-  { value: "Local", label: "Turtle Creek presence" },
-  { value: "Static", label: "Fast deployable pages" },
-  { value: "Clear", label: "Plain-English systems" },
-  { value: "Built", label: "Implementation over theater" },
+  { value: "Local", label: "124 Grant Street, Turtle Creek" },
+  { value: "Clear", label: "Plain-English guidance" },
+  { value: "Useful", label: "Operational systems, not theater" },
+  { value: "Direct", label: "Web, IT, software, and support" },
 ];
 
 export default function WhyChooseUs() {
@@ -40,13 +40,13 @@ export default function WhyChooseUs() {
         <div className="grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
           <div className="lg:sticky lg:top-28">
             <div className="mb-5 inline-flex rounded-full border border-slate-200 bg-white px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-700 shadow-soft">
-              Operating principles
+              Why GroveX
             </div>
             <h2 id="approach-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-6xl">
-              Serious design is the visible edge of serious operations.
+              Practical B2B technology work, grounded in the real business.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              GroveX should feel crafted and technical, but the purpose is practical: help a business owner understand the next move and trust that the implementation will hold up.
+              GroveX helps local businesses make practical technology decisions, improve customer-facing assets, and reduce operational friction without inflated sales language.
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-3">

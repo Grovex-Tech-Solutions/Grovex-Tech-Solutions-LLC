@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const nextSteps = [
-  "Clarify the business bottleneck",
-  "Map the page, support, or workflow path",
-  "Build the smallest reliable next system",
+  "Talk through the website, support, systems, or workflow problem",
+  "Identify whether the next move is a page, repair, setup, software build, or process cleanup",
+  "Scope a practical GroveX service path with clear pricing and handoff expectations",
 ];
 
 export default function CallToAction() {
@@ -17,13 +17,13 @@ export default function CallToAction() {
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
             <div>
               <div className="mb-5 inline-flex rounded-full border border-teal-200/20 bg-teal-300/10 px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-100">
-                Start clean
+                Start with GroveX
               </div>
               <h2 id="cta-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-white sm:text-4xl lg:text-6xl">
-                Bring one messy technical problem. Leave with a scoped next move.
+                Start with the practical bottleneck.
               </h2>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-200">
-                GroveX is best used when the website, workflow, device layer, or support process is creating avoidable friction. The first step is a practical systems review, not a vague pitch.
+                Talk with GroveX about the website, support, systems, or workflow problem slowing the business down right now. The first step is a practical business systems review, not a vague pitch.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -31,14 +31,14 @@ export default function CallToAction() {
                   href="/contact"
                   className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-teal-300 px-7 py-3 text-base font-black text-slate-950 shadow-[0_18px_60px_rgba(45,212,191,0.25)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-teal-200 focus:ring-offset-2 focus:ring-offset-slate-950"
                 >
-                  Request a Systems Review
+                  Request a Business Systems Review
                 </Link>
-                <Link
-                  href="/services"
+                <a
+                  href="mailto:info@grovextech.com?subject=Business%20Systems%20Review%20Request"
                   className="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-white/20 bg-white/[0.06] px-7 py-3 text-base font-bold text-white transition hover:-translate-y-0.5 hover:border-teal-200/60 hover:bg-white/[0.12] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950"
                 >
-                  Review service paths
-                </Link>
+                  Email GroveX
+                </a>
               </div>
             </div>
 
@@ -52,9 +52,11 @@ export default function CallToAction() {
                   </li>
                 ))}
               </ol>
-              <p className="mt-5 text-sm leading-6 text-slate-400">
-                Rooted in Turtle Creek, serving the Mon Valley and nearby businesses with practical website, systems, and support work.
-              </p>
+              <div className="mt-5 space-y-2 text-sm leading-6 text-slate-400">
+                <p>Call: <a href="tel:+14122069453" className="font-semibold text-teal-100 hover:text-white">(412) 206-9453</a></p>
+                <p>Email: <a href="mailto:info@grovextech.com" className="font-semibold text-teal-100 hover:text-white">info@grovextech.com</a></p>
+                <p>Rooted in Turtle Creek, serving the Mon Valley and nearby businesses.</p>
+              </div>
             </div>
           </div>
         </div>

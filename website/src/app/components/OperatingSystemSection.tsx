@@ -9,23 +9,23 @@ const layers: Array<{
   href: string;
 }> = [
   {
-    eyebrow: "Marketing site",
-    title: "Explain the business clearly",
-    description: "The public site should quickly tell local buyers what GroveX fixes, who it helps, and how to start a practical conversation.",
+    eyebrow: "Local business website",
+    title: "Explain what GroveX does without sanding off the local context",
+    description: "The site should quickly tell nearby owners that GroveX builds websites, landing pages, service pages, and customer contact paths for real small-business needs.",
     asset: "webFoundation",
     href: "/services",
   },
   {
-    eyebrow: "Operating layer",
-    title: "Turn messy work into systems",
-    description: "Service pages, support flows, automations, and repair paths should feel connected instead of scattered across one-off requests.",
+    eyebrow: "Business systems and IT",
+    title: "Keep support, devices, workflows, and operations connected",
+    description: "GroveX is not just a pretty-page shop. The offer includes dependable help for networks, devices, software ideas, workflow cleanup, repairs, and owner-facing support.",
     asset: "operationsGrid",
     href: "/services",
   },
   {
-    eyebrow: "Proof lab",
-    title: "Show technical depth deliberately",
-    description: "Portfolio work like FFE and ReflexNet belongs where buyers can explore capability after the core offer is already obvious.",
+    eyebrow: "Technical proof",
+    title: "Show advanced work after the core GroveX offer is clear",
+    description: "Portfolio work like Finance Feedback Engine and ReflexNet proves depth, but it should support the GroveX story rather than replace the website's local-business message.",
     asset: "reflexnetDreamscope",
     href: "/portfolio",
   },
@@ -39,14 +39,14 @@ export default function OperatingSystemSection() {
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <div className="mb-5 inline-flex rounded-full border border-teal-200 bg-teal-50 px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-800">
-              Redesign direction
+              GroveX site architecture
             </div>
             <h2 id="operating-system-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-5xl">
-              A sharper site architecture: clear offer first, technical proof after.
+              Clear local offer first. Deeper technical proof after.
             </h2>
           </div>
           <p className="max-w-3xl text-lg leading-8 text-slate-600 lg:ml-auto">
-            The homepage now starts from buyer clarity instead of decoration. It frames GroveX as a practical technical partner, then routes visitors into services, proof, and the visual asset system with intent.
+            This redesign should make GroveX easier to understand, not less specific. The front page now keeps the Turtle Creek business context, practical service categories, and direct path to a systems review while still feeling crafted and technical.
           </p>
         </div>
 

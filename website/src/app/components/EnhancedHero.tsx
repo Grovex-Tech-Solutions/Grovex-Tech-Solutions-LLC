@@ -2,9 +2,9 @@ import Link from "next/link";
 import { PixelArtImage } from "@/components/PixelArtAsset";
 
 const proofPoints = [
-  "Local conversion pages",
-  "Operational cleanup",
-  "Custom systems",
+  "124 Grant Street, Turtle Creek",
+  "Websites, systems, and IT support",
+  "Built for owner-led local business",
 ];
 
 export default function EnhancedHero() {
@@ -19,15 +19,15 @@ export default function EnhancedHero() {
           <div>
             <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-teal-200/20 bg-white/[0.06] px-4 py-2 text-sm font-semibold text-teal-50 shadow-2xl backdrop-blur-md">
               <span className="h-2 w-2 rounded-full bg-teal-300 shadow-[0_0_22px_rgba(94,234,212,0.9)]" aria-hidden="true" />
-              Turtle Creek technical studio for websites, systems, and support
+              124 Grant Street, Turtle Creek, PA 15145
             </div>
 
             <h1 className="max-w-5xl text-4xl font-black leading-[0.95] tracking-[-0.055em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              Clean technical infrastructure for businesses that need the web to work.
+              Reliable websites, systems, and IT support for local business.
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-              GroveX builds practical websites, service funnels, IT support paths, and custom systems for owner-led businesses that need clarity, reliability, and fewer operational bottlenecks.
+              GroveX helps small businesses improve the practical pieces that make work run better: credible websites, local-search foundations, support systems, workflow cleanup, and business technology owners can actually maintain.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row" role="group" aria-label="Primary GroveX actions">
@@ -35,13 +35,13 @@ export default function EnhancedHero() {
                 href="/contact"
                 className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-teal-300 px-7 py-3 text-base font-black text-slate-950 shadow-[0_18px_60px_rgba(45,212,191,0.28)] transition hover:-translate-y-0.5 hover:bg-white focus:outline-none focus:ring-2 focus:ring-teal-200 focus:ring-offset-2 focus:ring-offset-slate-950"
               >
-                Request a Systems Review
+                Request a Business Systems Review
               </Link>
               <Link
                 href="/services"
                 className="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-white/20 bg-white/[0.06] px-7 py-3 text-base font-bold text-white backdrop-blur-md transition hover:-translate-y-0.5 hover:border-teal-200/60 hover:bg-white/[0.12] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-950"
               >
-                View Services
+                Explore Services
               </Link>
             </div>
 
@@ -63,9 +63,9 @@ export default function EnhancedHero() {
                 <PixelArtImage asset="heroSystemsMap" className="h-auto w-full rounded-[1.25rem]" />
               </div>
               <div className="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/10 bg-slate-950/72 p-4 text-left shadow-xl backdrop-blur-md">
-                <div className="font-mono text-xs font-black uppercase tracking-[0.26em] text-teal-100">Website scope</div>
-                <div className="mt-1 text-xl font-black tracking-[-0.03em] text-white">Marketing clarity up front. Systems proof one layer deeper.</div>
-                <p className="mt-2 text-sm leading-6 text-slate-300">Designed to feel technical and crafted without burying local-business buyers in internal lore.</p>
+                <div className="font-mono text-xs font-black uppercase tracking-[0.26em] text-teal-100">GroveX scope</div>
+                <div className="mt-1 text-xl font-black tracking-[-0.03em] text-white">Web presence, support paths, and business systems under one roof.</div>
+                <p className="mt-2 text-sm leading-6 text-slate-300">Technical enough to solve the real problem. Local enough to be accountable when the work has to hold up.</p>
               </div>
             </div>
           </div>

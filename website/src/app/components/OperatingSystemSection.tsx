@@ -9,23 +9,23 @@ const layers: Array<{
   href: string;
 }> = [
   {
-    eyebrow: "Local business website",
-    title: "Explain what GroveX does without sanding off the local context",
-    description: "The site should quickly tell nearby owners that GroveX builds websites, landing pages, service pages, and customer contact paths for real small-business needs.",
+    eyebrow: "Websites that work",
+    title: "Get found and get hired",
+    description: "We build websites, landing pages, and service pages that tell nearby customers exactly what you do — and make it easy for them to reach you.",
     asset: "webFoundation",
     href: "/services",
   },
   {
-    eyebrow: "Business systems and IT",
-    title: "Keep support, devices, workflows, and operations connected",
-    description: "GroveX is not just a pretty-page shop. The offer includes dependable help for networks, devices, software ideas, workflow cleanup, repairs, and owner-facing support.",
+    eyebrow: "IT & support",
+    title: "Keep the day-to-day running",
+    description: "Networks, devices, email, printers, repairs, and workflow cleanup — dependable help so the technology behind your business stays out of your way.",
     asset: "operationsGrid",
     href: "/services",
   },
   {
-    eyebrow: "Technical proof",
-    title: "Show advanced work after the core GroveX offer is clear",
-    description: "Portfolio work like Finance Feedback Engine and ReflexNet proves depth, but it should support the GroveX story rather than replace the website's local-business message.",
+    eyebrow: "Custom builds",
+    title: "Software made for how you work",
+    description: "Need something off-the-shelf tools can't do? We build custom systems — like our Finance Feedback Engine — when a project calls for real engineering depth.",
     asset: "reflexnetDreamscope",
     href: "/portfolio",
   },
@@ -39,14 +39,14 @@ export default function OperatingSystemSection() {
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <div className="mb-5 inline-flex rounded-full border border-teal-200 bg-teal-50 px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-800">
-              GroveX site architecture
+              How we help
             </div>
             <h2 id="operating-system-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-5xl">
-              Clear local offer first. Deeper technical proof after.
+              Your website, your systems, and someone local who picks up the phone.
             </h2>
           </div>
           <p className="max-w-3xl text-lg leading-8 text-slate-600 lg:ml-auto">
-            This redesign should make GroveX easier to understand, not less specific. The front page now keeps the Turtle Creek business context, practical service categories, and direct path to a systems review while still feeling crafted and technical.
+            Most small businesses don&apos;t need more software — they need the basics handled well. That&apos;s where we start, and we can go as deep as your business needs from there.
           </p>
         </div>
 

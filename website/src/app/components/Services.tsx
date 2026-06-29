@@ -46,7 +46,7 @@ export default function Services() {
         <header className="mb-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <div className="mb-5 inline-flex items-center rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-100">
-              B2B technology foundation
+              What we do
             </div>
             <h2 id="services-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-white sm:text-4xl lg:text-6xl">
               Business websites, systems, and support.

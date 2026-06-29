@@ -28,7 +28,7 @@ const operatingPrinciples = [
 const metrics = [
   { value: "Local", label: "124 Grant Street, Turtle Creek" },
   { value: "Clear", label: "Plain-English guidance" },
-  { value: "Useful", label: "Operational systems, not theater" },
+  { value: "Useful", label: "Real fixes, no fluff" },
   { value: "Direct", label: "Web, IT, software, and support" },
 ];
 
@@ -43,10 +43,10 @@ export default function WhyChooseUs() {
               Why GroveX
             </div>
             <h2 id="approach-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-6xl">
-              Practical B2B technology work, grounded in the real business.
+              Honest, practical tech help — grounded in your actual business.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-              GroveX helps local businesses make practical technology decisions, improve customer-facing assets, and reduce operational friction without inflated sales language.
+              GroveX helps local businesses make smart technology decisions, sharpen what customers see, and cut the friction slowing things down — no jargon, no overselling.
             </p>
 
             <div className="mt-8 grid grid-cols-2 gap-3">

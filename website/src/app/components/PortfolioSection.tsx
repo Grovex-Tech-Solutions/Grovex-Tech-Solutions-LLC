@@ -42,8 +42,8 @@ const capabilities: Capability[] = [
   {
     id: "finance-feedback-engine",
     title: "Finance Feedback Engine",
-    description: "A public technical showcase for auditable trading-system feedback loops, experiment gates, and workflow-gated paper-mode evidence.",
-    category: "Systems proof",
+    description: "An example of the custom software we can build when a project needs serious engineering — an auditable trading-system feedback engine with experiment gates and paper-mode evidence.",
+    category: "Custom build",
     art: "reflexnetDreamscope",
     href: "/portfolio/finance-feedback-engine",
     cta: "View proof",
@@ -61,7 +61,7 @@ export default function PortfolioSection() {
               What GroveX builds
             </div>
             <h2 id="capabilities-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-6xl">
-              Business technology infrastructure for local operators.
+              Everything your business runs on, in one place.
             </h2>
           </div>
           <p className="max-w-3xl text-lg leading-8 text-slate-600 lg:ml-auto">
@@ -102,7 +102,7 @@ export default function PortfolioSection() {
             View all services
           </Link>
           <Link href="/pixel_art" className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-black text-slate-950 transition hover:-translate-y-0.5 hover:border-teal-300 hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2">
-            View visual asset system
+            See our pixel art
           </Link>
         </div>
       </div>

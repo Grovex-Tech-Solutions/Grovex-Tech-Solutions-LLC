@@ -27,7 +27,7 @@ export default function EnhancedHero() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-              GroveX helps small businesses improve the practical pieces that make work run better: credible websites, local-search foundations, support systems, workflow cleanup, and business technology owners can actually maintain.
+              We&apos;re your local tech partner in Turtle Creek. We build websites that bring in customers, keep your devices and networks running, clean up the busywork, and handle the everyday technology so you can get back to running your business.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row" role="group" aria-label="Primary GroveX actions">
@@ -63,9 +63,9 @@ export default function EnhancedHero() {
                 <PixelArtImage asset="heroSystemsMap" className="h-auto w-full rounded-[1.25rem]" />
               </div>
               <div className="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/10 bg-slate-950/72 p-4 text-left shadow-xl backdrop-blur-md">
-                <div className="font-mono text-xs font-black uppercase tracking-[0.26em] text-teal-100">GroveX scope</div>
-                <div className="mt-1 text-xl font-black tracking-[-0.03em] text-white">Web presence, support paths, and business systems under one roof.</div>
-                <p className="mt-2 text-sm leading-6 text-slate-300">Technical enough to solve the real problem. Local enough to be accountable when the work has to hold up.</p>
+                <div className="font-mono text-xs font-black uppercase tracking-[0.26em] text-teal-100">What we do</div>
+                <div className="mt-1 text-xl font-black tracking-[-0.03em] text-white">Websites, IT support, and custom software — all from one local team.</div>
+                <p className="mt-2 text-sm leading-6 text-slate-300">Technical enough to fix the real problem, local enough to stand behind the work.</p>
               </div>
             </div>
           </div>

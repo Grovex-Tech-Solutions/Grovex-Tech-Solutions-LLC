@@ -51,14 +51,14 @@ export default function ContactPage() {
                 </p>
                 <div className="space-y-3">
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="mr-2 text-blue-800" aria-hidden="true">📞</span>
+                    <FaPhone className="mr-2 h-4 w-4 flex-shrink-0 text-blue-800" aria-hidden="true" />
                     <span className="text-blue-700 font-semibold">
                       <span className="sr-only">Phone: </span>
                       Call us: <a href="tel:+14122069453" className="text-blue-700 hover:text-blue-900 underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-1 -mx-1">(412) 206-9453</a>
                     </span>
                   </div>
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="mr-2 text-blue-800" aria-hidden="true">✉️</span>
+                    <FaEnvelope className="mr-2 h-4 w-4 flex-shrink-0 text-blue-800" aria-hidden="true" />
                     <a
                       href="mailto:info@grovextech.com?subject=Business Systems Review Request&body=Hi! I'd like to talk about:%0D%0A%0D%0ABusiness/Project: %0D%0ACurrent bottleneck: %0D%0ABusiness goal: %0D%0A%0D%0APlease contact me to schedule a conversation.%0D%0A%0D%0AThank you!"
                       className="text-blue-700 hover:text-blue-900 underline focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-1 -mx-1"
@@ -69,7 +69,7 @@ export default function ContactPage() {
                     </a>
                   </div>
                   <div className="flex items-center">
-                    <span className="font-semibold text-blue-800 mr-2">📅</span>
+                    <FaClock className="mr-2 h-4 w-4 flex-shrink-0 text-blue-800" aria-hidden="true" />
                     <span className="text-blue-700">Or book directly using the calendar below</span>
                   </div>
                 </div>

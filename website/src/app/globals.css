@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .image-render-pixel {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+  }
+}

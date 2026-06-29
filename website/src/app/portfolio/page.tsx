@@ -16,7 +16,7 @@ const showcaseProjects = [
     title: "Finance Feedback Engine",
     description:
       "Live public technical showcase for trading-system research focused on runtime correctness, audit trails, safer feedback loops, and a workflow-gated paper-mode evidence feed.",
-    image: "/assets/derrr/social-preview.png",
+    image: "/pixel_art/card-reflexnet-dreamscope.svg",
     repoUrl: "https://github.com/Grovex-Tech-Solutions/finance_feedback_engine",
     liveUrl: "/portfolio/finance-feedback-engine",
     liveLabel: "View Showcase",

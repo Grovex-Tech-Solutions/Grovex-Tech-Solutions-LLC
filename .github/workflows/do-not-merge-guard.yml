@@ -1,0 +1,32 @@
+name: Do-not-merge label guard
+
+on:
+  pull_request:
+    branches: [master]
+    types: [opened, reopened, synchronize, labeled, unlabeled, ready_for_review]
+  workflow_dispatch:
+
+permissions:
+  pull-requests: read
+
+jobs:
+  do-not-merge:
+    name: Do-not-merge label guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fail while do-not-merge label is present
+        env:
+          LABELS_JSON: ${{ toJson(github.event.pull_request.labels.*.name) }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import sys
+
+          labels = {str(label).strip().lower() for label in json.loads(os.environ.get("LABELS_JSON") or "[]")}
+          if "do-not-merge" in labels:
+              print("Blocking merge: PR has the do-not-merge label.")
+              sys.exit(1)
+          print("OK: do-not-merge label is absent.")
+          PY

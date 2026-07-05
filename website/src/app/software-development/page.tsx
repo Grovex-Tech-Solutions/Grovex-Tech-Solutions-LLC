@@ -68,27 +68,27 @@ export default function SoftwareDevelopmentSkillsPage() {
           </div>
         </div>
 
-        <div className="bg-background-secondary rounded-xl p-8 mb-16">
-          <h2 className="text-3xl font-bold mb-6 text-center">Development Methodologies</h2>
+        <div className="bg-slate-50 rounded-xl p-8 mb-16 border border-slate-200">
+          <h2 className="text-3xl font-bold mb-6 text-center text-slate-950">Development Methodologies</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center p-6 bg-background rounded-lg">
-              <div className="text-primary text-4xl mb-4">1</div>
-              <h3 className="text-xl font-semibold mb-2">Agile Development</h3>
-              <p className="text-foreground-secondary">
+            <div className="text-center p-6 bg-white text-slate-950 rounded-lg border border-slate-200 shadow-soft">
+              <div className="text-primary-dark text-4xl mb-4 font-bold">1</div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-950">Agile Development</h3>
+              <p className="text-slate-700">
                 Iterative approach with continuous feedback and improvement cycles
               </p>
             </div>
-            <div className="text-center p-6 bg-background rounded-lg">
-              <div className="text-primary text-4xl mb-4">2</div>
-              <h3 className="text-xl font-semibold mb-2">DevOps Practices</h3>
-              <p className="text-foreground-secondary">
+            <div className="text-center p-6 bg-white text-slate-950 rounded-lg border border-slate-200 shadow-soft">
+              <div className="text-primary-dark text-4xl mb-4 font-bold">2</div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-950">DevOps Practices</h3>
+              <p className="text-slate-700">
                 CI/CD pipelines, automated testing, and deployment strategies
               </p>
             </div>
-            <div className="text-center p-6 bg-background rounded-lg">
-              <div className="text-primary text-4xl mb-4">3</div>
-              <h3 className="text-xl font-semibold mb-2">Quality Assurance</h3>
-              <p className="text-foreground-secondary">
+            <div className="text-center p-6 bg-white text-slate-950 rounded-lg border border-slate-200 shadow-soft">
+              <div className="text-primary-dark text-4xl mb-4 font-bold">3</div>
+              <h3 className="text-xl font-semibold mb-2 text-slate-950">Quality Assurance</h3>
+              <p className="text-slate-700">
                 Comprehensive testing including unit, integration, and end-to-end testing
               </p>
             </div>

@@ -20,9 +20,9 @@
     "build:analyze": "npm run build && npm run analyze:bundle"
   },
   "dependencies": {
-    "@next/third-parties": "^15.5.6",
+    "@next/third-parties": "^16.3.0",
     "js-yaml": "^4.2.0",
-    "next": "15.5.18",
+    "next": "16.3.0",
     "nodemailer": "^9.0.1",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -49,7 +49,7 @@
     "jest-axe": "^10.0.0",
     "jsdom": "^27.0.0",
     "playwright": "^1.55.1",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.23",
     "tailwindcss": "^3.4.18",
     "typescript": "5.9.3",
     "vitest": "^4.1.9"

@@ -247,12 +247,15 @@ export async function loadTestimonials(options: ContentLoadOptions = {}): Promis
   const filePath = path.join(process.cwd(), CONTENT_PATHS.base, CONTENT_PATHS.testimonials);
   
   try {
-    const testimonials = await loadContentFile(filePath, undefined, options);
+    const testimonials = await loadContentFile(filePath, undefined, {
+      ...options,
+      fallback: false,
+    });
     return testimonials as TestimonialContent[];
   } catch (error) {
     if (options.fallback) {
-      console.warn('Testimonials file not found, using fallback');
-      return createFallbackTestimonials();
+      console.warn('Testimonials file not found; no testimonials will be published');
+      return [];
     }
     throw error;
   }
@@ -418,19 +421,6 @@ function createFallbackServices(): ServiceContent[] {
         customPricing: true,
       },
       cta: { text: 'Learn More', href: '/services/software-development' },
-    },
-  ];
-}
-
-function createFallbackTestimonials(): TestimonialContent[] {
-  return [
-    {
-      id: 'testimonial-1',
-      name: 'John Doe',
-      company: 'Example Corp',
-      role: 'CEO',
-      content: 'Great service and professional results.',
-      rating: 5,
     },
   ];
 }

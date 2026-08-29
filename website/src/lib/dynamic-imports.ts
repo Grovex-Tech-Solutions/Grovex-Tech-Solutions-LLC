@@ -31,8 +31,6 @@ export const LazyOpenGraphPreview = lazy(() => import('@/components/OpenGraphPre
 export const LazySocialShare = lazy(() => import('@/components/SocialShare'));
 
 // Lazy load page-specific components
-export const LazyTestimonials = lazy(() => import('@/app/components/Testimonials'));
-
 export const LazyWhyChooseUs = lazy(() => import('@/app/components/WhyChooseUs'));
 
 // Preload critical components on interaction
@@ -45,5 +43,4 @@ export const preloadComponent = (importFn: () => Promise<unknown>) => {
 
 // Preload functions for critical components
 export const preloadSearch = preloadComponent(() => import('@/app/components/Search'));
-export const preloadTestimonials = preloadComponent(() => import('@/app/components/Testimonials'));
 export const preloadWhyChooseUs = preloadComponent(() => import('@/app/components/WhyChooseUs'));

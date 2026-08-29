@@ -28,10 +28,8 @@ We're a local business committed to making technology accessible and affordable 
 ### Development
 - **[Development Guide](DEVELOPMENT_GUIDE.md)** - Setup, architecture, and development workflows
 - **[Codebase Analysis](CODEBASE_ANALYSIS.md)** - Technical overview and architecture decisions
-- **[Professional Standards](professional-standards-validation.md)** - Code quality and standards validation
 
 ### Content & SEO
-- **[Content Audit Report](content-audit-report.md)** - Content strategy and messaging
 - **[Modern Design Improvements](modern-design-improvements.md)** - Design evolution and enhancements
 
 ## 🚀 Quick Start

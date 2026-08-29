@@ -116,15 +116,6 @@ Technical architecture overview:
 
 ### 📝 Content & Strategy
 
-#### [Content Audit Report](../content-audit-report.md)
-Content strategy and messaging:
-- Community-focused messaging
-- Target audience analysis
-- Tone and voice guidelines
-- Content recommendations
-
-**When to use**: Writing copy or planning content updates.
-
 #### [Pricing Management](PRICING_MANAGEMENT.md)
 Complete pricing structure and management:
 - Labor rates (residential & business)
@@ -135,15 +126,6 @@ Complete pricing structure and management:
 - Management workflow and updates
 
 **When to use**: When updating prices, quoting services, or ensuring pricing consistency.
-
-#### [Professional Standards Validation](../professional-standards-validation.md)
-Code quality and standards:
-- Code style guidelines
-- Best practices validation
-- Quality checklist
-- Review criteria
-
-**When to use**: Code reviews and quality assurance.
 
 ---
 
@@ -210,12 +192,11 @@ Code quality improvements:
 ### For Content Writers
 
 **Creating content?** Start here:
-1. Read [Content Audit Report](../content-audit-report.md) - Understand voice and tone
-2. Review [Pricing Management](PRICING_MANAGEMENT.md) - Current pricing structure
-3. Review homepage and key pages for style reference
-4. Focus on community-first, accessible language
-5. Avoid technical jargon unless necessary
-6. Write with seniors and non-technical users in mind
+1. Review [Pricing Management](PRICING_MANAGEMENT.md) - Current pricing structure
+2. Review homepage and key pages for style reference
+3. Focus on community-first, accessible language
+4. Avoid technical jargon unless necessary
+5. Write with seniors and non-technical users in mind
 
 **Content guidelines:**
 - Community-focused, not corporate
@@ -263,9 +244,6 @@ Code quality improvements:
 **Code Setup**
 → [Development Guide](../DEVELOPMENT_GUIDE.md) → Quick Start
 
-**Content Voice**
-→ [Content Audit Report](../content-audit-report.md)
-
 ### By Question
 
 **"What color should I use for...?"**
@@ -286,9 +264,6 @@ Code quality improvements:
 
 **"How do I set up development?"**
 → [Development Guide](../DEVELOPMENT_GUIDE.md) → Quick Start
-
-**"What's the brand voice?"**
-→ [Content Audit Report](../content-audit-report.md)
 
 **"What are the current prices?"**
 → [Pricing Management](PRICING_MANAGEMENT.md) → Pricing Structure
@@ -374,7 +349,7 @@ From [Component Library](COMPONENT_LIBRARY.md#creating-new-components):
 ### Week 2: Implementation
 - Day 1-2: Set up with [Development Guide](../DEVELOPMENT_GUIDE.md)
 - Day 3-4: Build sample components
-- Day 5: Review code against [Professional Standards](../professional-standards-validation.md)
+- Day 5: Review code against [Code Standards](CODE_STANDARDS.md)
 
 ### Week 3: Advanced
 - Day 1-2: Master [Animation Guide](ANIMATION_GUIDE.md)
@@ -480,7 +455,7 @@ Creating a new document?
 
 - **Design Questions**: Review Design System, Visual Standards
 - **Code Questions**: Check Development Guide, Component Library
-- **Content Questions**: See Content Audit Report
+- **Content Questions**: Review the current homepage and key pages
 - **Image Questions**: Read Image Guidelines
 - **Animation Questions**: Study Animation Guide
 

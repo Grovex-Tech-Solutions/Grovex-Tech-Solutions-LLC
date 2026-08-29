@@ -247,7 +247,10 @@ export async function loadTestimonials(options: ContentLoadOptions = {}): Promis
   const filePath = path.join(process.cwd(), CONTENT_PATHS.base, CONTENT_PATHS.testimonials);
   
   try {
-    const testimonials = await loadContentFile(filePath, undefined, options);
+    const testimonials = await loadContentFile(filePath, undefined, {
+      ...options,
+      fallback: false,
+    });
     return testimonials as TestimonialContent[];
   } catch (error) {
     if (options.fallback) {

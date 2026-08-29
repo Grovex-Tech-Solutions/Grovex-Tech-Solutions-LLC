@@ -1,108 +1,85 @@
 import Link from "next/link";
 import { PixelArtImage, type PixelArtAssetKey } from "@/components/PixelArtAsset";
 
-type Capability = {
-  id: string;
+const serviceLanes: ReadonlyArray<{
   title: string;
   description: string;
   category: string;
   art: PixelArtAssetKey;
   href: string;
   cta: string;
-};
-
-const capabilities: Capability[] = [
+}> = [
   {
-    id: "web-foundation",
     title: "Web & Operations Foundations",
-    description: "Websites, landing pages, service-page cleanup, and infrastructure that helps local businesses explain what they do and capture qualified inquiries.",
-    category: "Strategy",
+    description:
+      "Clear websites, local search basics, and business operations support built around a practical scope.",
+    category: "Services offered",
     art: "webFoundation",
     href: "/services",
-    cta: "View website work",
+    cta: "Explore services",
   },
   {
-    id: "operations-grid",
     title: "Operations, IT & Repair Support",
-    description: "Support for devices, networks, workflows, and critical troubleshooting needs so the business runs cleaner behind the scenes.",
-    category: "Operations",
+    description:
+      "Device setup, troubleshooting, workflow cleanup, and practical systems help for day-to-day reliability.",
+    category: "Services offered",
     art: "operationsGrid",
     href: "/services",
-    cta: "View support work",
+    cta: "See support options",
   },
   {
-    id: "custom-systems",
     title: "Custom Systems",
-    description: "Software, automations, dashboards, and internal tools that cut friction, reduce repeat work, and support better decision-making.",
-    category: "Build",
+    description:
+      "Focused software, automations, integrations, and reporting tools when an off-the-shelf product does not fit.",
+    category: "Services offered",
     art: "customSystems",
     href: "/software-development",
-    cta: "Explore systems",
-  },
-  {
-    id: "finance-feedback-engine",
-    title: "Finance Feedback Engine",
-    description: "An example of the custom software we can build when a project needs serious engineering — an auditable trading-system feedback engine with experiment gates and paper-mode evidence.",
-    category: "Custom build",
-    art: "reflexnetDreamscope",
-    href: "/portfolio/finance-feedback-engine",
-    cta: "View proof",
+    cta: "View software capabilities",
   },
 ];
 
 export default function PortfolioSection() {
   return (
-    <section className="relative overflow-hidden bg-white py-16 sm:py-20 lg:py-24" aria-labelledby="capabilities-heading">
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-slate-300 to-transparent" aria-hidden="true" />
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mb-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
-          <div>
-            <div className="mb-5 inline-flex rounded-full border border-teal-200 bg-teal-50 px-4 py-2 font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-800">
-              What GroveX builds
-            </div>
-            <h2 id="capabilities-heading" className="max-w-3xl text-3xl font-black tracking-[-0.045em] text-slate-950 sm:text-4xl lg:text-6xl">
-              Everything your business runs on, in one place.
-            </h2>
+    <section className="bg-background px-4 py-16 sm:px-6 lg:px-8" aria-labelledby="work-heading">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-10 max-w-3xl">
+          <div className="mb-4 inline-flex rounded-full border border-teal-800/20 bg-teal-800/10 px-4 py-2 text-sm font-semibold text-teal-900 dark:text-teal-100">
+            Offers and evidence stay separate
           </div>
-          <p className="max-w-3xl text-lg leading-8 text-slate-600 lg:ml-auto">
-            GroveX brings together websites, support, and systems work so local businesses can operate from a stronger, more dependable base.
+          <h2 id="work-heading" className="text-3xl font-black text-foreground sm:text-4xl lg:text-5xl">
+            Services describe what we offer. Public evidence shows what exists.
+          </h2>
+          <p className="mt-4 text-lg leading-8 text-foreground-secondary">
+            Service lanes are intentionally not presented as delivered work. The public evidence row above states project maturity and limitations separately.
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {capabilities.map((item, index) => (
-            <article key={item.id} className="group relative flex min-h-full flex-col overflow-hidden rounded-[1.75rem] border border-slate-200 bg-slate-50 shadow-soft transition duration-300 hover:-translate-y-1 hover:border-teal-300 hover:shadow-large" aria-labelledby={`capability-${item.id}-title`}>
-              <div className="relative h-52 overflow-hidden bg-slate-950">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(94,234,212,0.22),transparent_32%),radial-gradient(circle_at_78%_12%,rgba(96,165,250,0.20),transparent_30%),radial-gradient(circle_at_58%_92%,rgba(20,184,166,0.16),transparent_35%)]" />
-                <PixelArtImage asset={item.art} className="absolute inset-0 h-full w-full object-contain p-5 transition duration-500 group-hover:scale-[1.04]" />
-                <div className="absolute left-4 top-4 rounded-full border border-white/10 bg-slate-950/65 px-3 py-1 font-mono text-xs font-black tracking-[0.2em] text-teal-100 backdrop-blur">
-                  0{index + 1}
+        <section aria-labelledby="service-lanes-heading">
+          <h3 id="service-lanes-heading" className="text-xl font-bold text-foreground">
+            Service lanes
+          </h3>
+          <div className="mt-5 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {serviceLanes.map((item) => (
+              <article key={item.title} className="flex h-full flex-col overflow-hidden rounded-3xl border border-border bg-background-secondary/50 shadow-soft">
+                <div className="bg-slate-950 p-5">
+                  <PixelArtImage asset={item.art} className="mx-auto aspect-square w-full max-w-[210px]" />
                 </div>
-              </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="text-xs font-bold uppercase tracking-[0.16em] text-teal-900 dark:text-teal-100">{item.category}</div>
+                  <h4 className="mt-3 text-xl font-bold text-foreground">{item.title}</h4>
+                  <p className="mt-3 flex-1 leading-7 text-slate-700 dark:text-slate-200">{item.description}</p>
+                  <Link href={item.href} className="mt-5 font-bold text-teal-900 underline decoration-teal-900/30 underline-offset-4 hover:decoration-teal-900 dark:text-teal-100">
+                    {item.cta}
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
 
-              <div className="flex flex-1 flex-col p-6">
-                <div className="font-mono text-xs font-black uppercase tracking-[0.22em] text-teal-700">{item.category}</div>
-                <h3 id={`capability-${item.id}-title`} className="mt-3 text-2xl font-black tracking-[-0.035em] text-slate-950">
-                  {item.title}
-                </h3>
-                <p className="mt-4 flex-1 text-base leading-7 text-slate-600">{item.description}</p>
-                <Link href={item.href} className="mt-6 inline-flex min-h-[44px] items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-black text-slate-950 transition hover:border-teal-300 hover:bg-teal-300 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:ring-offset-2">
-                  {item.cta}
-                  <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Link href="/services" className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-slate-950 px-6 py-3 text-sm font-black text-white shadow-large transition hover:-translate-y-0.5 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2">
-            View all services
-          </Link>
-          <Link href="/pixel_art" className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-black text-slate-950 transition hover:-translate-y-0.5 hover:border-teal-300 hover:bg-teal-50 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2">
-            See our pixel art
+        <div className="mt-10 border-t border-border pt-8">
+          <Link href="/portfolio" className="font-bold text-teal-900 underline decoration-teal-900/30 underline-offset-4 hover:decoration-teal-900 dark:text-teal-100">
+            Review the full evidence inventory and policy
           </Link>
         </div>
       </div>

@@ -52,10 +52,10 @@ export const pixelArtAssets: Record<PixelArtAssetKey, PixelArtAsset> = {
   },
   reflexnetDreamscope: {
     key: "reflexnetDreamscope",
-    title: "ReflexNet Dreamscope",
-    description: "Proof visual for FFE and ReflexNet: signals moving through evaluation toward portfolio-constrained maneuvers.",
+    title: "Research Feedback Loop",
+    description: "Proof visual for paper-mode research: signals moving through evaluation and publication gates.",
     src: "/pixel_art/card-reflexnet-dreamscope.svg",
-    alt: "Pixel art signal field representing ReflexNet and Finance Feedback Engine decision loops",
+    alt: "Pixel art signal field representing paper-mode research and evaluation loops",
     bestUse: "proof",
   },
   localPresence: {

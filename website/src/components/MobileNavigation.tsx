@@ -14,7 +14,7 @@ interface NavigationItem {
 const navigationItems: NavigationItem[] = [
   { href: "/", label: "Home", description: "Return to homepage" },
   { href: "/services", label: "Services", description: "View our tech services" },
-  { href: "/portfolio", label: "Portfolio", description: "See our completed projects" },
+  { href: "/portfolio", label: "Portfolio", description: "Review public evidence" },
   { href: "/community-involvement", label: "Community", description: "Our local involvement" },
   { href: "/about", label: "About", description: "Learn about our team" },
   { href: "/contact", label: "Contact", description: "Get in touch with us" },

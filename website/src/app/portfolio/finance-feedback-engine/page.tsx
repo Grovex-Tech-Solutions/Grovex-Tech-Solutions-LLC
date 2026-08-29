@@ -6,17 +6,12 @@ const portalLinks = [
   {
     label: "Technical portal",
     href: "https://ffe.grovextech.com/",
-    description: "Live public entry point for the FFE architecture, roadmap, and evidence surfaces.",
+    description: "Public entry point for the FFE architecture, roadmap, and evidence surfaces.",
   },
   {
-    label: "Live public-safe feed",
+    label: "Public research feed",
     href: "https://ffe.grovextech.com/feed.json",
-    description: "Workflow-published JSON feed with paper-mode, delayed, allowlisted metrics only.",
-  },
-  {
-    label: "GitHub source",
-    href: "https://github.com/Grovex-Tech-Solutions/finance_feedback_engine",
-    description: "Inspectable implementation history for the trading-system runtime and docs portal.",
+    description: "Workflow-published JSON snapshot with paper-mode, delayed, allowlisted evidence only; freshness is not assumed.",
   },
   {
     label: "Roadmap",
@@ -55,7 +50,7 @@ const proofPillars = [
 
 const maturitySignals = [
   "GitHub Pages technical portal deployed at ffe.grovextech.com",
-  "Live public-safe feed deployed through GitHub Actions with a PII/sensitive-content gate",
+  "Public research snapshot deployed through GitHub Actions with a PII/sensitive-content gate",
   "Roadmap organized around evidence-backed milestones and exit gates",
   "Experiment catalog designed around baseline, post-change, and spillover readouts",
   "Publication policy separates public proof from sensitive trading/account state",
@@ -112,14 +107,14 @@ const technicalSignals = [
 export const metadata: Metadata = {
   title: "Finance Feedback Engine | GroveX Portfolio",
   description:
-    "Explore the GroveX Finance Feedback Engine: a public technical showcase for auditable trading-system feedback loops, experiment discipline, and evidence-backed runtime improvement.",
+    "Explore the GroveX Finance Feedback Engine: a paper-only research showcase for auditable feedback loops and evidence-gated experiments—not live trading results or financial advice.",
   alternates: {
     canonical: "https://grovextech.com/portfolio/finance-feedback-engine",
   },
   openGraph: {
     title: "Finance Feedback Engine | GroveX Portfolio",
     description:
-      "A GroveX technical showcase for trading-system runtime correctness, auditability, and evidence-gated research workflows.",
+      "A paper-only GroveX research showcase for runtime correctness, auditability, and evidence-gated experiments—not live trading results or financial advice.",
     type: "website",
     url: "https://grovextech.com/portfolio/finance-feedback-engine",
     images: [
@@ -131,6 +126,13 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Finance Feedback Engine | GroveX Portfolio",
+    description:
+      "Paper-only GroveX research on auditable feedback loops and evidence-gated experiments—not live trading results or financial advice.",
+    images: ["https://grovextech.com/assets/derrr/social-preview.png"],
+  },
 };
 
 function SignalGraph() {
@@ -140,7 +142,7 @@ function SignalGraph() {
       <div className="relative rounded-3xl border border-cyan-300/20 bg-slate-950/80 p-5">
         <div className="mb-5 flex items-center justify-between">
           <div>
-            <div className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-100/70">Live feedback map</div>
+            <div className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-100/70">Illustrative feedback map</div>
             <div className="mt-1 text-2xl font-black text-white">Decision quality loop</div>
           </div>
           <div className="flex gap-2">
@@ -236,12 +238,12 @@ export default function FinanceFeedbackEnginePortfolioPage() {
                 Open the technical portal
               </a>
               <a
-                href="https://github.com/Grovex-Tech-Solutions/finance_feedback_engine"
+                href="https://ffe.grovextech.com/publication-policy.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-white/20 px-6 py-3 font-bold text-white transition hover:scale-[1.02] hover:bg-white/10"
               >
-                View the source repo
+                Read the publication policy
               </a>
             </div>
           </div>
@@ -290,6 +292,9 @@ export default function FinanceFeedbackEnginePortfolioPage() {
             </h2>
             <p className="mt-5 leading-8 text-foreground-secondary">
               FFE is not a promise of returns. It is GroveX proof of disciplined systems engineering around a hard domain: every public surface should help reviewers understand how decisions are generated, tested, governed, and evaluated while private runtime details stay private.
+            </p>
+            <p className="mt-4 leading-8 text-foreground-secondary">
+              All FFE evidence is paper-only and for research use. Simulated, backtest, illustrative, current-feed, and retired artifacts are labeled separately; none is brokerage performance or financial advice. The implementation repository is private, so this page links only to public evidence surfaces.
             </p>
             <ul className="mt-6 space-y-3">
               {maturitySignals.map((signal) => (

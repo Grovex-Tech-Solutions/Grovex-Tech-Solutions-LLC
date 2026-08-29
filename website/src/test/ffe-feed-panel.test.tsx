@@ -1,4 +1,4 @@
-import { cleanup, render, screen, waitFor } from "@testing-library/react";
+import { act, cleanup, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import FfeLiveFeedPanel from "@/app/portfolio/finance-feedback-engine/FfeLiveFeedPanel";
 
@@ -25,6 +25,7 @@ function mockFetch(body: unknown, ok = true) {
 
 afterEach(() => {
   cleanup();
+  vi.useRealTimers();
   vi.unstubAllGlobals();
 });
 
@@ -60,5 +61,31 @@ describe("FFE public feed panel", () => {
     expect(screen.getByText("94.2%")).toBeVisible();
     expect(screen.getByText("Simulated evidence")).toBeVisible();
     expect(screen.getByText("Paper-only research")).toBeVisible();
+  });
+
+  it("does not let an older success overwrite the latest failed refresh", async () => {
+    vi.useFakeTimers();
+    type MockResponse = { ok: boolean; status: number; json: () => Promise<unknown> };
+    let resolveOlder: (response: MockResponse) => void = () => undefined;
+    const olderRequest = new Promise<MockResponse>((resolve) => {
+      resolveOlder = resolve;
+    });
+    const fetchMock = vi.fn()
+      .mockImplementationOnce(() => olderRequest)
+      .mockResolvedValueOnce({ ok: true, status: 200, json: async () => ({ metrics: [] }) });
+    vi.stubGlobal("fetch", fetchMock);
+
+    render(<FfeLiveFeedPanel />);
+    await act(async () => {
+      await vi.advanceTimersByTimeAsync(5 * 60 * 1000);
+    });
+    expect(screen.getByText("Feed unavailable")).toBeVisible();
+
+    await act(async () => {
+      resolveOlder({ ok: true, status: 200, json: async () => payload("current") });
+      await Promise.resolve();
+    });
+    expect(screen.getByText("Feed unavailable")).toBeVisible();
+    expect(screen.queryByText("94.2%")).not.toBeInTheDocument();
   });
 });

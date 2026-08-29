@@ -4,8 +4,10 @@ import {
   freshnessPresentation,
   getEvidenceModeLabel,
   getFeedFreshness,
+  isFeedPayload,
+  isValidTimestamp,
   type FeedPayload,
-} from "@/app/portfolio/finance-feedback-engine/feedEvidence";
+} from "@/lib/ffe-evidence";
 import { metadata } from "@/app/portfolio/finance-feedback-engine/page";
 
 const completeFeed = (freshness_status?: string): FeedPayload => ({
@@ -23,7 +25,7 @@ describe("FFE public evidence freshness contract", () => {
     const feed = completeFeed();
     expect(getFeedFreshness(feed)).toBe("unverified");
     expect(canPublishMetrics(feed)).toBe(false);
-    expect(freshnessPresentation.unverified.publishMetrics).toBe(false);
+    expect(freshnessPresentation("unverified").description).toContain("withheld");
   });
 
   it.each(["aging", "stale"])("withholds %s metrics", (freshness: string) => {
@@ -65,6 +67,19 @@ describe("FFE public evidence freshness contract", () => {
     const retiredMetric = completeFeed("current");
     retiredMetric.metrics = [{ key: "coverage", label: "Decision coverage", mode: "retired", display: "94.2%" }];
     expect(canPublishMetrics(retiredMetric)).toBe(false);
+  });
+
+  it("rejects calendar-invalid RFC 3339 timestamps", () => {
+    const feed = completeFeed("current");
+    if (feed.meta) feed.meta.source_as_of = "2026-02-30T12:00:00Z";
+    expect(isValidTimestamp(feed.meta?.source_as_of)).toBe(false);
+    expect(canPublishMetrics(feed)).toBe(false);
+  });
+
+  it("rejects wrong-shaped optional metadata before render", () => {
+    const payload = completeFeed("current") as unknown as { meta: { freshness_status: unknown } };
+    payload.meta.freshness_status = { state: "current" };
+    expect(isFeedPayload(payload)).toBe(false);
   });
 
   it("labels evidence maturity without promoting paper or simulation to live", () => {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   canPublishMetrics,
   freshnessPresentation,
@@ -8,7 +8,7 @@ import {
   getFeedFreshness,
   isFeedPayload,
   type FeedPayload,
-} from "./feedEvidence";
+} from "@/lib/ffe-evidence";
 
 const FEED_URL = "https://ffe.grovextech.com/feed.json";
 
@@ -30,15 +30,22 @@ function formatTimestamp(value?: string) {
 export default function FfeLiveFeedPanel() {
   const [feed, setFeed] = useState<FeedPayload | null>(null);
   const [status, setStatus] = useState<"loading" | "ready" | "error">("loading");
+  const requestGeneration = useRef(0);
 
   useEffect(() => {
-    let cancelled = false;
+    let activeController: AbortController | null = null;
 
     async function loadFeed() {
+      const generation = ++requestGeneration.current;
+      activeController?.abort();
+      const controller = new AbortController();
+      activeController = controller;
+
       try {
         const response = await fetch(`${FEED_URL}?ts=${Date.now()}`, {
           cache: "no-store",
           headers: { Accept: "application/json" },
+          signal: controller.signal,
         });
         if (!response.ok) {
           throw new Error(`Feed request failed: ${response.status}`);
@@ -47,12 +54,12 @@ export default function FfeLiveFeedPanel() {
         if (!isFeedPayload(payload)) {
           throw new Error("Feed response did not match the public evidence contract");
         }
-        if (!cancelled) {
+        if (generation === requestGeneration.current) {
           setFeed(payload);
           setStatus("ready");
         }
       } catch {
-        if (!cancelled) {
+        if (!controller.signal.aborted && generation === requestGeneration.current) {
           setFeed(null);
           setStatus("error");
         }
@@ -65,13 +72,14 @@ export default function FfeLiveFeedPanel() {
     }, 5 * 60 * 1000);
 
     return () => {
-      cancelled = true;
+      requestGeneration.current += 1;
+      activeController?.abort();
       window.clearInterval(interval);
     };
   }, []);
 
   const freshness = getFeedFreshness(feed);
-  const freshnessCopy = freshnessPresentation[freshness];
+  const freshnessCopy = freshnessPresentation(freshness);
   const metrics = canPublishMetrics(feed) ? feed?.metrics?.slice(0, 4) ?? [] : [];
   const stateLabel = status === "loading"
     ? "Loading"
@@ -134,7 +142,7 @@ export default function FfeLiveFeedPanel() {
               ? "Requesting the public evidence snapshot. No placeholder values are shown while loading."
               : status === "error"
                 ? "The public feed is unavailable or invalid. No cached or hard-coded values are substituted."
-                : freshnessCopy.detail}
+                : freshnessCopy.description}
           </div>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-2">

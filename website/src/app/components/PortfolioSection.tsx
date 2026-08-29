@@ -1,7 +1,5 @@
 import Link from "next/link";
-import EvidenceCard from "@/app/components/EvidenceCard";
 import { PixelArtImage, type PixelArtAssetKey } from "@/components/PixelArtAsset";
-import { portfolioProjects } from "@/lib/portfolio-evidence";
 
 const serviceLanes: ReadonlyArray<{
   title: string;
@@ -49,10 +47,10 @@ export default function PortfolioSection() {
             Offers and evidence stay separate
           </div>
           <h2 id="work-heading" className="text-3xl font-black text-foreground sm:text-4xl lg:text-5xl">
-            Services describe what we offer. Evidence shows what exists.
+            Services describe what we offer. Public evidence shows what exists.
           </h2>
           <p className="mt-4 text-lg leading-8 text-foreground-secondary">
-            Every project below carries an explicit maturity state and a public artifact. Service lanes are intentionally not presented as delivered work.
+            Service lanes are intentionally not presented as delivered work. The public evidence row above states project maturity and limitations separately.
           </p>
         </div>
 
@@ -79,26 +77,11 @@ export default function PortfolioSection() {
           </div>
         </section>
 
-        <section className="mt-14 border-t border-border pt-10" aria-labelledby="project-evidence-heading">
-          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <h3 id="project-evidence-heading" className="text-2xl font-black text-foreground sm:text-3xl">
-                Project evidence
-              </h3>
-              <p className="mt-2 max-w-2xl leading-7 text-foreground-secondary">
-                Maturity labels distinguish deployed work from paper-only research.
-              </p>
-            </div>
-            <Link href="/portfolio" className="font-bold text-teal-900 underline decoration-teal-900/30 underline-offset-4 hover:decoration-teal-900 dark:text-teal-100">
-              Review the evidence policy
-            </Link>
-          </div>
-          <div className="grid gap-6 lg:grid-cols-2">
-            {portfolioProjects.map((project) => (
-              <EvidenceCard key={project.id} project={project} headingLevel="h4" />
-            ))}
-          </div>
-        </section>
+        <div className="mt-10 border-t border-border pt-8">
+          <Link href="/portfolio" className="font-bold text-teal-900 underline decoration-teal-900/30 underline-offset-4 hover:decoration-teal-900 dark:text-teal-100">
+            Review the full evidence inventory and policy
+          </Link>
+        </div>
       </div>
     </section>
   );

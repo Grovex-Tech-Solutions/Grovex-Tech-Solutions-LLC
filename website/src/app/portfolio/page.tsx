@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "Turtle Creek technology",
   ],
   alternates: {
-    canonical: "https://grovextech.com/portfolio",
+    canonical: "https://grovextech.com/portfolio/",
   },
   openGraph: {
     title: "Portfolio | GroveX",
     description:
       "Public project evidence with maturity labels, limitations, and artifact links.",
-    url: "https://grovextech.com/portfolio",
+    url: "https://grovextech.com/portfolio/",
     type: "website",
   },
 };
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
 const pageSchema = generateWebPageSchema(
   "GroveX Public Project Evidence",
   "Public GroveX project evidence with explicit maturity labels, limitations, and artifact links.",
-  "https://grovextech.com/portfolio",
+  "https://grovextech.com/portfolio/",
   [
     { name: "Home", url: "https://grovextech.com" },
-    { name: "Portfolio", url: "https://grovextech.com/portfolio" },
+    { name: "Portfolio", url: "https://grovextech.com/portfolio/" },
   ],
 );
 

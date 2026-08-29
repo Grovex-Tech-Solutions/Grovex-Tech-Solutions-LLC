@@ -31,10 +31,28 @@ describe("portfolio evidence semantics", () => {
       expect(publicEvidenceLinks(project).length).toBeGreaterThan(0);
       for (const link of publicEvidenceLinks(project)) {
         expect(link.access).toBe("public");
-        expect(link.href).toMatch(/^(https:\/\/|\/)/);
+        expect(link.href).toMatch(/^(https:\/\/|\/(?!\/))/);
         expect(link.href).not.toMatch(/github\.com\/.*finance_feedback_engine/i);
       }
     }
+  });
+
+  it("rejects protocol-relative evidence links", () => {
+    const unsafeProject = {
+      id: "unsafe",
+      title: "Unsafe evidence fixture",
+      summary: "Test fixture only.",
+      maturity: "prototype",
+      evidence: [
+        {
+          label: "Protocol-relative link",
+          href: "//example.com",
+          access: "public",
+        },
+      ],
+    } as unknown as PortfolioProject;
+
+    expect(publicEvidenceLinks(unsafeProject)).toEqual([]);
   });
 
   it("renders private evidence as text, never as an action", () => {
@@ -67,8 +85,8 @@ describe("portfolio evidence semantics", () => {
     expect(screen.queryByRole("link")).not.toBeInTheDocument();
   });
 
-  it("caps homepage evidence at two qualified entries", () => {
-    expect(homepageEvidenceProjects.length).toBeLessThanOrEqual(2);
+  it("requires exactly two qualified homepage evidence entries", () => {
+    expect(homepageEvidenceProjects.length).toBe(2);
     for (const project of homepageEvidenceProjects) {
       expect(canPresentOnHomepage(project)).toBe(true);
       expect(publicEvidenceLinks(project).length).toBeGreaterThan(0);

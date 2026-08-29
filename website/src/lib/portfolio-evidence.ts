@@ -1,6 +1,7 @@
 import {
   PROJECT_MATURITY,
   type PortfolioProject,
+  type ProjectMaturity,
   type PublicEvidenceLink,
 } from "@/types/portfolio-evidence";
 
@@ -63,7 +64,7 @@ export type MaturityPresentation = {
   tone: "neutral" | "research" | "published" | "delivered";
 };
 
-const maturityPresentations: Record<string, MaturityPresentation> = {
+const maturityPresentations: Record<ProjectMaturity, MaturityPresentation> = {
   concept: {
     label: "Concept",
     description: "Described intent without an implementation claim.",
@@ -103,7 +104,7 @@ export function maturityPresentation(value: unknown): MaturityPresentation {
   const normalized = value.trim().toLowerCase();
   if (!maturitySet.has(normalized)) return unverifiedPresentation;
 
-  return maturityPresentations[normalized] ?? unverifiedPresentation;
+  return maturityPresentations[normalized as ProjectMaturity] ?? unverifiedPresentation;
 }
 
 export function publicEvidenceLinks(
@@ -112,7 +113,8 @@ export function publicEvidenceLinks(
   return project.evidence.filter(
     (item): item is PublicEvidenceLink =>
       item.access === "public" &&
-      (item.href.startsWith("https://") || item.href.startsWith("/")),
+      (item.href.startsWith("https://") ||
+        (item.href.startsWith("/") && !item.href.startsWith("//"))),
   );
 }
 

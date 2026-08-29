@@ -16,8 +16,8 @@ export default function Home() {
       <EnhancedHero />
       <OperatingSystemSection />
       <Services />
-      <WhyChooseUs />
       <PortfolioSection />
+      <WhyChooseUs />
       <SpaceStorySection />
       <ExperienceSection />
       <CallToAction />

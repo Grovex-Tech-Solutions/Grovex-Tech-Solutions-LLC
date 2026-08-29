@@ -25,8 +25,8 @@ const scopeRows = [
   },
   {
     label: "Portfolio proof",
-    purpose: "Show visible work, public technical artifacts, GitHub-backed projects, and safe evidence surfaces.",
-    visualRole: "Use denser systems visuals for FFE, ReflexNet, dashboards, and research/product proof.",
+    purpose: "Show visible work, public technical artifacts, and safe evidence surfaces.",
+    visualRole: "Use denser systems visuals for paper-mode research, dashboards, and technical evidence.",
   },
   {
     label: "Asset library",

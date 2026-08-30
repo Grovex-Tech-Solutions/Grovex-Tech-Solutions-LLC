@@ -17,6 +17,7 @@
     "optimize:images": "node scripts/optimize-images.mjs",
     "analyze:images": "node scripts/optimize-images.mjs",
     "analyze:bundle": "node scripts/analyze-bundle.mjs",
+    "verify:ffe-delivery": "node scripts/verify-ffe-browser-delivery.mjs",
     "build:analyze": "npm run build && npm run analyze:bundle"
   },
   "dependencies": {

@@ -23,12 +23,13 @@ const result = {
   verified: false,
 };
 
-const browser = await chromium.launch({
-  headless: true,
-  ...(executablePath ? { executablePath } : {}),
-});
+let browser;
 
 try {
+  browser = await chromium.launch({
+    headless: true,
+    ...(executablePath ? { executablePath } : {}),
+  });
   const page = await browser.newPage();
   page.on("requestfailed", (request) => {
     if (request.url().startsWith(feedUrl)) {
@@ -90,11 +91,13 @@ try {
     && result.browserFetch.ok === true
     && result.browserFetch.status === 200
     && result.browserFetch.hasTypedMeta === true
+    && ["Freshness unverified", "Current", "Aging", "Stale"].includes(result.pageState)
+    && result.requestFailures.length === 0
   );
 } catch (error) {
   result.error = error instanceof Error ? error.message : String(error);
 } finally {
-  await browser.close();
+  await browser?.close();
 }
 
 const serialized = `${JSON.stringify(result, null, 2)}\n`;

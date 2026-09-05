@@ -41,9 +41,30 @@ async function htmlResponse(context) {
   });
 }
 
+async function apiCatalogResponse(context) {
+  const response = await context.next();
+  const headers = new Headers(response.headers);
+  headers.set(
+    'Content-Type',
+    'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"',
+  );
+  headers.set('Link', '</.well-known/api-catalog>; rel="api-catalog"');
+  return new Response(context.request.method === 'HEAD' ? null : response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 export async function onRequest(context) {
   const { request } = context;
   const requestUrl = new URL(request.url);
+  if (
+    ['GET', 'HEAD'].includes(request.method)
+    && requestUrl.pathname === '/.well-known/api-catalog'
+  ) {
+    return apiCatalogResponse(context);
+  }
   const assetPath = markdownPath(requestUrl.pathname);
   if (!['GET', 'HEAD'].includes(request.method) || !assetPath) return context.next();
   if (!acceptsMarkdown(request.headers.get('Accept'))) return htmlResponse(context);

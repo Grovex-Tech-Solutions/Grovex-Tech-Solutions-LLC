@@ -1,27 +1,19 @@
 {
-  "publisher": "Grovex Technologies & Software Solutions LLC",
-  "description": "Public machine-readable API catalog for agent discovery. GroveX currently exposes public website resources and service/contact routes; additional public APIs will be listed here when available.",
-  "links": [
+  "linkset": [
     {
-      "href": "/",
-      "rel": "home",
-      "title": "GroveX homepage"
-    },
-    {
-      "href": "/services/",
-      "rel": "service-doc",
-      "title": "Service information"
-    },
-    {
-      "href": "/contact/",
-      "rel": "contact",
-      "title": "Contact GroveX"
-    },
-    {
-      "href": "/sitemap.xml",
-      "rel": "sitemap",
-      "title": "XML sitemap"
+      "anchor": "https://grovextech.com/.well-known/api-catalog",
+      "service-desc": [
+        {
+          "href": "https://grovextech.com/api/openapi.json",
+          "type": "application/json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://grovextech.com/api/docs/",
+          "type": "text/html"
+        }
+      ]
     }
-  ],
-  "apis": []
+  ]
 }

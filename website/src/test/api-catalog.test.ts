@@ -70,8 +70,32 @@ describe('RFC 9727 API catalog', () => {
     });
 
     expect(response.status).toBe(200);
-    expect(response.headers.get('content-type')).toBe('application/linkset+json');
+    expect(response.headers.get('content-type')).toBe(
+      'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"',
+    );
+    expect(response.headers.get('link')).toBe(
+      '</.well-known/api-catalog>; rel="api-catalog"',
+    );
     expect(await response.json()).toEqual(catalog);
+    expect(next).toHaveBeenCalledOnce();
+  });
+
+  it('supports RFC 9727 discovery with HEAD and no response body', async () => {
+    const next = vi.fn().mockResolvedValue(new Response(JSON.stringify(catalog)));
+    const response = await onRequest({
+      request: new Request('https://grovextech.com/.well-known/api-catalog', {
+        method: 'HEAD',
+      }),
+      env: { ASSETS: { fetch: vi.fn() } },
+      next,
+    });
+
+    expect(response.status).toBe(200);
+    expect(response.headers.get('content-type')).toContain('application/linkset+json');
+    expect(response.headers.get('link')).toBe(
+      '</.well-known/api-catalog>; rel="api-catalog"',
+    );
+    expect(await response.text()).toBe('');
     expect(next).toHaveBeenCalledOnce();
   });
 });

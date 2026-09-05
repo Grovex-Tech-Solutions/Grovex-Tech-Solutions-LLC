@@ -28,6 +28,25 @@
             }
           }
         }
+      },
+      "head": {
+        "summary": "Discover the GroveX API catalog",
+        "description": "Returns catalog metadata without a response body.",
+        "operationId": "headApiCatalog",
+        "responses": {
+          "200": {
+            "description": "API catalog discovery metadata",
+            "headers": {
+              "Link": {
+                "description": "Link to the API catalog using the api-catalog relation.",
+                "schema": {
+                  "type": "string",
+                  "example": "</.well-known/api-catalog>; rel=\"api-catalog\""
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -93,6 +112,7 @@
         "properties": {
           "linkset": {
             "type": "array",
+            "minItems": 1,
             "items": {
               "$ref": "#/components/schemas/ApiEntry"
             }

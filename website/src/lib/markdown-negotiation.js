@@ -44,8 +44,12 @@ async function htmlResponse(context) {
 async function apiCatalogResponse(context) {
   const response = await context.next();
   const headers = new Headers(response.headers);
-  headers.set('Content-Type', 'application/linkset+json');
-  return new Response(response.body, {
+  headers.set(
+    'Content-Type',
+    'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"',
+  );
+  headers.set('Link', '</.well-known/api-catalog>; rel="api-catalog"');
+  return new Response(context.request.method === 'HEAD' ? null : response.body, {
     status: response.status,
     statusText: response.statusText,
     headers,

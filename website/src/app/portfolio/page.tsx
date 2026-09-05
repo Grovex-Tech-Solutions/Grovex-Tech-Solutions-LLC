@@ -79,7 +79,7 @@ export default function PortfolioPage() {
         <section className="bg-background-secondary px-4 py-16 sm:px-6 lg:px-8" aria-labelledby="evidence-policy-heading">
           <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
-              <div className="mb-4 inline-flex rounded-full border border-teal-800/20 bg-teal-800/10 px-4 py-2 text-sm font-semibold text-teal-900 dark:text-teal-100">
+              <div className="mb-4 inline-flex rounded-full border border-teal-800/20 bg-teal-800/10 px-4 py-2 text-sm font-semibold text-teal-900">
                 Evidence policy
               </div>
               <h2 id="evidence-policy-heading" className="text-3xl font-black text-foreground sm:text-4xl">

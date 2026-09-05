@@ -15,17 +15,17 @@ module.exports = {
         },
         foreground: {
           DEFAULT: '#1e293b',
-          secondary: '#64748b',
+          secondary: '#475569',
         },
         primary: {
-          DEFAULT: '#0d9488', // Dark teal-green
-          hover: '#0f766e',
+          DEFAULT: '#0f6f68', // Accessible teal-green for text and white-label controls
+          hover: '#115e59',
           light: '#5eead4',
-          dark: '#0f5d55',
+          dark: '#134e4a',
         },
         secondary: {
-          DEFAULT: '#3b82f6', // Blue
-          hover: '#2563eb', // Darker blue
+          DEFAULT: '#1d4ed8', // Accessible blue for text on pale backgrounds
+          hover: '#1e40af', // Darker blue
           light: '#60a5fa', // Light blue
           dark: '#1e40af', // Dark blue
         },
@@ -38,7 +38,7 @@ module.exports = {
           DEFAULT: '#e2e8f0',
           hover: '#cbd5e1',
         },
-        muted: '#64748b',
+        muted: '#475569',
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],

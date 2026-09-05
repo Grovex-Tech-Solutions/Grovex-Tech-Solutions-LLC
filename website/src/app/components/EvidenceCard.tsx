@@ -68,7 +68,7 @@ export default function EvidenceCard({
         className={
           compact
             ? "mt-3 text-sm leading-6 text-slate-200"
-            : "mt-4 leading-7 text-slate-700 dark:text-slate-200"
+            : "mt-4 leading-7 text-slate-700"
         }
       >
         {project.summary}
@@ -123,7 +123,7 @@ export default function EvidenceCard({
         )}
 
         {!compact && privateNotes.length > 0 ? (
-          <ul className="mt-4 text-sm font-medium text-slate-700 dark:text-slate-200">
+          <ul className="mt-4 text-sm font-medium text-slate-700">
             {privateNotes.map((item) => (
               <li key={item.label}>{item.label}</li>
             ))}

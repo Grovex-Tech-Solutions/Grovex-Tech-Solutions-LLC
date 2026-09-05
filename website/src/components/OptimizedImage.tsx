@@ -73,7 +73,7 @@ export default function OptimizedImage({
         data-width={width}
         data-height={height}
       >
-        <span className="text-gray-500 text-sm">Image not available</span>
+        <span className="text-gray-700 text-sm">Image not available</span>
       </div>
     );
   }
@@ -168,7 +168,7 @@ export function ResponsiveImage({
         data-width={largestSize.width}
         data-height={largestSize.height}
       >
-        <span className="text-gray-500 text-sm">Image not available</span>
+        <span className="text-gray-700 text-sm">Image not available</span>
       </div>
     );
   }

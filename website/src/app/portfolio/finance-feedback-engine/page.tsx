@@ -270,7 +270,7 @@ export default function FinanceFeedbackEnginePortfolioPage() {
             {flowStages.map((stage, index) => (
               <article key={stage.step} className="relative rounded-3xl border border-border bg-background-secondary/50 p-6 shadow-soft">
                 <div className="mb-6 flex items-center justify-between">
-                  <span className="text-4xl font-black text-primary/30">{stage.step}</span>
+                  <span className="text-4xl font-black text-primary/80">{stage.step}</span>
                   {index < flowStages.length - 1 ? <span className="hidden text-2xl text-primary/40 lg:block">→</span> : null}
                 </div>
                 <h3 className="text-xl font-bold text-foreground">{stage.title}</h3>

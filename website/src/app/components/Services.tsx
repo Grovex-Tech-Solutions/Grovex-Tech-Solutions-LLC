@@ -71,7 +71,7 @@ export default function Services() {
                 <div className="rounded-2xl border border-teal-200/20 bg-teal-300/10 p-4 text-teal-100 transition group-hover:bg-teal-300 group-hover:text-slate-950" aria-hidden="true">
                   <service.icon className="h-7 w-7" />
                 </div>
-                <div className="font-mono text-xs font-black uppercase tracking-[0.22em] text-slate-500">{service.eyebrow}</div>
+                <div className="font-mono text-xs font-black uppercase tracking-[0.22em] text-slate-400">{service.eyebrow}</div>
               </div>
 
               <h3 id={`service-title-${service.id}`} className="text-2xl font-black tracking-[-0.035em] text-white transition group-hover:text-teal-100">

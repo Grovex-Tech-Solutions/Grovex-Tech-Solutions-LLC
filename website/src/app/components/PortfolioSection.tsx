@@ -43,7 +43,7 @@ export default function PortfolioSection() {
     <section className="bg-background px-4 py-16 sm:px-6 lg:px-8" aria-labelledby="work-heading">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 max-w-3xl">
-          <div className="mb-4 inline-flex rounded-full border border-teal-800/20 bg-teal-800/10 px-4 py-2 text-sm font-semibold text-teal-900 dark:text-teal-100">
+          <div className="mb-4 inline-flex rounded-full border border-teal-800/20 bg-teal-800/10 px-4 py-2 text-sm font-semibold text-teal-900">
             Offers and evidence stay separate
           </div>
           <h2 id="work-heading" className="text-3xl font-black text-foreground sm:text-4xl lg:text-5xl">
@@ -65,10 +65,10 @@ export default function PortfolioSection() {
                   <PixelArtImage asset={item.art} className="mx-auto aspect-square w-full max-w-[210px]" />
                 </div>
                 <div className="flex flex-1 flex-col p-6">
-                  <div className="text-xs font-bold uppercase tracking-[0.16em] text-teal-900 dark:text-teal-100">{item.category}</div>
+                  <div className="text-xs font-bold uppercase tracking-[0.16em] text-teal-900">{item.category}</div>
                   <h4 className="mt-3 text-xl font-bold text-foreground">{item.title}</h4>
-                  <p className="mt-3 flex-1 leading-7 text-slate-700 dark:text-slate-200">{item.description}</p>
-                  <Link href={item.href} className="mt-5 font-bold text-teal-900 underline decoration-teal-900/30 underline-offset-4 hover:decoration-teal-900 dark:text-teal-100">
+                  <p className="mt-3 flex-1 leading-7 text-slate-700">{item.description}</p>
+                  <Link href={item.href} className="mt-5 font-bold text-teal-900 underline decoration-teal-900/30 underline-offset-4 hover:decoration-teal-900">
                     {item.cta}
                   </Link>
                 </div>
@@ -78,7 +78,7 @@ export default function PortfolioSection() {
         </section>
 
         <div className="mt-10 border-t border-border pt-8">
-          <Link href="/portfolio" className="font-bold text-teal-900 underline decoration-teal-900/30 underline-offset-4 hover:decoration-teal-900 dark:text-teal-100">
+          <Link href="/portfolio" className="font-bold text-teal-900 underline decoration-teal-900/30 underline-offset-4 hover:decoration-teal-900">
             Review the full evidence inventory and policy
           </Link>
         </div>

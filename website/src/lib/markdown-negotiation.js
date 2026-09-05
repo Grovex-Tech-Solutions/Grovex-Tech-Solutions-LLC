@@ -41,9 +41,26 @@ async function htmlResponse(context) {
   });
 }
 
+async function apiCatalogResponse(context) {
+  const response = await context.next();
+  const headers = new Headers(response.headers);
+  headers.set('Content-Type', 'application/linkset+json');
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 export async function onRequest(context) {
   const { request } = context;
   const requestUrl = new URL(request.url);
+  if (
+    ['GET', 'HEAD'].includes(request.method)
+    && requestUrl.pathname === '/.well-known/api-catalog'
+  ) {
+    return apiCatalogResponse(context);
+  }
   const assetPath = markdownPath(requestUrl.pathname);
   if (!['GET', 'HEAD'].includes(request.method) || !assetPath) return context.next();
   if (!acceptsMarkdown(request.headers.get('Accept'))) return htmlResponse(context);

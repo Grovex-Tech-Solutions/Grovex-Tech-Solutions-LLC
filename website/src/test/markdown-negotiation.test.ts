@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { acceptsMarkdown, onRequest } from '../../functions/_middleware.js';
+import { acceptsMarkdown, onRequest } from '@/lib/markdown-negotiation.js';
 
 describe('Markdown content negotiation', () => {
   it.each([
@@ -46,7 +46,8 @@ describe('Markdown content negotiation', () => {
       next,
     });
 
-    expect(response).toBe(htmlResponse);
+    expect(await response.text()).toBe('<html></html>');
+    expect(response.headers.get('vary')).toContain('Accept');
     expect(next).toHaveBeenCalledOnce();
   });
 
@@ -59,7 +60,9 @@ describe('Markdown content negotiation', () => {
       next,
     });
 
-    expect(response).toBe(htmlResponse);
+    expect(response.status).toBe(404);
+    expect(await response.text()).toBe('not found');
+    expect(response.headers.get('vary')).toContain('Accept');
     expect(next).toHaveBeenCalledOnce();
   });
 });

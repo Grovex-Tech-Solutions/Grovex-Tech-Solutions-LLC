@@ -12,6 +12,10 @@ test("publishes only a closed private-systems notice", async () => {
   assert.match(html, /mailto:cpenrod@grovextech\.com/);
   assert.match(html, /noindex, nofollow, noarchive, noimageindex/);
   assert.doesNotMatch(html, /googletagmanager|gtag\(/i);
+  assert.match(html, /pathname === "\/sw\.js"/);
+  assert.match(html, /retiredCachePrefixes\.some/);
+  assert.doesNotMatch(html, /registrations\.map/);
+  assert.doesNotMatch(html, /names\.map\(\(name\) => caches\.delete/);
 });
 
 test("blocks crawlers and replaces legacy routes with the notice", async () => {

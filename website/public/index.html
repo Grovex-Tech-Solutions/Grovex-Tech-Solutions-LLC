@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090b10" />
+    <meta name="robots" content="noindex, nofollow, noarchive, noimageindex" />
+    <meta name="description" content="GroveX develops and operates proprietary software for internal use." />
+    <link rel="canonical" href="https://grovextech.com/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>GroveX — Private Systems Operation</title>
+  </head>
+  <body>
+    <main class="notice" aria-labelledby="notice-title">
+      <div class="notice__mark" aria-hidden="true">GX</div>
+      <p class="notice__eyebrow">GroveX Technologies &amp; Software Solutions LLC</p>
+      <h1 id="notice-title">Private systems operation</h1>
+      <p class="notice__body">
+        GroveX develops and operates proprietary software for internal use. We are
+        not accepting clients, users, investors, or access requests.
+      </p>
+      <p class="notice__disclaimer">
+        Nothing on this site is an offer of investment, advisory, brokerage, or
+        trading services.
+      </p>
+      <p class="notice__security">
+        Security reports only:
+        <a href="mailto:cpenrod@grovextech.com">cpenrod@grovextech.com</a>
+      </p>
+    </main>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.getRegistrations().then((registrations) =>
+          Promise.all(registrations.map((registration) => registration.unregister())),
+        );
+      }
+      if ("caches" in window) {
+        caches.keys().then((names) => Promise.all(names.map((name) => caches.delete(name))));
+      }
+    </script>
+  </body>
+</html>

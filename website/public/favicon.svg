@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GroveX">
+  <rect width="64" height="64" rx="12" fill="#090b10"/>
+  <rect x="1" y="1" width="62" height="62" rx="11" fill="none" stroke="#526170" stroke-width="2"/>
+  <text x="32" y="39" fill="#b8c7d9" font-family="ui-monospace,monospace" font-size="20" font-weight="700" text-anchor="middle">GX</text>
+</svg>

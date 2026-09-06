@@ -1,44 +1,16 @@
-// public/sw.js
+const RETIRED_CACHE_PREFIXES = ["grovex", "next-static"];
 
-// Map to store session tokens per client ID
-const clientSessions = new Map();
+self.addEventListener("install", () => self.skipWaiting());
 
-// Helper to get client session token
-function getClientSessionToken(clientId) {
-    return clientSessions.get(clientId);
-}
-
-// Helper to set client session token
-function setClientSessionToken(clientId, token) {
-    if (typeof token === "string" && token.length > 0) {
-        clientSessions.set(clientId, token);
-    }
-}
-    const { data } = event;
-    // Verify the message comes from your expected origin
-    if (event.origin !== self.location.origin) {
-        return;
-    }
-    if (data && data.type === "SESSION_INIT" && typeof data.sessionToken === "string") {
-        sessionToken = data.sessionToken;
-    };
-
-/**
- * When cache updates are detected:
- * Post a vetted message back to all clients.
- */
-async function notifyCacheUpdated(cacheName, updatedUrls) {
-    if (!sessionToken) {
-        // No session yet; avoid sending unauthenticated messages.
-        return;
-    }
-    const clientsList = await self.clients.matchAll({ includeUncontrolled: true });
-    for (const client of clientsList) {
-        client.postMessage({
-            type: "CACHE_UPDATED",
-            payload: { cacheName, updatedUrls },
-            sessionToken,
-            __sw: true
-        });
-    }
-}
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    caches.keys()
+      .then((names) => Promise.all(
+        names
+          .filter((name) => RETIRED_CACHE_PREFIXES.some((prefix) => name.toLowerCase().includes(prefix)))
+          .map((name) => caches.delete(name)),
+      ))
+      .then(() => self.registration.unregister())
+      .then(() => self.clients.claim()),
+  );
+});
